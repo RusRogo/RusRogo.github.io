@@ -1,6 +1,6 @@
-* {
+/** {
 	outline: 1px solid green;
-}
+}*/
 html,
 body,
 p,
@@ -54,7 +54,7 @@ body {
 	-moz-user-select: -moz-none;
 	user-select: none;
 	margin: 60px 0;
-	width: 320px;
+	width: 300px;
 	text-shadow: -1px 1px 1px #14191c;
 }
 .header__title {
@@ -151,7 +151,7 @@ body {
 	-moz-user-select: -moz-none;
 	user-select: none;
 	height: 200px;
-	width: 320px;
+	width: 300px;
 	margin: 46px 0 33px 0;
 	position: relative;
 }
@@ -572,7 +572,7 @@ body {
 /*yellow yellow my works*/
 
 .my__comSlides {
-	width: 320px;
+	width: 300px;
 	height: 130px;
 	margin: 30px 0;
 	background: #f9f9f9;

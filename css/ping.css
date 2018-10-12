@@ -573,22 +573,31 @@ body {
 
 .my__comSlides {
 	width: 300px;
-	height: 130px;
+	height: 80px;
 	margin: 30px 0;
-	background: #f9f9f9;
+	background: none;
+	border: 1px solid #525350;
+	border-radius: 10px;
 	text-shadow: none;
 }
-.my__slider__text {
-	padding: 20px 0 10px 20px;
-	font-size: 24px;
-	font-family: OpenSans-Light, Arial, sans-serif;
-	color: #454545;
+.my__slider__title {
+	padding: 10px 0 0 5px;
+	font-size: 17px;
+	font-family: 'Segoe Print', OpenSans-ExtraBold, Arial, sans-serif;
+	color: #fff;
 	text-transform: uppercase;
 }
-.my__comSlider__user {
-	color: #583e63;
+.my__comSlider__link {
+	position: relative;
+	color: #000;
 }
-.my__comSlider__title {
-	color: #583e63;
+.my__comSlider__text {
+	color: #000;
 	margin: 10px 50px;
+}
+.my__Img {
+	position: absolute;
+	left: 180px;
+	top: 130%;
+	width: 25px;
 }

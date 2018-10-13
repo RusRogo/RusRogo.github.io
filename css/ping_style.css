@@ -98,7 +98,7 @@ body {
 .headerMenu__list:hover .headerMenu__item {
 	opacity: 0;
 	z-index: 0;
-	transition: 0.5s;
+	transition: 0.7s;
 }
 .menu__item_upper {
 	display: block;

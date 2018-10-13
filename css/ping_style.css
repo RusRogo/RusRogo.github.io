@@ -94,8 +94,8 @@ body {
 	z-index: 2;
 	opacity: 1;
 	transition: 0.7s ease-in;
-	outline: 1px solid green;
-}.headerMenu__list:active .menu {
+}
+.headerMenu__list:active .menu {
 	z-index: 2;
 	opacity: 1;
 	transition: 0.7s ease-in;
@@ -618,3 +618,5 @@ body {
 	color: #214db7;
 	margin: 0 0 30px 30px;
 }
+
+	/*outline: 1px solid green;*/

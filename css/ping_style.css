@@ -88,6 +88,7 @@ body {
 .headerMenu__item{
 	border: none;
 	text-align: center;
+	cursor: pointer;
 }
 .headerMenu__list:hover .menu {
 	z-index: 2;
@@ -97,6 +98,7 @@ body {
 .headerMenu__list:hover .headerMenu__item {
 	opacity: 0;
 	z-index: 0;
+	transition: 0.5s;
 }
 .menu__item_upper {
 	display: block;

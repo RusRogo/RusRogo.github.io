@@ -90,10 +90,13 @@ body {
 	text-align: center;
 }
 .headerMenu__list:hover .menu {
-	display: flex;
+	z-index: 2;
+	opacity: 1;
+	transition: 0.7s ease-in;
 }
 .headerMenu__list:hover .headerMenu__item {
 	opacity: 0;
+	z-index: 0;
 }
 .menu__item_upper {
 	display: block;
@@ -113,8 +116,8 @@ body {
 	opacity: 0.7;
 }
 .menu {
-	z-index: 2;
-	display: none;
+	z-index: 0;
+	opacity: 0;
 	flex-direction: column;
 	position: absolute;
 	left: -200%;
@@ -602,8 +605,4 @@ body {
 	font-weight: bold;
 	color: #214db7;
 	margin: 0 0 30px 30px;
-}
-.my__comSlider__numbering {
-	color: #fff;
-	margin-right: 10px;
 }

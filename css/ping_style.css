@@ -94,12 +94,22 @@ body {
 	z-index: 2;
 	opacity: 1;
 	transition: 0.7s ease-in;
+	outline: 1px solid green;
+}.headerMenu__list:active .menu {
+	z-index: 2;
+	opacity: 1;
+	transition: 0.7s ease-in;
 }
 .headerMenu__list:hover .headerMenu__item {
 	opacity: 0;
 	z-index: 0;
 	transition: 0.7s;
 }
+/*.headerMenu__item:active .headerMenu__item {
+	opacity: 0;
+	z-index: 0;
+	transition: 0.7s;
+}*/
 .menu__item_upper {
 	display: block;
 	width: 48px;
@@ -118,7 +128,7 @@ body {
 	opacity: 0.7;
 }
 .menu {
-	z-index: 0;
+	z-index: -1;
 	opacity: 0;
 	flex-direction: column;
 	position: absolute;

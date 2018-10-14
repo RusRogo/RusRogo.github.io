@@ -8,12 +8,13 @@
 </head>
 <body>
   <div class="wrapper wrapper__header">
+<div class="overlay">over</div>
     <header class="header">
-      <a class="header__topic" href="#">
-        <h1 class="header__title">pingbull<span class="header__title_span">er</span></h1>
+      <a class="header__title" href="#">
+        <h1 class="header__title_text">pingbull<span class="header__title_span">er</span></h1>
       </a>
 
-    <div class="myWorks">
+    <!-- <div class="myWorks">
       <div class="my__comSlides">
         <p class="slider__text my__slider__title">other my works:</p>
         
@@ -21,14 +22,14 @@
           <p class="comSlider__title my__comSlider__text">Holidays in Asia</p>
         </a>
       </div>
-    </div>
+    </div> -->
 
       <nav>
         <ul class="headerMenu">
           <li class="headerMenu__list">
             <div class="headerMenu__item">
               <span class="menu__item_upper">menu</span>
-              <img class="headerNav_icon" src="img/menu-2.png" alt="">
+              <img class="menu__navIcon" src="img/menu-2.png" alt="">
             </div>
             <nav>
               <ul class="menu">
@@ -48,6 +49,11 @@
         </ul>
       </nav>
 
+      <!-- /*#e3f200 #e3f200 #e3f200 media*/ -->
+      <div class="header__title_text mwidth m479">less479px</div>
+      <div class="header__title_text mwidth m480">480px</div>
+      <div class="header__title_text mwidth m768">768px</div>
+
 <!-- Slider yellow -->
       <aside class="wrapSlider">
         <input type="radio" name="slides" id="point1" class="radioPoint" checked>
@@ -58,18 +64,22 @@
           <div class="slides">
               <p class="slider__text">Lorem Ipsum Dolor</p>
               <span class="slider__span">it will make all of youre dreams come</span>
+              <img class="slides__img" src="img/Iphone.png" alt="Iphone">
           </div>
           <div class="slides">
               <p class="slider__text">Come leifend lacinia</p>
               <span class="slider__span">Nunc turpis neque, feugiat</span>
+              <img class="slides__img" src="img/" alt="Device">
           </div>
           <div class="slides">
               <p class="slider__text">Praesent rhoncus</p>
               <span class="slider__span">all of youre dreams come</span>
+              <img class="slides__img" src="img/" alt="Device">
           </div>
           <div class="slides">
               <p class="slider__text">Feugiat et eleifend</p>
               <span class="slider__span">lacinia non neque. Praesent rhoncus</span>
+              <img class="slides__img" src="img/" alt="Device">
           </div>
         </div>
 
@@ -99,7 +109,7 @@
       <section class="content">
         <div class="content__sprite"></div>
         <h3 class="content__title">about our company</h3>
-        <p class="content__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus</p>
+        <p class="content__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor laudantium ipsa, eius tempora magni dolorem minima ab expedita deserunt omnis dolore possimus, veritatis nostrum nihil repellendus soluta labore culpa explicabo.</p>
         <a class="content__more" href="#">read more</a>
       </section>
       <section class="content">
@@ -111,7 +121,7 @@
       <section class="content">
         <div class="content__sprite content__sprite_music"></div>
         <h3 class="content__title">feugiat eget eleifend et</h3>
-        <p class="content__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus</p>
+        <p class="content__text">Praesent rhoncus. Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.</p>
         <a class="content__more" href="#">read more</a>
       </section>
     </div> 
@@ -206,5 +216,7 @@
       <div class="footer__text">Designed by <span class="footer__text_span">Pingbull AS</span></div>
     </footer>
   </div>
+
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>

@@ -338,7 +338,7 @@ body {
 }
 .content__text {
 	padding-left: 50px;
-	height: 70px;
+	height: 65px;
 	font-family: OpenSans-Light, Arial, san-serif;
 	color: #fff;
 	font-size: 16px;
@@ -683,9 +683,6 @@ body {
 	.community,
 	 .comWrapSlider {
 		width: 440px;
-	}
-	.content__text {
-		height: 70px;
 	}
 	.comSlider__title {
 		font-size: 30px;

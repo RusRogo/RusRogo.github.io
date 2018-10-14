@@ -1,5 +1,5 @@
 * {
-	outline: 1px solid green;
+	/*outline: 1px solid green;*/
 }
 html,
 body,
@@ -580,6 +580,14 @@ body {
 	display: flex;
 	flex-flow: row wrap;
 	padding-bottom: 75px;
+	display: flex;
+	justify-content: center;
+}
+.logos__item {
+	height: 70px;
+}
+.logos__item_long {
+	margin-top: 20px;
 }
 /*yellow yellow footer */
 .wrapper__footer {
@@ -650,7 +658,7 @@ body {
 		margin: 60px 0 0 55px;
 	}
 	.logos__item:last-child {
-		margin: 60px 0 0 10px;
+		margin: 60px 20px 0 0;
 	}
 	.logos__item:nth-of-type(5) {
 		margin: 60px 0 60px 25px;
@@ -681,6 +689,18 @@ body {
 	}
 	.comSlider__title {
 		font-size: 30px;
+	}
+	.logos {
+	width: 480px;
+	}
+	.logos__item {
+		margin: 60px 0 0 55px;
+	}
+	.logos__item:nth-of-type(5) {
+		margin: 60px 0 60px 25px;
+	}
+	.logos__item:last-child {
+		margin: 60px 0 0 10px;
 	}
 }
 @media (min-width: 768px) {

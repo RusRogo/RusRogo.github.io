@@ -110,7 +110,6 @@ body {
 	z-index: 0;
 	transition: 0.7s;
 }*/
-
 .menu__item_underline {
 	display: block;
 	width: 48px;
@@ -148,14 +147,12 @@ body {
 .headerMenu__list {
 	border-bottom: 2px solid #302c32;
 }
-.headerMenu__list:last-child {
-	border-bottom: none;
-}
-.headerMenu__list:last-child {
-	border-radius: 0 0 8px 8px;
-}
 .headerMenu__list:first-child {
 	border-radius: 8px 8px 0 0;
+}
+.headerMenu__list:last-child {
+	border-bottom: none;
+	border-radius: 0 0 8px 8px;
 }
 .headerMenu__list {
 	background-color: rgba(62, 49, 70, 0.8);
@@ -595,14 +592,16 @@ body {
 	background-color: #ececec;
 }
 .news {
-	min-width: 445px;
+	min-width: 455px;
 	-moz-hyphens: auto;
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
 }
 .news__item {
 	margin-top: 10%;
-}.news__item:last-child {
+	padding: 0 10px 0 8px;
+}
+.news__item:last-child {
 	margin-bottom: 10%;
 }
 .news__title {
@@ -629,7 +628,7 @@ body {
 }
 /*yellow menu*/
 .menu {
-	display: none;
+	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	list-style: none;
@@ -643,10 +642,9 @@ body {
 .menu__item:hover {
 	text-decoration: underline;
 }
-.footer__menu {
+.footerMenu {
 	margin-top: 45px;
 }
-/*yellow  /menu*/
 .footer__about {
 	margin-top: 40px;
 	font-family: OpenSans-Light;
@@ -724,6 +722,9 @@ body {
 	.news {
 		display: none;
 	}
+	.menu {
+		display: none;
+	}
 }
 @media (min-width: 320px) {
 	.mediaInfo {
@@ -743,7 +744,7 @@ body {
 	.slides__img {
 	width: 25%;
 	top: 100%;
-	right: 10%;
+	right: 11%;
 	font-size: 50px;
 	}
 	.comSlider__span {
@@ -753,6 +754,9 @@ body {
 	margin-top: 27.5%;
 	}
 	.news {
+		display: none;
+	}
+	.footerMenu {
 		display: none;
 	}
 }
@@ -775,7 +779,7 @@ body {
 	.slides__img {
 	width: auto;
 	top: 20%;
-	right: 7%;
+	right: 8%;
 	font-size: 50px;
 	}
 	.control {
@@ -792,11 +796,11 @@ body {
 .news {
 	display: block;
 	}
-.menu {
-	display: flex;
+	.footerMenu {
+		display: flex;
 	}
 }
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
 	.mediaInfo {
 		display: none;
 	}
@@ -808,5 +812,5 @@ body {
 		display: block;
 	}
 }
-
+*/
 	/*outline: 1px solid green;*/

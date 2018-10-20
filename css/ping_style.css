@@ -56,7 +56,7 @@ body {
 	text-decoration: none;
 }
 /*yellow yellow header */
-.wrapper__header {
+.wrapper_header {
 	background: url(../img/back.jpg) top no-repeat;
 	position: relative;
 }
@@ -78,9 +78,6 @@ body {
 	display: block;
 	width: 155px;
 	margin: 0 auto;
-}
-.header__title:hover {
-	text-decoration: underline;
 }
 .header__title_text {
 	font-size: 48px;
@@ -312,7 +309,7 @@ body {
 	z-index: 1;
 }
 /*yellow yellow info */
-.wrapper__info {
+.wrapper_info {
 	background: #654872;
 	border-top: 1px solid #35273c;
 	border-bottom: 1px solid #12191f;
@@ -366,7 +363,7 @@ body {
 	background-position: -74px 0;
 }
 /*community yellow white */
-.wrapper__community {
+.wrapper_community {
 	background-color: #f9f9f9;
 	border-top: 1px solid #f9f9f9;
 	box-shadow: inset 0 10px 10px -10px gray;
@@ -446,7 +443,7 @@ body {
 	width: 30px;
 	height: 40px;
 	cursor: pointer;
-	top: 40%;
+	top: 75%;
 	opacity: 0.3;
 	z-index: 0;
 }
@@ -584,7 +581,7 @@ body {
 	text-decoration: underline;
 }
 /*yellow yellow logos */
-.wrapper__logos {
+.wrapper_logos {
 	background: #f9f9f9;
 	border-top: 1px solid #fefefe;
 	border-bottom: 1px solid #fefefe;
@@ -608,10 +605,11 @@ body {
 }
 
 /*yellow yellow news*/
-.wrapper__news {
+.wrapper_news {
 	background-color: #ececec;
 }
 .news {
+	margin-top: 10%;
 	display: none;
 	margin-bottom: 10%;
 	width: 455px;
@@ -620,7 +618,6 @@ body {
   -ms-hyphens: auto;
 }
 .news__item {
-	margin-top: 10%;
 	height: 130px;
 	overflow: hidden;
 }
@@ -650,7 +647,7 @@ body {
 }
 
 /*yellow yellow footer */
-.wrapper__footer {
+.wrapper_footer {
 	background: url(../img/back_copy.png) bottom no-repeat;
 	box-shadow: inset 0 10px 10px -10px #211f1f;
 }
@@ -733,7 +730,10 @@ body {
 	}
 	.control {
 		margin-top: 40%;
-
+	}
+	.comPrev,
+	.comNext {
+		top: 87%;
 	}
 	.footerMenu {
 		display: none;
@@ -765,6 +765,10 @@ body {
 	}
 	.control {
 		margin-top: 25%;
+	}
+	.comPrev,
+	.comNext {
+		top: 87%;
 	}
 	.footerMenu {
 		display: none;
@@ -798,6 +802,10 @@ body {
 	.comWrapSlider,
 	.logos {
 		width: 440px;
+	}
+	.comPrev,
+	.comNext {
+		top: 88%;
 	}
 	.comSlider__title,
 	.comSlider__span {
@@ -903,7 +911,10 @@ body {
 	.comControl {
 		bottom: 15%;
 	}
-
+	.comPrev,
+	.comNext {
+		top: 75%;
+	}
 	.updates {
 		margin: 90px 0;
 		width: 323px;

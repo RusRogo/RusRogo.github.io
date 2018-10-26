@@ -1,5 +1,4 @@
 /** {outline: 1px solid green};*/
-    /*outline: 2px solid yellow;*/
 @font-face{
     font-family:"Open-Sans";
     src:url("../fonts/OpenSans-Regular.ttf");
@@ -41,7 +40,7 @@ body{
     user-select: none;
 }
 .page-header{
-    margin-bottom: 50px;
+    margin: 0.5em 0.5em 50px 0.5em;
     -webkit-box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.8);
     -moz-box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.8);
     box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.8);
@@ -99,7 +98,15 @@ body{
 }
 .page-header__photo{
     text-align:center;
-    margin-bottom:30px
+    margin: 0 auto;
+    margin-bottom:30px;
+    width:200px;
+    height:200px;
+    background: url(../img/code3.jpg) center;
+    border-radius:50%;
+    -webkit-box-shadow:10px 0px 5px 0px rgba(0, 0, 0, 0.8);
+       -moz-box-shadow:10px 0px 5px 0px rgba(0, 0, 0, 0.8);
+            box-shadow:10px 0px 5px 0px rgba(0, 0, 0, 0.8);
 }
 .page-header__photo-img{
     width:200px;
@@ -145,7 +152,7 @@ body{
     }
 }
 .portfolio{
-    margin-bottom: 50px;
+    margin: 0.5em 0.5em 50px 0.5em;
     -webkit-box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.8);
     -moz-box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.8);
     box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.8);

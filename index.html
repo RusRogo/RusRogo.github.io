@@ -6,7 +6,26 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" type="image/png" href="img/favicon.png" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+<!--   <script type="text/javascript">
+$(document).ready(function(){
+ 
+$(window).scroll(function(){
+if ($(this).scrollTop() > 100) {
+$('.scrollup').fadeIn();
+} else {
+$('.scrollup').fadeOut();
+}
+});
+ 
+$('.scrollup').click(function(){
+$("html, body").animate({ scrollTop: 0 }, 300);
+return false;
+});
+ 
+});
+</script> -->
   <title>Портфолио - Руслан</title>
 </head>
 <body>
@@ -21,8 +40,8 @@
       </div>
       <div class="page-header__title">
         <h1 class="page-header__name">Руслан</h1>
-        <h2 class="page-header__lastname"> </h2>
-        <span class="page-header__prof">Разработка на html - css - Javascript</span>
+        <!-- <h2 class="page-header__lastname"></h2> -->
+        <h3 class="page-header__prof">Разработка на html - css - Javascript</h3>
       </div>
     </div>
   </header>
@@ -36,8 +55,8 @@
             <img class="portfolio__preview" src="img/pingbuller.jpg" alt="pingbuller">
           </a>
           <a class="portfolio__link" href="https://rusrogo.github.io/pingbuller" target="_blank">
-            <span class="portfolio__name">Pingbuller</span>
-            <h3 class="portfolio__description">Мобильный сайт</h3>
+            <h3 class="portfolio__name">Pingbuller</h3>
+            <h4 class="portfolio__description">Мобильный сайт</h4>
           </a>
         </article>
 <!--         <article class="portfolio__item">
@@ -61,36 +80,36 @@
       <ul class="about__list">
         <li class="about__item">
           <img class="about__item-icon" width="48" height="48" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAABc0lEQVRoQ+2a3Q0BQRDHdxF1ePRCIjSgAzqgg1OJ64ASlKAAQnjxRgkakJUVJ2fua2fX7N3F3IvIfezvN//ZzeaQouaHrDm/YIGyE0wk0N8tVNlQeeOfRssvZhbwndb/JQCNfVcczkl0AizgGBknwC30Ly3U2wWTZlNsj4PwHneuxRzo7YOZVHIllDo2WmIcl6i8wAc+KjuQqLRAAv4toYSankfhRn+trEAmvFTz8zBcR4FUUsAUnjyB7iHoXAbhDbNSYuBJBSIQBSLPk8HCkwlAEBMJG3gSAd027Ye8wkrnSdjCkwjoh2KAMNemtR/ZKmQCZnJN0QJAJlCUhD7/2h6Aw2S+eN0LZVU5rbJYeLI5AOFMJGzgvQnktZM+ZwvvVSBLwgXeuwCUcIUvRSCS0J/xXWXRcpl1nnQZtYXC3McC/FoF0y8p13ILcQuV3UKO4//8dvTvAz8ncHwgCzgW0Pn2wgScR/D8AP6rgeeCJ4arfQJPOq3jQOHfgNcAAAAASUVORK5CYII=">
-          <h3 class="about__item-name">Семантика и БЭМ</h3>
+          <h4 class="about__item-name">Семантика и БЭМ</h4>
           <p class="about__item-description">Использую методологию БЭМ в именовании классов и организованности верстки. Создаю читабельный код, использую HTML-теги по назначению.</p>
         </li>
         <li class="about__item">
           <img class="about__item-icon" width="48" height="48" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAABc0lEQVRoQ+2a3Q0BQRDHdxF1ePRCIjSgAzqgg1OJ64ASlKAAQnjxRgkakJUVJ2fua2fX7N3F3IvIfezvN//ZzeaQouaHrDm/YIGyE0wk0N8tVNlQeeOfRssvZhbwndb/JQCNfVcczkl0AizgGBknwC30Ly3U2wWTZlNsj4PwHneuxRzo7YOZVHIllDo2WmIcl6i8wAc+KjuQqLRAAv4toYSankfhRn+trEAmvFTz8zBcR4FUUsAUnjyB7iHoXAbhDbNSYuBJBSIQBSLPk8HCkwlAEBMJG3gSAd027Ye8wkrnSdjCkwjoh2KAMNemtR/ZKmQCZnJN0QJAJlCUhD7/2h6Aw2S+eN0LZVU5rbJYeLI5AOFMJGzgvQnktZM+ZwvvVSBLwgXeuwCUcIUvRSCS0J/xXWXRcpl1nnQZtYXC3McC/FoF0y8p13ILcQuV3UKO4//8dvTvAz8ncHwgCzgW0Pn2wgScR/D8AP6rgeeCJ4arfQJPOq3jQOHfgNcAAAAASUVORK5CYII=">
-          <h3 class="about__item-name">Адаптивность</h3>
+          <h4 class="about__item-name">Адаптивность</h4>
           <p class="about__item-description">Умею оранизовать код под все необходимые размеры экранов - десктопный, планшетный, мобильный. Знаю и использую принцип mobile-first. Применяю Flexbox компоновку элементов, резиновость.</p>
         </li>
 
         <li class="about__item">
           <img class="about__item-icon" width="48" height="48" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAABc0lEQVRoQ+2a3Q0BQRDHdxF1ePRCIjSgAzqgg1OJ64ASlKAAQnjxRgkakJUVJ2fua2fX7N3F3IvIfezvN//ZzeaQouaHrDm/YIGyE0wk0N8tVNlQeeOfRssvZhbwndb/JQCNfVcczkl0AizgGBknwC30Ly3U2wWTZlNsj4PwHneuxRzo7YOZVHIllDo2WmIcl6i8wAc+KjuQqLRAAv4toYSankfhRn+trEAmvFTz8zBcR4FUUsAUnjyB7iHoXAbhDbNSYuBJBSIQBSLPk8HCkwlAEBMJG3gSAd027Ye8wkrnSdjCkwjoh2KAMNemtR/ZKmQCZnJN0QJAJlCUhD7/2h6Aw2S+eN0LZVU5rbJYeLI5AOFMJGzgvQnktZM+ZwvvVSBLwgXeuwCUcIUvRSCS0J/xXWXRcpl1nnQZtYXC3McC/FoF0y8p13ILcQuV3UKO4//8dvTvAz8ncHwgCzgW0Pn2wgScR/D8AP6rgeeCJ4arfQJPOq3jQOHfgNcAAAAASUVORK5CYII=">
-          <h3 class="about__item-name">JavaScript</h3>
-          <p class="about__item-description">Владею JavaScript на базовом уровне. Учитель: https://learn.javascript.ru и другие источники.</p>
+          <h4 class="about__item-name">JavaScript</h4>
+          <p class="about__item-description">Владею JavaScript на базовом уровне. Ресурсы: https://learn.javascript.ru и "google helps you".</p>
         </li>
 
         <li class="about__item">
           <img class="about__item-icon" width="48" height="48" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAABc0lEQVRoQ+2a3Q0BQRDHdxF1ePRCIjSgAzqgg1OJ64ASlKAAQnjxRgkakJUVJ2fua2fX7N3F3IvIfezvN//ZzeaQouaHrDm/YIGyE0wk0N8tVNlQeeOfRssvZhbwndb/JQCNfVcczkl0AizgGBknwC30Ly3U2wWTZlNsj4PwHneuxRzo7YOZVHIllDo2WmIcl6i8wAc+KjuQqLRAAv4toYSankfhRn+trEAmvFTz8zBcR4FUUsAUnjyB7iHoXAbhDbNSYuBJBSIQBSLPk8HCkwlAEBMJG3gSAd027Ye8wkrnSdjCkwjoh2KAMNemtR/ZKmQCZnJN0QJAJlCUhD7/2h6Aw2S+eN0LZVU5rbJYeLI5AOFMJGzgvQnktZM+ZwvvVSBLwgXeuwCUcIUvRSCS0J/xXWXRcpl1nnQZtYXC3McC/FoF0y8p13ILcQuV3UKO4//8dvTvAz8ncHwgCzgW0Pn2wgScR/D8AP6rgeeCJ4arfQJPOq3jQOHfgNcAAAAASUVORK5CYII=">
-          <h3 class="about__item-name">Git</h3>
+          <h4 class="about__item-name">Git</h4>
           <p class="about__item-description">Пользуюсь Git системой управления версиями. Выкладываю работы на Github.</p>
         </li>
 
         <li class="about__item">
           <img class="about__item-icon" width="48" height="48" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAABc0lEQVRoQ+2a3Q0BQRDHdxF1ePRCIjSgAzqgg1OJ64ASlKAAQnjxRgkakJUVJ2fua2fX7N3F3IvIfezvN//ZzeaQouaHrDm/YIGyE0wk0N8tVNlQeeOfRssvZhbwndb/JQCNfVcczkl0AizgGBknwC30Ly3U2wWTZlNsj4PwHneuxRzo7YOZVHIllDo2WmIcl6i8wAc+KjuQqLRAAv4toYSankfhRn+trEAmvFTz8zBcR4FUUsAUnjyB7iHoXAbhDbNSYuBJBSIQBSLPk8HCkwlAEBMJG3gSAd027Ye8wkrnSdjCkwjoh2KAMNemtR/ZKmQCZnJN0QJAJlCUhD7/2h6Aw2S+eN0LZVU5rbJYeLI5AOFMJGzgvQnktZM+ZwvvVSBLwgXeuwCUcIUvRSCS0J/xXWXRcpl1nnQZtYXC3McC/FoF0y8p13ILcQuV3UKO4//8dvTvAz8ncHwgCzgW0Pn2wgScR/D8AP6rgeeCJ4arfQJPOq3jQOHfgNcAAAAASUVORK5CYII=">
-          <h3 class="about__item-name">Кроссбраузерность</h3>
+          <h4 class="about__item-name">Кроссбраузерность</h4>
           <p class="about__item-description">Верстка проверяется и отлаживается во всех необходимых браузерах.</p>
         </li>
 
         <li class="about__item">
           <img class="about__item-icon" width="48" height="48" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAABc0lEQVRoQ+2a3Q0BQRDHdxF1ePRCIjSgAzqgg1OJ64ASlKAAQnjxRgkakJUVJ2fua2fX7N3F3IvIfezvN//ZzeaQouaHrDm/YIGyE0wk0N8tVNlQeeOfRssvZhbwndb/JQCNfVcczkl0AizgGBknwC30Ly3U2wWTZlNsj4PwHneuxRzo7YOZVHIllDo2WmIcl6i8wAc+KjuQqLRAAv4toYSankfhRn+trEAmvFTz8zBcR4FUUsAUnjyB7iHoXAbhDbNSYuBJBSIQBSLPk8HCkwlAEBMJG3gSAd027Ye8wkrnSdjCkwjoh2KAMNemtR/ZKmQCZnJN0QJAJlCUhD7/2h6Aw2S+eN0LZVU5rbJYeLI5AOFMJGzgvQnktZM+ZwvvVSBLwgXeuwCUcIUvRSCS0J/xXWXRcpl1nnQZtYXC3McC/FoF0y8p13ILcQuV3UKO4//8dvTvAz8ncHwgCzgW0Pn2wgScR/D8AP6rgeeCJ4arfQJPOq3jQOHfgNcAAAAASUVORK5CYII=">
-          <h3 class="about__item-name">Photoshop, Pixel Perfect</h3>
+          <h4 class="about__item-name">Photoshop, Pixel Perfect</h4>
           <p class="about__item-description">Adobe Photoshop - кадрирование, нарезка, обработка изображений, работа со слоями и другое.<br>Применяю Pixel Perfect технику верстки</p>
         </li>
       </ul>
@@ -109,7 +128,11 @@
           </tr> 
           <tr class="contacts__row">
             <td class="contacts__cell"><b>Phone:</b></td>
-            <td class="contacts__cell"><a class="contacts__cell_link" href="tel:+380714630627">+38-071-</a></td>
+            <td class="contacts__cell"><a class="contacts__cell_link" href="tel:+38071">+38-071-</a></td>
+          </tr>
+          <tr class="contacts__row">
+            <td class="contacts__cell"><b>Mail:</b></td>
+            <td class="contacts__cell"><a class="contacts__cell_link" href="mailto:rusf6996@mail.ru">rusf6996@mail.ru</a></td>
           </tr>
         </table>
       </div>
@@ -119,7 +142,7 @@
 <!--   <footer class="page-footer">
     <p class="page-footer__copyright">&copy; 2018 Ruslan</p>
   </footer> -->
-
+  <a href="#" class="scrollup">Наверх</a>
 </body>
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </html>

@@ -177,6 +177,7 @@ body{
     margin-bottom:35px;
     margin:0;
     margin-bottom:40px;
+    margin-left: -10%;
 }
 .portfolio__preview{
     display:block;
@@ -355,7 +356,7 @@ body{
     color:#566366;
     margin-bottom:35px;
     margin:0;
-    margin-bottom:40px
+    margin-bottom:40px;
 }
 .about__description{
     margin:0;

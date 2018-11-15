@@ -155,7 +155,7 @@ body{
     box-shadow: 3px 3px 5px rgba(0,0,0,0.6);
     padding-top:60px;
     padding-bottom:40px;
-    background: url(../img/code4.jpg) center no-repeat;
+    background: url(../img/code3.jpg) center no-repeat;
     background-size: cover;
 }
 .portfolio__wrapper{
@@ -265,6 +265,20 @@ body{
     font-weight:normal;
     color:#FCFCFC;
     /*text-shadow: 20px 20px 20px rgba(0, 0, 0, 0.9);*/
+}
+.portfolio__text {
+    margin: 5% -5%;
+    padding-left: 20%;
+    text-indent: 10px;
+    width: 70%;
+    border-radius: 70%;
+    background-color: rgba(90, 90, 0, 0.8);
+    font-size: 100%;
+    font-style: italic;
+    color:#FCFCFC;
+    opacity: 0.9;
+    /*text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);*/
+    /*border: 2px solid green;*/
 }
 @media (max-width:767px){
     .portfolio__wrapper{

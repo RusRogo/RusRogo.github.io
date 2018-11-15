@@ -90,7 +90,9 @@ body{
     margin-bottom:30px;
     width:200px;
     height:200px;
-    background: url(../img/code3.jpg) 50%;
+    background: url(../img/norm.jpg) 40% 40% no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
     border-radius:50%;
     -webkit-box-shadow:5px 0px 5px 0px rgba(0, 0, 0, 0.8);
        -moz-box-shadow:5px 0px 5px 0px rgba(0, 0, 0, 0.8);

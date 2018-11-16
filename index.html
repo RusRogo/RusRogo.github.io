@@ -8,9 +8,11 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typeit@VERSION_NUMBER/dist/typeit.min.js"></script>
   <title>Портфолио - Руслан</title>
 </head>
 <body>
+  <!-- <p class="example1" id="example1"></p> -->
   <header class="page-header">
     <div class="page-header__wrapper">
       <nav class="main-nav">
@@ -31,7 +33,7 @@
   <section class="portfolio" id="portfolio">
     <div class="portfolio__wrapper">
       <h2 class="portfolio__title">Портфолио</h2>
-      <p class="portfolio__text">Начальные работы на Github, следущая - в процессе...</p>
+      <p class="portfolio__text example1" id="example1">Начальные работы на Github, следущие - в процессе...</p>
       <div class="portfolio__list">
         <article class="portfolio__item">
           <a class="portfolio__img-link" href="https://rusrogo.github.io/pingbuller" target="_blank">
@@ -58,7 +60,7 @@
   <section class="about" id="about">
     <div class="about__wrapper">
       <h2 class="about__title">Обо мне</h2>
-      <p class="about__description">Увлекаюсь Web-разработкой и всем, что с ней связано. Здесь перечислены основные технологии, которые я использую.
+      <p class="about__description example2" id="example2">Увлекаюсь Web-разработкой и всем, что с ней связано. Здесь перечислены основные технологии, которые я использую.
       </p>
       <ul class="about__list">
         <li class="about__item">
@@ -123,5 +125,6 @@
   </footer>
   <a href="#" class="scrollup">Наверх</a>
 </body>
+<script type="text/javascript" src="js/script2.js"></script>
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </html>

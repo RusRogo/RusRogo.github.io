@@ -18,18 +18,31 @@
     font-weight:normal
 }
 @font-face{
-    font-family:"Roboto";
-    src:url("../fonts/Roboto-Bold.ttf");
+    font-family:"spider";
+    src:url("../fonts/spider.otf");
     font-style:normal;
     font-weight:bold
 }
+@font-face{
+    font-family:"BadScript-Regular";
+    src:url("../fonts/BadScript-Regular.ttf");
+    font-style:normal;
+    font-weight:bold
+}
+@font-face{
+    font-family:"cocon";
+    src:url("../fonts/cocon.otf");
+    font-style:normal;
+    font-weight:bold
+}
+
 html {
     scroll-behavior: smooth;
 }
 body{
     margin:0;
     min-width:320px;
-    background-color:#E8E8E8;
+    background-color:#fff;
     color:#353535;
     font-family:"Roboto", Arial, sans-serif;
     font-size:18px;
@@ -42,13 +55,16 @@ body{
     -o-user-select: none;
     user-select: none;
 }
+.example2 {
+    font-size: 20px;
+}
 .page-header{
     margin-bottom: 5px;
     -webkit-box-shadow: 3px 3px 5px rgba(0,0,0,0.6);
     -moz-box-shadow: 3px 3px 5px rgba(0,0,0,0.6);
     box-shadow: 3px 3px 5px rgba(0,0,0,0.6);
-    background:url(../img/coding3.jpg) no-repeat center;
-    background-size:cover;
+    background:url(../img/coding6.jpg) no-repeat 50%;
+    background-size: cover;
     padding-top:35px;
 }
 .page-header__wrapper{
@@ -68,7 +84,8 @@ body{
 .main-nav__item{
     margin-bottom: 10px;
     display:block;
-    color: #fff;
+    font-family:"cocon";
+    color: #111;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
     text-transform:uppercase;
     text-decoration: none;
@@ -107,9 +124,9 @@ body{
     font-size:30px;
     font-weight: bold;
     line-height:30px;
-    color:#FCFCFC;
+    color: #111;
     text-transform:uppercase;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+    /*text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);*/
 }
 @media (min-width:768px){
     .main-nav{
@@ -128,7 +145,8 @@ body{
 }
 .page-header__title{
     text-align:center;
-    padding-bottom:35px
+    padding-bottom:35px;
+    font-family:"spider";
 }
 .page-header__name,
 .page-header__lastname {
@@ -136,9 +154,9 @@ body{
     margin-bottom:25px;
     font-size:56px;
     line-height:40px;
-    color:#fff;
+    color:#FFF;
     text-transform:uppercase;
-    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
 }
 @media (min-width:768px){
     .page-header{
@@ -160,7 +178,9 @@ body{
     padding-bottom:40px;
     /*background: url(../img/code3.jpg) center no-repeat;*/
     /*background-size: cover;*/
-    background-color: #C1C1BD;
+    /*background-color: #C1C1BD;*/
+    background: url(../img/coding7.jpg) no-repeat;
+    background-size:cover;
 }
 .portfolio__wrapper{
     padding-left:10%;
@@ -188,7 +208,7 @@ body{
     -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
     -moz-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
-    opacity: 0.9;
+    opacity: 0.8;
     width:250px;
     height:227px
 }
@@ -221,18 +241,18 @@ body{
     z-index:100;
     top:0
 }
-.portfolio__img-link:hover:after{
+/*.portfolio__img-link:hover:after{
     background-color:rgba(137, 137, 137, 0.6);
     background-image:url("../img/icon.png");
     background-repeat:no-repeat;
     background-position:center
-}
-.portfolio__img-link:active:after{
+}*/
+/*.portfolio__img-link:active:after{
     background-color:rgba(137, 137, 137, 0.5);
     background-image:url("../img/icon.png");
     background-repeat:no-repeat;
     background-position:center
-}
+}*/
 .portfolio__img-link:hover{
     margin-top: -15px;
     padding-bottom: 15px;
@@ -244,7 +264,7 @@ body{
 .portfolio__link{
     min-height:84px;
     display:block;
-    background-color: #404040FF;
+    background-color: #999999FF;
     text-decoration:none;
     margin-bottom:40px;
     text-align:center;
@@ -275,11 +295,9 @@ body{
     padding-left: 10px;
     text-indent: 10px;
     width: 250px;
-    background-color: #404040FF;
+    background-color: #8C8C8CFF;
     font-size: 100%;
-    font-style: italic;
     color:#FCFCFC;
-    opacity: 0.9;
     position: relative;
     -moz-border-radius: 12px;
     -webkit-border-radius: 12px;
@@ -293,8 +311,11 @@ body{
     top: 20%;
     position: absolute;
     border-top: 1px solid transparent;
-    border-right: 26px solid #404040FF;
+    border-right: 26px solid #8C8C8CFF;
     border-bottom: 13px solid transparent;
+}
+.about__item {
+    margin-top: 60px;
 }
 @media (max-width:767px){
     .portfolio__wrapper{
@@ -371,7 +392,10 @@ body{
 .about{
     padding-top:60px;
     padding-bottom:40px;
-    background-color:#f2f2f1
+/*    background-image: url(../img/about2.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;*/
+    background-color:#EDEDEC
 }
 .about__wrapper{
     padding-left:10%;
@@ -383,8 +407,8 @@ body{
     font-family:"Roboto", Arial, sans-serif;
     text-transform:uppercase;
     font-size:30px;
-    color:#566366;
-    margin-bottom:35px;
+    color:#FCFCFC;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
     margin:0;
     margin-bottom:40px;
 }
@@ -393,6 +417,7 @@ body{
     text-indent:20px
 }
 .about__list{
+    font-family:"spider";
     list-style:none;
     margin:0;
     padding:0;
@@ -404,11 +429,11 @@ body{
     margin-bottom:40px
 }
 .about__item-name{
-    font-family:"Roboto", Arial, sans-serif;
+    font-family:"spider", Arial, sans-serif;;
     text-transform:uppercase;
     font-size:20px;
     line-height:24px;
-    color:#566366;
+    color:#404040;
     margin-top:0;
     margin-bottom:20px
 }
@@ -418,7 +443,10 @@ body{
 }
 .about__item-description{
     margin:0;
-    line-height: 1.3em;
+    line-height: 1.5em;
+    font-family:"BadScript-Regular";
+    font-size: 1.3em;
+    font-weight: bold;
 }
 @media (max-width:767px){
     .about__wrapper{
@@ -472,10 +500,9 @@ body{
     text-transform:uppercase;
     font-size:30px;
     line-height:24px;
-    margin-bottom:35px;
-    margin:0;
-    margin-bottom:40px;
-    color:#f2f2f1;
+    margin: 0 0 40px -10px;
+    color:#FCFCFC;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
 }
 .contacts__content{
     padding-bottom:40px
@@ -656,6 +683,11 @@ body{
         font-size:2.4em;
         line-height:.1em;
     }
+    .page-header__photo {
+        margin: 3em auto;
+        width: 100px;
+        height: 100px;
+    }
     .portfolio__name,
     .about__title,
     .contacts__title,
@@ -680,6 +712,11 @@ body{
         display: block;
         font-size: 40px;
     }
+    .page-header__photo {
+        margin: 4em auto;
+        width:200px;
+        height:200px;
+    }
 }
 @media (min-width: 960px) {
     .mediaInfo {
@@ -698,7 +735,7 @@ body{
         font-size:1.4em;
     }
     .page-header__photo {
-        margin: 4em auto;
+        margin: 5em auto;
     }
 
     .page-header__prof {
@@ -724,10 +761,6 @@ body{
         display: block;
         font-size: 48px;
     }
-    .page-header__photo {
-        margin: 5em auto;
-    }
-
     .page-header__prof {
         margin: 3em auto;
     }

@@ -47,7 +47,7 @@ body{
     -webkit-box-shadow: 3px 3px 5px rgba(0,0,0,0.6);
     -moz-box-shadow: 3px 3px 5px rgba(0,0,0,0.6);
     box-shadow: 3px 3px 5px rgba(0,0,0,0.6);
-    background:url(../img/coding.jpg) no-repeat center;
+    background:url(../img/coding3.jpg) no-repeat center;
     background-size:cover;
     padding-top:35px;
 }
@@ -155,8 +155,9 @@ body{
     box-shadow: 3px 3px 5px rgba(0,0,0,0.6);
     padding-top:60px;
     padding-bottom:40px;
-    background: url(../img/code3.jpg) center no-repeat;
-    background-size: cover;
+    /*background: url(../img/code3.jpg) center no-repeat;*/
+    /*background-size: cover;*/
+    background-color: #C1C1BD;
 }
 .portfolio__wrapper{
     padding-left:10%;
@@ -327,7 +328,7 @@ body{
         margin:0 auto
     }
     .portfolio__list{
-        margin: 100px 0;
+        margin: 50px 0;
         display:-webkit-box;
         display:-ms-flexbox;
         display:flex;

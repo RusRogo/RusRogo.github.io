@@ -71,6 +71,7 @@ body{
     color: #fff;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
     text-transform:uppercase;
+    text-decoration: none;
     font-size:28px;
     font-weight: bold;
     line-height:40px;
@@ -78,11 +79,13 @@ body{
     scroll-behavior: smooth;
 }
 .main-nav__item:hover{
+    text-decoration: underline;
     transition: all 0.2s ease-in-out;
-    color:rgba(46, 204, 113, 0.85)
+    color: #404040FF;
 }
 .main-nav__item:active{
-    color:rgba(46, 204, 113, 0.85)
+    text-decoration: underline;
+    color: #404040FF;
 }
 .page-header__photo {
     text-align:center;
@@ -90,7 +93,7 @@ body{
     margin-bottom:30px;
     width:200px;
     height:200px;
-    background: url(../img/norm.jpg) 40% 40% no-repeat;
+    background: url(../img/norm5.png) 10% no-repeat;
     -webkit-background-size: 100%;
     background-size: 100%;
     border-radius:50%;
@@ -202,7 +205,7 @@ body{
     top:60%
 }
 .portfolio__img-link:hover:before{
-    content:"Перейти на сайт";
+    content:"Перейти";
     color:#FCFCFC;
     font-style: italic;
     text-align:center;
@@ -219,13 +222,13 @@ body{
     top:0
 }
 .portfolio__img-link:hover:after{
-    background-color:rgba(46, 204, 113, 0.45);
+    background-color:rgba(137, 137, 137, 0.6);
     background-image:url("../img/icon.png");
     background-repeat:no-repeat;
     background-position:center
 }
 .portfolio__img-link:active:after{
-    background-color:rgba(30, 153, 84, 0.45);
+    background-color:rgba(137, 137, 137, 0.5);
     background-image:url("../img/icon.png");
     background-repeat:no-repeat;
     background-position:center
@@ -241,7 +244,7 @@ body{
 .portfolio__link{
     min-height:84px;
     display:block;
-    background-color: rgba(90, 90, 0, 0.6);
+    background-color: #404040FF;
     text-decoration:none;
     margin-bottom:40px;
     text-align:center;
@@ -266,21 +269,18 @@ body{
     line-height:20px;
     font-weight:normal;
     color:#FCFCFC;
-    /*text-shadow: 20px 20px 20px rgba(0, 0, 0, 0.9);*/
 }
 .portfolio__text {
     margin: 5% -5%;
     padding-left: 10px;
     text-indent: 10px;
     width: 250px;
-    /*border-radius: 70%;*/
-    background-color: rgba(90, 90, 0, 0.8);
+    background-color: #404040FF;
     font-size: 100%;
     font-style: italic;
     color:#FCFCFC;
     opacity: 0.9;
-    /*text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);*/
-        position: relative;
+    position: relative;
     -moz-border-radius: 12px;
     -webkit-border-radius: 12px;
     border-radius: 12px;
@@ -293,7 +293,7 @@ body{
     top: 20%;
     position: absolute;
     border-top: 1px solid transparent;
-    border-right: 26px solid rgba(90, 90, 0, 0.8);
+    border-right: 26px solid #404040FF;
     border-bottom: 13px solid transparent;
 }
 @media (max-width:767px){

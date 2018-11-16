@@ -437,6 +437,9 @@ body{
     margin-top:0;
     margin-bottom:20px
 }
+.about__item_span {
+    font-family:"cocon";
+}
 .about__item-icon{
     position:absolute;
     left:0

@@ -222,4 +222,9 @@ $('#example2').typeIt({
      speed: 20
 });
 
+$('#example3').typeIt({
+     strings: ['This is my string!'],
+     speed: 60
+});
+
 

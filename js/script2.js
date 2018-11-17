@@ -213,18 +213,18 @@
 
 
 $('#example1').typeIt({
-     strings: ['This is my string!'],
+     strings: ['Разработка', 'html', 'css', 'Javascript'],
      speed: 40
 });
 
 $('#example2').typeIt({
-     strings: ['This is my string!'],
-     speed: 20
+     strings: ['Начальные работы на Github,', 'следущие - в процессе...'],
+     speed: 30
 });
 
 $('#example3').typeIt({
-     strings: ['This is my string!'],
-     speed: 60
+     strings: ['Увлекаюсь Web-разработкой и всем, что с ней связано. ', 'Здесь перечислены основные технологии, которые я использую.'],
+     speed: 20
 });
 
 

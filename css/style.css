@@ -35,7 +35,18 @@
     font-style:normal;
     font-weight:bold
 }
-
+@font-face{
+    font-family:"Xar";
+    src:url("../fonts/Xar.otf");
+    font-style:normal;
+    font-weight:bold
+}
+@font-face{
+    font-family:"TYGRA";
+    src:url("../fonts/TYGRA.ttf");
+    font-style:normal;
+    font-weight:bold
+}
 html {
     scroll-behavior: smooth;
 }
@@ -44,7 +55,7 @@ body{
     min-width:320px;
     background-color:#fff;
     color:#353535;
-    font-family:"Roboto", Arial, sans-serif;
+    font-family:"TYGRA", Arial, sans-serif;
     font-size:18px;
     line-height:30px;
     font-style:normal;
@@ -85,7 +96,7 @@ body{
     margin-bottom: 10px;
     display:block;
     font-family:"cocon";
-    color: #111;
+    color: #222;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
     text-transform:uppercase;
     text-decoration: none;
@@ -98,11 +109,11 @@ body{
 .main-nav__item:hover{
     text-decoration: underline;
     transition: all 0.2s ease-in-out;
-    color: #404040FF;
+    color: #FCFCFCFF;
 }
 .main-nav__item:active{
     text-decoration: underline;
-    color: #404040FF;
+    color: #FCFCFCFF;
 }
 .page-header__photo {
     text-align:center;
@@ -117,16 +128,6 @@ body{
     -webkit-box-shadow:5px 0px 5px 0px rgba(0, 0, 0, 0.8);
        -moz-box-shadow:5px 0px 5px 0px rgba(0, 0, 0, 0.8);
             box-shadow:5px 0px 5px 0px rgba(0, 0, 0, 0.8);
-}
-.page-header__prof{
-    display:block;
-    margin-top:50px;
-    font-size:30px;
-    font-weight: bold;
-    line-height:30px;
-    color: #111;
-    text-transform:uppercase;
-    /*text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);*/
 }
 @media (min-width:768px){
     .main-nav{
@@ -147,6 +148,7 @@ body{
     text-align:center;
     padding-bottom:35px;
     font-family:"spider";
+    padding-bottom:70px
 }
 .page-header__name,
 .page-header__lastname {
@@ -158,15 +160,24 @@ body{
     text-transform:uppercase;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
 }
+.page-header__prof{
+    display:flex;
+    justify-content: center;
+    margin-top:50px;
+    height: 50px;
+    font-size:30px;
+    font-weight: bold;
+    line-height:30px;
+    color: #222;
+    text-transform:uppercase;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+}
 @media (min-width:768px){
     .page-header{
         padding-top:35px
     }
     .page-header__name{
         font-size:64px;
-    }
-    .page-header__title{
-        padding-bottom:70px
     }
 }
 .portfolio{
@@ -192,7 +203,7 @@ body{
     max-width:250px;
 }
 .portfolio__title{
-    font-family:"Roboto", Arial, sans-serif;
+    font-family:"cocon", Arial, sans-serif;
     text-transform:uppercase;
     font-size:30px;
     line-height:24px;
@@ -264,7 +275,7 @@ body{
 .portfolio__link{
     min-height:84px;
     display:block;
-    background-color: #999999FF;
+    background-color: #EB7;
     text-decoration:none;
     margin-bottom:40px;
     text-align:center;
@@ -273,6 +284,7 @@ body{
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
 }
 .portfolio__name{
+    font-family:"cocon", Arial, sans-serif;
     margin: 0;
     display:block;
     padding-top:20px;
@@ -285,6 +297,7 @@ body{
 .portfolio__description{
     padding: 0;
     height: 30px;
+    font-family:"spider", Arial, sans-serif;
     font-size:32px;
     line-height:20px;
     font-weight:normal;
@@ -293,11 +306,12 @@ body{
 .portfolio__text {
     margin: 5% -5%;
     padding-left: 10px;
+    font-size:  1em;
     text-indent: 10px;
-    width: 250px;
-    background-color: #8C8C8CFF;
-    font-size: 100%;
-    color:#FCFCFC;
+    width: 280px;
+    height: 60px;
+    background-color: #F6F2FF;
+    color:#111;
     position: relative;
     -moz-border-radius: 12px;
     -webkit-border-radius: 12px;
@@ -307,15 +321,16 @@ body{
     content: '';
     width: 0;
     height: 0;
-    right: 100%;
-    top: 20%;
     position: absolute;
+    opacity: 0.6;
+    right: 99%;
+    top: 25%;
     border-top: 1px solid transparent;
-    border-right: 26px solid #8C8C8CFF;
+    border-right: 26px solid #FCFCFC;
     border-bottom: 13px solid transparent;
 }
 .about__item {
-    margin-top: 60px;
+    margin-top: 10px;
 }
 @media (max-width:767px){
     .portfolio__wrapper{
@@ -404,7 +419,7 @@ body{
     max-width:1200px
 }
 .about__title{
-    font-family:"Roboto", Arial, sans-serif;
+    font-family:"cocon", Arial, sans-serif;
     text-transform:uppercase;
     font-size:30px;
     color:#FCFCFC;
@@ -414,7 +429,9 @@ body{
 }
 .about__description{
     margin:0;
-    text-indent:20px
+    outline: 1px solid green;
+    height: 150px;
+    text-indent:10px;
 }
 .about__list{
     font-family:"spider";
@@ -431,7 +448,7 @@ body{
 .about__item-name{
     font-family:"spider", Arial, sans-serif;;
     text-transform:uppercase;
-    font-size:20px;
+    font-size:26px;
     line-height:24px;
     color:#404040;
     margin-top:0;
@@ -447,9 +464,10 @@ body{
 .about__item-description{
     margin:0;
     line-height: 1.5em;
-    font-family:"BadScript-Regular";
-    font-size: 1.3em;
+    font-family:"Xar";
+    font-size: 22px;
     font-weight: bold;
+    text-indent:10px;
 }
 @media (max-width:767px){
     .about__wrapper{
@@ -499,7 +517,7 @@ body{
     max-width:1200px
 }
 .contacts__title{
-    font-family:"Roboto", Arial, sans-serif;
+    font-family:"cocon", Arial, sans-serif;
     text-transform:uppercase;
     font-size:30px;
     line-height:24px;
@@ -706,6 +724,9 @@ body{
         display: block;
         font-size: 35px;
     }
+    .about__description{
+        height: 120px;
+    }
 }
 @media (min-width: 768px) {
     .mediaInfo {
@@ -755,6 +776,12 @@ body{
     .portfolio__title {
         font-size: 2em;
     }
+    .portfolio__text {
+        width: 320px;
+    }
+    .about__description{
+        height: 60px;
+    }
 }
 @media (min-width: 1600px) {
     .mediaInfo {
@@ -777,7 +804,7 @@ body{
         font-size: 55px;
     }
     body {
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
     .main-nav__item,
     .page-header__prof,
@@ -801,5 +828,7 @@ body{
     .portfolio__title {
         font-size: 2.2em;
     }
-
+    .portfolio__text {
+        width: 360px;
+    }
 }

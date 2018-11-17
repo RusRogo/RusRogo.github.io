@@ -213,7 +213,7 @@
 
 
 $('#example1').typeIt({
-     strings: ['Разработка', 'html', 'css', 'Javascript'],
+     strings: ['Разработка:', 'html - css - Javascript'],
      speed: 40
 });
 

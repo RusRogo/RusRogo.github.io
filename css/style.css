@@ -146,9 +146,8 @@ body{
 }
 .page-header__title{
     text-align:center;
-    padding-bottom:35px;
     font-family:"spider";
-    padding-bottom:70px
+    padding-bottom:70px;
 }
 .page-header__name,
 .page-header__lastname {
@@ -168,7 +167,7 @@ body{
     font-size:30px;
     font-weight: bold;
     line-height:30px;
-    color: #222;
+    color: #FFE;
     text-transform:uppercase;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
 }
@@ -308,7 +307,7 @@ body{
     padding-left: 10px;
     font-size:  1em;
     text-indent: 10px;
-    width: 280px;
+    width: 290px;
     height: 60px;
     background-color: #F6F2FF;
     color:#111;
@@ -322,8 +321,8 @@ body{
     width: 0;
     height: 0;
     position: absolute;
-    opacity: 0.6;
-    right: 99%;
+    opacity: 0.5;
+    right: 100%;
     top: 25%;
     border-top: 1px solid transparent;
     border-right: 26px solid #FCFCFC;
@@ -429,7 +428,6 @@ body{
 }
 .about__description{
     margin:0;
-    outline: 1px solid green;
     height: 150px;
     text-indent:10px;
 }
@@ -526,6 +524,8 @@ body{
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
 }
 .contacts__content{
+    font-family:"Xar";
+    font-size: 1.1em;
     padding-bottom:40px
 }
 .contacts__cell_link{
@@ -763,7 +763,7 @@ body{
     }
 
     .page-header__prof {
-        margin: 2em auto;
+        margin: 3em auto;
     }
     .page-header__name,
     .page-header__lastname {
@@ -777,7 +777,7 @@ body{
         font-size: 2em;
     }
     .portfolio__text {
-        width: 320px;
+        width: 340px;
     }
     .about__description{
         height: 60px;
@@ -829,6 +829,6 @@ body{
         font-size: 2.2em;
     }
     .portfolio__text {
-        width: 360px;
+        width: 380px;
     }
 }

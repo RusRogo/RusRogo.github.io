@@ -74,7 +74,7 @@ body{
     -webkit-box-shadow: 3px 3px 5px rgba(0,0,0,0.6);
     -moz-box-shadow: 3px 3px 5px rgba(0,0,0,0.6);
     box-shadow: 3px 3px 5px rgba(0,0,0,0.6);
-    background:url(../img/coding6.jpg) no-repeat 50%;
+    background:url(../img/coding6.jpg) no-repeat 60% 5%;
     background-size: cover;
     padding-top:35px;
 }
@@ -96,7 +96,7 @@ body{
     margin-bottom: 10px;
     display:block;
     font-family:"cocon";
-    color: #222;
+    color: #FA1;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
     text-transform:uppercase;
     text-decoration: none;
@@ -166,8 +166,8 @@ body{
     height: 50px;
     font-size:30px;
     font-weight: bold;
-    line-height:30px;
-    color: #FFE;
+    line-height:40px;
+    color: #FFF;
     text-transform:uppercase;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
 }
@@ -251,36 +251,21 @@ body{
     z-index:100;
     top:0
 }
-/*.portfolio__img-link:hover:after{
-    background-color:rgba(137, 137, 137, 0.6);
-    background-image:url("../img/icon.png");
-    background-repeat:no-repeat;
-    background-position:center
-}*/
-/*.portfolio__img-link:active:after{
-    background-color:rgba(137, 137, 137, 0.5);
-    background-image:url("../img/icon.png");
-    background-repeat:no-repeat;
-    background-position:center
-}*/
 .portfolio__img-link:hover{
     margin-top: -15px;
     padding-bottom: 15px;
-    -webkit-box-shadow: 5px 5px 7px rgba(50, 50, 50, 0.8);
-    -moz-box-shadow: 5px 5px 7px rgba(50, 50, 50, 0.8);
-    box-shadow: 5px 5px 7px rgba(50, 50, 50, 0.8);
     transition: all 0.2s ease-in-out;
 }
-.portfolio__link{
+.portfolio__box{
     min-height:84px;
     display:block;
     background-color: #EB7;
     text-decoration:none;
     margin-bottom:40px;
     text-align:center;
-    -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
-    -moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
 }
 .portfolio__name{
     font-family:"cocon", Arial, sans-serif;
@@ -409,7 +394,7 @@ body{
 /*    background-image: url(../img/about2.jpg);
     -webkit-background-size: cover;
     background-size: cover;*/
-    background-color:#EDEDEC
+    background-color:#D9E6E7
 }
 .about__wrapper{
     padding-left:10%;
@@ -506,7 +491,7 @@ body{
 }*/
 .contacts{
     padding-top:50px;
-    background-color: #888;
+    background-color: #489;
 }
 .contacts__wrapper{
     padding-left:10%;
@@ -520,22 +505,18 @@ body{
     font-size:30px;
     line-height:24px;
     margin: 0 0 40px -10px;
-    color:#FCFCFC;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
 }
 .contacts__content{
     font-family:"Xar";
     font-size: 1.1em;
+    color:#FCFCFC;
     padding-bottom:40px
 }
 .contacts__cell_link{
     padding: 10px;
-    color:#FFD;
     font-family:"Roboto", Arial, sans-serif;
-}
-.contacts__cell_link{
     color: #fff;
-    /*text-decoration: underline;*/
 }
 @media (max-width:767px){
     .contacts__wrapper{
@@ -649,7 +630,7 @@ body{
 .scrollup{
     width:40px;
     height:40px;
-    opacity:0.4;
+    opacity:0.3;
     position:fixed;
     bottom:3em;
     right:1em;
@@ -658,7 +639,7 @@ body{
     background: url("../img/icon_top.png") no-repeat;
 }
 .scrollup:hover {
-    opacity: 0.8;
+    opacity: 0.6;
     transition: all 0.2s ease-in-out;
 }
 /*#e3f200 #e3f200 #e3f200 mediaInfo*/

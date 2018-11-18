@@ -14,3 +14,13 @@ return false;
 });
  
 });
+//green My work
+
+// $('.scrollup').click(function(){
+// $("html, body").animate({ scrollTop: 0 }, 200);
+// return false;
+// });
+
+// document.getElementById('scrollup').onclick = function() {
+// function (t, e);
+// }

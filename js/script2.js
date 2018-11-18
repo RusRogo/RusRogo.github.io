@@ -212,17 +212,17 @@
 }(jQuery);
 
 
-$('#example1').typeIt({
+$('#header__prof').typeIt({
      strings: ['Навыки:', 'html - css - Javascript'],
      speed: 40
 });
 
-$('#example2').typeIt({
+$('#portfolio__text').typeIt({
      strings: ['Начальные работы на Github,', 'следущие - в процессе...'],
      speed: 30
 });
 
-$('#example3').typeIt({
+$('#about__description').typeIt({
      strings: ['Увлекаюсь Web-разработкой и всем, что с ней связано. ', 'Здесь перечислены основные технологии, которые я использую.'],
      speed: 30
 });
@@ -233,7 +233,7 @@ $('#example3').typeIt({
 // начать повторы с интервалом 2 сек
 var timerId = setInterval(function() {
   // alert( "тик" );
-$('#example1').typeIt({
+$('#header__prof').typeIt({
      strings: ['Навыки:', 'html - css - Javascript'],
      speed: 40
 });
@@ -241,7 +241,7 @@ $('#example1').typeIt({
 
 var timerId = setInterval(function() {
   // alert( "тик" );
-$('#example2').typeIt({
+$('#portfolio__text').typeIt({
      strings: ['Начальные работы на Github,', 'следущие - в процессе...'],
      speed: 30
 });
@@ -249,7 +249,7 @@ $('#example2').typeIt({
 
 var timerId = setInterval(function() {
   // alert( "тик" );
-$('#example3').typeIt({
+$('#about__description').typeIt({
      strings: ['Увлекаюсь Web-разработкой и всем, что с ней связано. ', 'Здесь перечислены основные технологии, которые я использую.'],
      speed: 30
 });

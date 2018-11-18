@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -12,34 +11,29 @@
   <title>Портфолио</title>
 </head>
 <body>
-  <header class="page-header">
-    <div class="page-header__wrapper">
-<!--       <div class="page-header__bg">
-        <img src="img/cod2.jpg" alt="img">
-      </div> -->
-      <nav class="main-nav">
-        <a class="main-nav__item" href="#portfolio">Портфолио</a>
-        <a class="main-nav__item" href="#about">Обо мне</a>
-        <a class="main-nav__item" href="#contacts">Контакты</a>
+  <header class="header">
+    <div class="header__wrapper">
+      <nav class="nav">
+        <a class="nav__item" href="#portfolio">Портфолио</a>
+        <a class="nav__item" href="#about">Обо мне</a>
+        <a class="nav__item" href="#contacts">Контакты</a>
       </nav>
-      <div class="page-header__title">
-        <h1 class="page-header__name">Руслан Рогоженар</h1>
-        <h2 сlass="page-header__about">Frontend разработчик</h2>
-        <div class="page-header__wrap_prof">
-          <img class="page-header__dev" src="img/dev1.png" alt="img">
-          <h3 class="page-header__prof example1" id="example1"></h3>
+      <div class="header__title">
+        <h1 class="header__name">Руслан Рогоженар</h1>
+        <h2 сlass="header__about">Frontend разработчик</h2>
+        <div class="header__wrap_prof">
+          <img class="header__dev" src="img/dev1.png" alt="img">
+          <h3 class="header__prof" id="header__prof"></h3>
         </div>
       </div>
     </div>
   </header>
 
   <section class="portfolio" id="portfolio">
-    <div class="portfolio__wrapper">      <h2 class="portfolio__title">Портфолио</h2>
-      <div class="portfolio__img">
-        <!-- <img src="img/coding7.jpg" alt="img"> -->
-      </div>
-
-      <p class="portfolio__text example2" id="example2"></p>
+    <div class="portfolio__wrapper">
+      <h2 class="portfolio__title">Портфолио</h2>
+      <div class="portfolio__img"></div>
+      <p class="portfolio__text" id="portfolio__text"></p>
       <div class="portfolio__list">
         <article class="portfolio__item">
           <a class="portfolio__img-link" href="https://rusrogo.github.io/pingbuller" target="_blank">
@@ -50,15 +44,6 @@
             <h4 class="portfolio__description">Мобильный сайт</h4>
           </div>
         </article>
-<!--         <article class="portfolio__item">
-          <a class="portfolio__img-link" href="https://rusrogo.github.io/asia" target="_blank">
-            <img class="portfolio__preview" src="img/asia.jpg" alt="pingbuller" width="370" height="300">
-          </a>
-          <a class="portfolio__link" href="https://rusrogo.github.io/asia" target="_blank">
-            <span class="portfolio__name">Asia</span>
-            <h3 class="portfolio__description">Туроператор</h3>
-          </a>
-        </article> -->
       </div>
     </div>
   </section>
@@ -66,9 +51,9 @@
   <section class="about" id="about">
     <div class="about__wrapper">
       <h2 class="about__title">Обо мне
-        <div class="page-header__photo"></div>
+        <div class="about__photo"></div>
       </h2>
-      <p class="about__description example3" id="example3"></p>
+      <p class="about__description" id="about__description"></p>
       <ul class="about__list">
         <li class="about__item">
           <img class="about__item-icon" src="img/checklist2.jpg">
@@ -76,36 +61,26 @@
           <p class="about__item-description">Применяю методологию <span class="about__item_span">БЭМ</span> в именовании классов и организованности верстки. Создаю читабельный код, использую HTML-теги по назначению.</p>
         </li>
         <li class="about__item">
-          <!-- <img class="about__item-icon" width="48" height="48" src="img/Check-Mark.png"> -->
           <h4 class="about__item-name">Адаптивность</h4>
           <p class="about__item-description">Умею оранизовать код под все необходимые размеры экранов. Использую принцип <span class="about__item_span">mobile-first</span>. Применяю <span class="about__item_span">Flexbox</span> компоновку элементов, резиновость.</p>
         </li>
-
         <li class="about__item">
-          <!-- <img class="about__item-icon" width="48" height="48" src="img/Check-Mark.png"> -->
           <h4 class="about__item-name">JavaScript</h4>
           <p class="about__item-description">Использую <span class="about__item_span">JavaScript</span> native. Основные ресурсы: https://learn.javascript.ru и другие источники.</p>
         </li>
-
         <li class="about__item">
-          <!-- <img class="about__item-icon" width="48" height="48" src="img/Check-Mark.png"> -->
           <h4 class="about__item-name">Git</h4>
           <p class="about__item-description">Пользуюсь <span class="about__item_span">Git</span> системой управления версиями. Выкладываю работы на Github: <a class="about__item_link" href="https://github.com/RusRogo">github.com/RusRogo</a></p>
         </li>
-
         <li class="about__item">
-          <!-- <img class="about__item-icon" width="48" height="48" src="img/Check-Mark.png"> -->
           <h4 class="about__item-name">Кроссбраузерность</h4>
           <p class="about__item-description">Верстка проверяется и отлаживается во всех необходимых браузерах.</p>
         </li>
-
         <li class="about__item">
-          <!-- <img class="about__item-icon" width="48" height="48" src="img/Check-Mark.png"> -->
           <h4 class="about__item-name">Photoshop, Pixel Perfect</h4>
           <p class="about__item-description"><span class="about__item_span">Adobe Photoshop</span> - кадрирование, нарезка, обработка изображений, работа со слоями и другое.<br>При надобности применяю <span class="about__item_span">Pixel Perfect</span> технику верстки.</p>
         </li>
         <li class="about__item">
-          <!-- <img class="about__item-icon" width="48" height="48" src="img/Check-Mark.png"> -->
           <h4 class="about__item-name">Google Search</h4>
           <p class="about__item-description">Умею правильно спросить у <span class="about__item_span">Google</span> для поиска нужной информации.</p>
         </li>
@@ -134,11 +109,8 @@
         </table>
       </div>
     </div>
-  </footer>
   <a href="#" class="scrollup" id="scrollup">Наверх</a>
-  <script>
-    
-  </script>
+  </footer>
 </body>
 <script type="text/javascript" src="js/script2.js"></script>
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>

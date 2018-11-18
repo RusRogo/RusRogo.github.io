@@ -416,6 +416,10 @@ body{
 .about__item_span {
     font-family:"cocon";
 }
+.about__item_link {
+    color: #489;
+    font-weight: bold;
+}
 .about__item-icon{
     position:absolute;
     width: 240px;
@@ -722,11 +726,10 @@ body{
         width: 0;
         height: 0;
         position: absolute;
-        opacity: 0.5;
         left: 100%;
         top: 25%;
         border-top: 1px solid transparent;
-        border-left: 26px solid #FCFCFC;
+        border-left: 26px solid #F9EFFA;
         border-bottom: 13px solid transparent;
     }
     .portfolio__img {

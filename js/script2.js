@@ -224,7 +224,38 @@ $('#example2').typeIt({
 
 $('#example3').typeIt({
      strings: ['Увлекаюсь Web-разработкой и всем, что с ней связано. ', 'Здесь перечислены основные технологии, которые я использую.'],
-     speed: 20
+     speed: 30
 });
 
 
+//green
+
+// начать повторы с интервалом 2 сек
+var timerId = setInterval(function() {
+  // alert( "тик" );
+$('#example1').typeIt({
+     strings: ['Навыки:', 'html - css - Javascript'],
+     speed: 40
+});
+}, 8000);
+
+var timerId = setInterval(function() {
+  // alert( "тик" );
+$('#example2').typeIt({
+     strings: ['Начальные работы на Github,', 'следущие - в процессе...'],
+     speed: 30
+});
+}, 6000);
+
+var timerId = setInterval(function() {
+  // alert( "тик" );
+$('#example3').typeIt({
+     strings: ['Увлекаюсь Web-разработкой и всем, что с ней связано. ', 'Здесь перечислены основные технологии, которые я использую.'],
+     speed: 30
+});
+}, 8000);
+
+
+// document.getElementById('myelement').onclick = function() {
+// MyFunc()
+// }

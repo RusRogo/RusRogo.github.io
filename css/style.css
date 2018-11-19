@@ -51,7 +51,7 @@ body {
     -webkit-box-shadow: 3px 3px 5px rgba(0,0,0,0.6);
     -moz-box-shadow: 3px 3px 5px rgba(0,0,0,0.6);
     box-shadow: 3px 3px 5px rgba(0,0,0,0.6);
-    background-color: #00BBD5;
+    background-color: #00BDD7;
 }
 .header__wrapper{
     display: -webkit-flex;
@@ -122,8 +122,8 @@ body {
 }
 .header__dev {
     position: absolute;
-    width: 90%;
-    right: 100%;
+    /*width: 90%;*/
+    /*right: 100%;*/
     bottom: 0;
 }
 .header__prof{
@@ -453,7 +453,7 @@ body {
     }
     .header__dev {
         width: 90%;
-        right: 0;
+        right: 10px;
         bottom: 110%;
     } 
     .header__prof{

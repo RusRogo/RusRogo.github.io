@@ -78,10 +78,10 @@ body {
     margin-top: 15px;
     font-family:"cocon", Arial, san-serif;
     color: #FA1;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    text-shadow: 2px 2px 2px #FA1;
     text-transform:uppercase;
     text-decoration: none;
-    font-size:28px;
+    font-size:32px;
     font-weight: bold;
     line-height:40px;
     text-align:center;
@@ -398,10 +398,9 @@ body {
 .contacts__title{
     font-family: "cocon", Arial, san-serif;
     text-transform:uppercase;
-    font-size:30px;
     line-height:24px;
     margin-bottom: 40px;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
 }
 .contacts__content{
     font-family: "Xar", Arial, san-serif;
@@ -439,7 +438,7 @@ body {
     .nav__item,
     .header__prof,
     .portfolio__description{
-        font-size:1.2em;
+        font-size:1.3em;
     }
     .header__name{
         font-size:2.4em;

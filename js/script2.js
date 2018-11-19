@@ -218,7 +218,7 @@ $('#header__prof').typeIt({
 });
 
 $('#portfolio__text').typeIt({
-     strings: ['Начальные работы на Github,', 'следущие - в процессе...'],
+     strings: ['Начальные работы на Github,', 'следущие - в разработке...'],
      speed: 30
 });
 
@@ -242,7 +242,7 @@ $('#header__prof').typeIt({
 var timerId = setInterval(function() {
   // alert( "тик" );
 $('#portfolio__text').typeIt({
-     strings: ['Начальные работы на Github,', 'следущие - в процессе...'],
+     strings: ['Начальные работы на Github,', 'следущие - в разработке...'],
      speed: 30
 });
 }, 6000);

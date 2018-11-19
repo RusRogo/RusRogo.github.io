@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/script.js"></script>
+  <script src="js/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typeit@VERSION_NUMBER/dist/typeit.min.js"></script>
   <title>Портфолио</title>
 </head>
@@ -22,7 +22,7 @@
         <h1 class="header__name">Руслан Рогоженар</h1>
         <h2 сlass="header__about">Frontend разработчик</h2>
         <div class="header__wrap_prof">
-          <img class="header__dev" src="img/dev1.png" alt="img">
+          <img class="header__dev" src="img/dev1.png" alt="dev">
           <h3 class="header__prof" id="header__prof"></h3>
         </div>
       </div>
@@ -56,7 +56,7 @@
       <p class="about__description" id="about__description"></p>
       <ul class="about__list">
         <li class="about__item">
-          <img class="about__item-icon" src="img/checklist2.jpg">
+          <img class="about__item-icon" src="img/checklist2.jpg" alt="checklist">
           <h4 class="about__item-name">Семантика и БЭМ</h4>
           <p class="about__item-description">Применяю методологию <span class="about__item_span">БЭМ</span> в именовании классов и организованности верстки. Создаю читабельный код, использую HTML-теги по назначению.</p>
         </li>
@@ -70,7 +70,9 @@
         </li>
         <li class="about__item">
           <h4 class="about__item-name">Git</h4>
-          <p class="about__item-description">Пользуюсь <span class="about__item_span">Git</span> системой управления версиями. Выкладываю работы на Github: <a class="about__item_link" href="https://github.com/RusRogo">github.com/RusRogo</a></p>
+          <p class="about__item-description">Пользуюсь <span class="about__item_span">Git</span> системой управления версиями. Выкладываю работы на Github: 
+            <a class="about__item_link" href="https://github.com/RusRogo">github.com/RusRogo</a>
+          </p>
         </li>
         <li class="about__item">
           <h4 class="about__item-name">Кроссбраузерность</h4>
@@ -111,7 +113,8 @@
     </div>
   <a href="#" class="scrollup" id="scrollup">Наверх</a>
   </footer>
+
+  <script src="js/script2.js"></script>
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
-<script type="text/javascript" src="js/script2.js"></script>
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </html>

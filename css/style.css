@@ -51,7 +51,7 @@ body {
     -webkit-box-shadow: 3px 3px 5px rgba(0,0,0,0.6);
     -moz-box-shadow: 3px 3px 5px rgba(0,0,0,0.6);
     box-shadow: 3px 3px 5px rgba(0,0,0,0.6);
-    background-color: #00bad3;
+    background-color: #00BBD5;
 }
 .header__wrapper{
     display: -webkit-flex;
@@ -76,9 +76,10 @@ body {
 .nav__item{
     display:block;
     margin-top: 15px;
+    margin-right: 3%;
     font-family:"cocon", Arial, san-serif;
     color: #FA1;
-    text-shadow: 2px 2px 2px #FA1;
+    text-shadow: 1px 1px 1px #FA1;
     text-transform:uppercase;
     text-decoration: none;
     font-size:32px;
@@ -103,6 +104,7 @@ body {
 .header__name{
     display:block;
     margin-bottom:25px;
+    font-family:"cocon";
     font-size:56px;
     line-height:40px;
     color:#F9EFFA;
@@ -308,7 +310,7 @@ body {
 .about{
     padding-top:60px;
     padding-bottom:40px;
-    background-color:#D9E6E7;
+    background-color:#D8E6E7;
 }
 .about__wrapper{
     padding-left:10%;
@@ -323,7 +325,7 @@ body {
     color:#48DCC0;
     text-shadow: 1px 1px 1px #48DCC0;
     margin:0;
-    margin-bottom:40px;
+    margin-bottom:50px;
     position: relative;
 }
 .about__photo {
@@ -472,6 +474,14 @@ body {
 @media (min-width: 768px) {
     .header {
         padding-top:30px;
+    }
+    .nav {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: center;
     }
     .portfolio__text:before {
         display: none;

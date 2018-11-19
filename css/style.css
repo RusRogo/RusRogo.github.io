@@ -88,7 +88,6 @@ body {
     scroll-behavior: smooth;
 }
 .nav__item:hover{
-    text-decoration: underline;
     transition: all 0.2s ease-in-out;
     color: #F9EFFA;
 }
@@ -331,9 +330,13 @@ body {
     background: url(../img/norm5.png) 50% no-repeat;
     -webkit-background-size: 80%;
             background-size: 80%;
-    border-radius:20%;
+    box-shadow: 12px 0 0 #FC5 inset,
+    -12px 0 0 #FC5 inset,
+    0 -12px 0 #FC5,
+    0 12px 0 #FC5;
+    border-radius: 8%;
     position: absolute;
-    top: -110%;
+    top: -130%;
     right: 5%;
 }
 .about__description{
@@ -547,7 +550,7 @@ body {
     .about__photo {
         width: 120px;
         height: 120px;
-        right: 30%;
+        right: 25%;
     }
     .about__list{
         margin-top:380px

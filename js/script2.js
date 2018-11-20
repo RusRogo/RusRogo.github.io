@@ -213,7 +213,7 @@
 
 
 $('#header__prof').typeIt({
-     strings: ['Навыки:', 'html - css - Javascript'],
+     strings: ['Навыки: ', 'html - css - Javascript'],
      speed: 40
 });
 
@@ -234,7 +234,7 @@ $('#about__description').typeIt({
 var timerId = setInterval(function() {
   // alert( "тик" );
 $('#header__prof').typeIt({
-     strings: ['Навыки:', 'html - css - Javascript'],
+     strings: ['Навыки: ', 'html - css - Javascript'],
      speed: 40
 });
 }, 8000);

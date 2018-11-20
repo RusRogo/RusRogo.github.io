@@ -114,29 +114,26 @@ body {
     text-transform:uppercase;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
-.header__deal {
+.header__about {
     font-size: 2em;
 }
 .header__wrap_prof {
-    position: relative;
     background: url(../img/cod.png) no-repeat;
     -webkit-background-size: contain;
     background-size: contain;
 }
 .header__prof{
-    display: block;
-    /*margin-top: 50px;*/
-    /*margin: 0 auto;*/
+    display: flex;
+    padding-top: 15%;
+    padding-left: 23%;
+    width: 230px;
     height: 50px;
     font-size: 1.2em;
     font-weight: bold;
-    line-height:40px;
+    line-height:35px;
     color: #F9EFFA;
     text-transform:uppercase;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
-    position: absolute;
-    bottom: 25%;
-    right: 5%;
 }
         /*yellow portfolio*/
 .portfolio{
@@ -169,6 +166,7 @@ body {
 }
 .portfolio__title{
     font-family:"cocon", Arial, san-serif;
+    font-size: 2em;
     text-transform:uppercase;
     font-size:30px;
     line-height:24px;
@@ -231,21 +229,20 @@ body {
 }
 .portfolio__name{
     font-family:"cocon", Arial, san-serif;
-    margin: 5% 0;
+    margin: 4% 0 1% 0;
     display:block;
-    /*padding-top:20px;*/
-    font-size:38px;
+    font-size:1.5em;
     line-height:34px;
     color:#847B90;
     text-transform:uppercase;
     font-weight:bold
 }
 .portfolio__description{
-    margin-top: 4%;
+    margin: 0;
     padding: 0;
     height: 30px;
     font-family:"spider", Arial, san-serif;
-    font-size: 1.2em;
+    font-size: 1em;
     line-height:20px;
     font-weight:normal;
     color:#353535;
@@ -317,7 +314,7 @@ body {
 .about__title{
     font-family:"cocon", Arial, san-serif;
     text-transform:uppercase;
-    font-size:30px;
+    font-size: 2em;
     color:#48DCC0;
     text-shadow: 1px 1px 1px #48DCC0;
     margin:0;
@@ -395,6 +392,7 @@ body {
 }
 .contacts__title{
     font-family: "cocon", Arial, san-serif;
+    font-size: 2em;
     text-transform:uppercase;
     line-height:24px;
     margin-bottom: 40px;
@@ -429,17 +427,10 @@ body {
         /*yellow @media*/
 @media (min-width: 320px) {
     body {
-        font-size: 1em;
+        font-size: 0.7em;
     }
     .header {
         padding-top:10px;
-    }
-    .nav__item,
-    .header__prof{
-        /*font-size:1.2em;*/
-    }
-    .header__name{
-        /*font-size:2.4em;*/
     }
     .header__wrap_prof {
         width: 250px;
@@ -448,20 +439,10 @@ body {
     }
     .header__dev {
         width: 250px;
-    } 
-    .header__prof{
-        bottom: 45%;
-        left: 10%;
     }
     .about__photo {
         width: 100px;
         height: 100px;
-    }
-    .portfolio__name,
-    .about__title,
-    .contacts__title,
-    .portfolio__title {
-        font-size: 1.8em;
     }
 }
 @media (min-width: 768px) {
@@ -507,27 +488,28 @@ body {
         width: 340px;
         height: 250px;
     }
+    .header__prof{
+        padding-top: 12%;
+        padding-left: 20%;
+    }
     .header__dev {
         width: 340px;
     } 
-.header__wrap_img {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    justify-content: space-around;
-    margin: 10% 5%;
-}
-    .header__name {
-        /*font-size:3em;*/
+    .header__wrap_img {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-around;
+        margin: 10% 5%;
     }
-    .portfolio__name,
+/*    .portfolio__name,
     .about__title,
     .contacts__title,
     .portfolio__title {
         font-size: 2em;
-    }
+    }*/
     .portfolio__text {
         width: 340px;
     }
@@ -567,30 +549,24 @@ body {
     body {
         font-size: 1.3em;
     }
-    .nav__item,
-    .header__prof{
-        /*font-size:1.6em;*/
-    }
-    .header__name {
-        /*font-size:4em;*/
-    }    
-    .header__prof{
-        bottom: 50%;
-        left: 10%;
-    }
     .header__wrap_prof {
         width: 440px;
         height: 320px;
     }
+    .header__prof{
+        padding-top: 15%;
+        padding-left: 23%;
+        width: 280px;
+    }
     .header__dev {
         width: 440px;
     } 
-    .portfolio__name,
+/*    .portfolio__name,
     .about__title,
     .contacts__title,
     .portfolio__title {
         font-size: 2.2em;
-    }
+    }*/
     .portfolio__img {
         width: 980px;
         height: 470px;

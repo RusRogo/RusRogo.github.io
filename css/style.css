@@ -125,7 +125,7 @@ body {
 .header__prof{
     display: flex;
     padding-top: 15%;
-    padding-left: 23%;
+    padding-left: 15%;
     width: 230px;
     height: 50px;
     font-size: 1.2em;
@@ -427,7 +427,7 @@ body {
         /*yellow @media*/
 @media (min-width: 320px) {
     body {
-        font-size: 0.7em;
+        font-size: 0.9em;
     }
     .header {
         padding-top:10px;
@@ -560,13 +560,7 @@ body {
     }
     .header__dev {
         width: 440px;
-    } 
-/*    .portfolio__name,
-    .about__title,
-    .contacts__title,
-    .portfolio__title {
-        font-size: 2.2em;
-    }*/
+    }
     .portfolio__img {
         width: 980px;
         height: 470px;

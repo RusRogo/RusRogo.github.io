@@ -1,0 +1,23 @@
+* {
+	outline: 2px solid green;
+}
+body {
+	background-color: #DDD;
+}
+.header {/*
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: column;*/
+	background: url(../img/header_bg.jpg);
+}
+.header__logo {
+	margin: 40px 0 0 50px;
+}
+.header__menu {
+	margin-right: -10px;
+}
+
+

@@ -1,0 +1,145 @@
+* {
+	background-color: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+.main {
+	padding: 0 155px;
+	background-color: #f9f9f9;
+	border-left: 1px solid #c8c8c8;
+	border-right: 1px solid #c8c8c8;
+}
+
+.main__content {
+	padding: 0 45px;
+	border-left: 1px solid #c8c8c8;
+	border-right: 1px solid #c8c8c8;
+	background-color: #fff;
+}
+
+		/*header yellow*/
+
+.header__logo {
+	margin: 50px 0 40px 0;
+}
+
+.menu__list {
+	display: inline-block;
+}
+
+.menu__ul {
+	font-size: 0;
+	background-color: #535252;
+}
+
+.menu__item {
+	display: block;
+	width: 145px;
+	padding: 12px 25px;
+	color: white;
+	font-family: Myriad Pro, non-serif;
+	font-size: 15px;
+	background-color: #535252;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+.header .menu__item:hover {
+	background-color: #3c3c3c;
+	border-right: 1px solid #838383;
+	border-left: 1px solid #838383;
+	padding-left: 35px;
+	color: #e1e2f3;
+	transition: 0.5s all;
+}
+
+		/*Content yellow*/
+
+.content {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	margin-top: 40px;
+}
+
+.sidebar {
+	margin-right: 10px;
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	width: 240px;
+	border-bottom: 1px solid #c8c8c8;
+	height: 100%;
+}
+
+.sidebar__item {
+	display: block;
+	width: 240px;
+	height: 40px;
+	padding: 12px 25px;
+	color: white;
+	font-family: Myriad Pro, non-serif;
+	font-size: 15px;
+	background-color: #fff;
+	text-decoration: none;
+	border: 1px solid #c8c8c8;
+	border-bottom: 0px;
+	color: #656363;
+	box-sizing: border-box;
+}
+
+.sidebar__item:hover {
+	background-color: #f9f9f9;
+	padding-left: 35px;
+	color: #333333;
+	transition: 0.5s all;
+}
+
+.content__img {
+	max-width: 1400px;
+	min-width: 58px;
+	flex-grow: 1;
+	padding: 50px 90px;
+	border: 1px solid #c8c8c8;
+}
+
+.article {
+	display: flex;
+	flex-grow: 1;
+	justify-content: right;
+}
+
+.article__text {
+	max-width: 70%;
+	font-family: Myriad Pro, non-serif;
+	font-size: 14px;
+	padding: 40px 20px;
+}
+
+		/*footer yellow*/
+
+.footer {
+	padding-bottom: 50px;
+}
+
+.footer .menu__ul,
+.footer .menu__list {
+	background-color: #e1e1e1;
+}
+
+.footer .menu__item {
+	background-color: #e1e1e1;
+	color: #2c2c2c;
+}
+
+.footer .menu__list:last-child .menu__item {
+	width: 240px;
+	margin-left: 90px;
+}
+
+.footer .menu__item:hover {
+	text-decoration: underline;
+	padding-left: 35px;
+	transition: 0.5s all;
+}

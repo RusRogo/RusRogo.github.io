@@ -420,7 +420,7 @@ body {
     text-indent:-9999px;
     background: url("../img/icon_top.png") no-repeat;
 }
-.scrollup:hover {
+.scrollup:active {
     opacity: 0.6;
     transition: all 0.2s ease-in-out;
 }
@@ -504,12 +504,6 @@ body {
         justify-content: space-around;
         margin: 10% 5%;
     }
-/*    .portfolio__name,
-    .about__title,
-    .contacts__title,
-    .portfolio__title {
-        font-size: 2em;
-    }*/
     .portfolio__text {
         width: 340px;
     }
@@ -543,6 +537,10 @@ body {
         width: 400px;
         top:-370px;
         left:40%;
+    }
+    .scrollup:hover {
+        opacity: 0.6;
+        transition: all 0.2s ease-in-out;
     }
 }
 @media (min-width: 1920px) {

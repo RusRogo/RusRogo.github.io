@@ -223,14 +223,14 @@ $('#portfolio__text').typeIt({
 });
 
 $('#about__description').typeIt({
-     strings: ['Увлекаюсь Web-разработкой и всем, что с ней связано. ', 'Здесь перечислены основные технологии, которые я использую.'],
+     strings: ['Увлекаюсь Web-разработкой и всем, что с ней связано. ', 'GEEK с детства, не женат, окунаюсь в интересную работу с головой.'],
      speed: 30
 });
 
 
 //green
 
-// начать повторы с интервалом 2 сек
+// начать повторы с интервалом
 var timerId = setInterval(function() {
   // alert( "тик" );
 $('#header__prof').typeIt({
@@ -250,12 +250,8 @@ $('#portfolio__text').typeIt({
 var timerId = setInterval(function() {
   // alert( "тик" );
 $('#about__description').typeIt({
-     strings: ['Увлекаюсь Web-разработкой и всем, что с ней связано. ', 'Здесь перечислены основные технологии, которые я использую.'],
+     strings: ['Увлекаюсь Web-разработкой и всем, что с ней связано. ', 'GEEK с детства, не женат, окунаюсь в интересную работу с головой.'],
      speed: 30
 });
 }, 8000);
 
-
-// document.getElementById('myelement').onclick = function() {
-// MyFunc()
-// }

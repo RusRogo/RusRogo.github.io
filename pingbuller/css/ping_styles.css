@@ -984,6 +984,7 @@ body {
 		right: 0;
 	}
 	.slides__content {
+		margin-top: 20px;
 		padding-left: 0;
 		width: 510px;
 		height: 220px;
@@ -1000,8 +1001,7 @@ body {
 	}
 	.prev,
 	.next {
-		top: -40%;
-		opacity: 0.1;
+		display: none;
 	}
 	.info,
 	.community,

@@ -237,21 +237,21 @@ $('#header__prof').typeIt({
      strings: ['Навыки:', 'html - css - Javascript'],
      speed: 40
 });
-}, 8000);
+}, 5000);
 
 var timerId = setInterval(function() {
   // alert( "тик" );
 $('#portfolio__text').typeIt({
      strings: ['Начальные работы на Github,', 'следущие - в разработке...'],
-     speed: 30
+     speed: 40
 });
-}, 8000);
+}, 6000);
 
 var timerId = setInterval(function() {
   // alert( "тик" );
 $('#about__description').typeIt({
      strings: ['Увлекаюсь Web-разработкой и всем, что с ней связано. ', 'GEEK с детства, не женат, окунаюсь в интересную работу с головой.'],
-     speed: 30
+     speed: 35
 });
 }, 8000);
 

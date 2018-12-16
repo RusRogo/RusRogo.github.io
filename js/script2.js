@@ -211,7 +211,7 @@
   }
 }(jQuery);
 
-
+// печатный текст
 $('#header__prof').typeIt({
      strings: ['Навыки:', 'html - css - Javascript'],
      speed: 40
@@ -227,12 +227,8 @@ $('#about__description').typeIt({
      speed: 30
 });
 
-
-//green
-
 // начать повторы с интервалом
 var timerId = setInterval(function() {
-  // alert( "тик" );
 $('#header__prof').typeIt({
      strings: ['Навыки:', 'html - css - Javascript'],
      speed: 40
@@ -240,7 +236,6 @@ $('#header__prof').typeIt({
 }, 5000);
 
 var timerId = setInterval(function() {
-  // alert( "тик" );
 $('#portfolio__text').typeIt({
      strings: ['Начальные работы на Github,', 'следущая - в разработке...'],
      speed: 40
@@ -248,7 +243,6 @@ $('#portfolio__text').typeIt({
 }, 6000);
 
 var timerId = setInterval(function() {
-  // alert( "тик" );
 $('#about__description').typeIt({
      strings: ['Обучался Web-разработке по курсам + самообучение на проектах. ', 'GEEK с детства, погружаюсь в работу с головой.'],
      speed: 35

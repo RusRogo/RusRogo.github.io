@@ -1,12 +1,13 @@
 * {
-	outline: 2px solid green;
+	/*outline: 2px solid green;*/
 }
 @font-face{
   font-family:"Avenir_Black";
   src:url("../fonts/Avenir-Black.ttf");
   font-style:normal;
   font-weight:normal;
-}@font-face{
+}
+@font-face{
   font-family:"Lato_Bold";
   src:url("../fonts/Lato_Bold.ttf");
   font-style:normal;

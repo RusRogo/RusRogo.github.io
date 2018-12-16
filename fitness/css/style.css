@@ -35,7 +35,7 @@
 
 .menu__item {
 	display: block;
-	width: 145px;
+	width: 125px;
 	padding: 12px 25px;
 	color: white;
 	font-family: Myriad Pro, non-serif;
@@ -61,6 +61,9 @@
 	flex-flow: row wrap;
 	justify-content: space-between;
 	margin-top: 40px;
+	background: url(../img/i_am.jpg) no-repeat right top -10%;
+	-webkit-background-size: 50%;
+	background-size: 50%;
 }
 
 .sidebar {
@@ -135,7 +138,7 @@
 
 .footer .menu__list:last-child .menu__item {
 	width: 240px;
-	margin-left: 90px;
+	margin: 0 60%;
 }
 
 .footer .menu__item:hover {

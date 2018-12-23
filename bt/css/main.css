@@ -1,6 +1,6 @@
 body {
   padding-top: 40px;
-  background-color: #EEF3FAFF;
+  background-color: #EEF3FA;
   color: #111;
   font-family: "Roboto", "Arial", sans-serif;
 }
@@ -12,6 +12,10 @@ a {
 
 h2 {
   font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
 }
 
 .btn {
@@ -29,7 +33,14 @@ h2 {
   background-color: #008ceb;
 }
 
+.justify-content-between {
+  background-color: #FFFFFF;
+}
+
 .top__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: #FFFFFF;
   padding: 15px 0;
 }
@@ -52,21 +63,18 @@ h2 {
 }
 .top__nav_menu li a:hover {
   color: #007DD1;
+  background-color: #FFFFFF;
 }
 .top__nav_menu li a:after {
   display: block;
   content: "";
-  width: 100%;
+  width: 100px;
   height: 2px;
   background-color: #007DD1;
   -webkit-transform: translateY(30px) scale(0);
           transform: translateY(30px) scale(0);
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
-}
-.top__nav_menu li a:hover:after {
-  -webkit-transform: translateY(30px) scale(1);
-          transform: translateY(30px) scale(1);
 }
 
 .content {
@@ -118,14 +126,6 @@ h2 {
   font-weight: 400;
 }
 
-.content__title {
-  margin-top: 0;
-}
-
-.directions {
-  margin-top: 80px;
-  width: 70%;
-}
 .directions__slider_block {
   margin: 0 15px;
   background-color: #FFFFFF;
@@ -162,17 +162,57 @@ h2 {
     font-size: 14px;
   }
 
+  body {
+    padding-top: 10px;
+  }
+
   .top__nav_menu li a {
-    font-size: 14px;
+    margin-left: 30%;
+    width: 100px;
+    font-size: 16px;
+  }
+
+  .top__nav_menu li a:hover:after {
+    -webkit-transform: translateY(0px) scale(1);
+            transform: translateY(0px) scale(1);
+  }
+
+  .navbar-brand {
+    display: block;
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+  .directions {
+    margin: 10%;
+    width: 80%;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
   html {
     font-size: 16px;
   }
 
+  body {
+    padding-top: 40px;
+  }
+
   .top__nav_menu li a {
     font-size: 15px;
+  }
+
+  .top__nav_menu li a:hover:after {
+    -webkit-transform: translateY(12px) scale(1);
+            transform: translateY(12px) scale(1);
+  }
+
+  .navbar-brand {
+    display: none;
+  }
+
+  .directions {
+    margin-top: 80px;
+    width: 70%;
   }
 }
 

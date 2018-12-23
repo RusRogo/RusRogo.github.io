@@ -2,14 +2,11 @@
 *
 	// outline: 1px solid green
 
-html
-	font-size: 14px
-
 body
 	padding-top: 40px
 	background-color: $body-bg
 	color: $dark
-	font-family: 'Roboto', 'Arial', san-serif
+	font-family: 'Roboto', 'Arial', sans-serif
 a
 	color: $active-color
 	text-decoration: underline
@@ -38,15 +35,15 @@ h2
 		padding: 0
 		display: flex
 		li
-			margin-right: 45px
-			// margin-top: 20px
+			margin-right: 35px
 			a
 				text-transform: uppercase
 				text-decoration: none
+				font-size: 14px
+				font-weight: 700
 				color: $dark
 				&:hover
 					color: $active-color
-					font-weight: 900
 				&:after
 					display: block
 					content: ''
@@ -103,14 +100,56 @@ h2
 	margin-top: 0				
 .directions
 	margin-top: 80px
+	width: 70%
 	&__slider_block
 		margin: 0 15px
 		background-color: $white
 		height: 220px
 		text-align: center
 		h3
-			margin-top: 15px
-			padding: 20px 34px
+			margin: 0 0 20px 0
+			padding: 10px 34px
+			height: 50px
 			color: $active-color
-// .slick-active
-// 	outline: none !important
+		img
+			width: 100%
+			height: 150px
+			background-size: contain
+
+.slick-active
+	user-select: none
+	outline: none
+.slick-dots li button:before
+	margin-top: 20px
+	font-size: 12px
+
+// @media (min-width: 1620px) 
+// 	html
+// 		font-size: 30px
+// 	.top__nav_menu li
+// 		margin-right: 20px
+// 		a
+// 	.top__nav_menu_link
+// 		font-size: 34px
+
+// @media (min-width: 992px)
+	
+@media screen and (min-width: 320px)
+	html
+		font-size: 14px
+	.top__nav_menu li a
+		font-size: 14px	
+
+// @media screen and (min-width: 992px)
+// 	html
+// 		font-size: 16px
+// 	.top__nav_menu li a
+// 		font-size: 12px	
+
+@media screen and (min-width: 1200px)
+	html
+		font-size: 16px
+	.top__nav_menu li a
+		font-size: 15px	
+
+

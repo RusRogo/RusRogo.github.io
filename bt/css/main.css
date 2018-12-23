@@ -1,12 +1,8 @@
-html {
-  font-size: 14px;
-}
-
 body {
   padding-top: 40px;
-  background-color: lightgray;
+  background-color: #EEF3FAFF;
   color: #111;
-  font-family: "Roboto", "Arial", san-serif;
+  font-family: "Roboto", "Arial", sans-serif;
 }
 
 a {
@@ -22,7 +18,7 @@ h2 {
   padding: 20px 30px;
   display: inline-block;
   background-color: #007DD1;
-  color: #FDFDFD;
+  color: #FFFFFF;
   border-radius: 5px;
   text-decoration: none;
   font-size: 16px;
@@ -34,7 +30,7 @@ h2 {
 }
 
 .top__nav {
-  background-color: #FDFDFD;
+  background-color: #FFFFFF;
   padding: 15px 0;
 }
 .top__nav_menu {
@@ -45,16 +41,17 @@ h2 {
   display: flex;
 }
 .top__nav_menu li {
-  margin-right: 45px;
+  margin-right: 35px;
 }
 .top__nav_menu li a {
   text-transform: uppercase;
   text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
   color: #111;
 }
 .top__nav_menu li a:hover {
   color: #007DD1;
-  font-weight: 900;
 }
 .top__nav_menu li a:after {
   display: block;
@@ -78,7 +75,7 @@ h2 {
 }
 
 .left__sidebar_menu {
-  background-color: #FDFDFD;
+  background-color: #FFFFFF;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -97,7 +94,7 @@ h2 {
   background-color: #007DD1;
 }
 .left__sidebar_menu li:hover a {
-  color: #FDFDFD;
+  color: #FFFFFF;
 }
 .left__sidebar_menu li a {
   display: block;
@@ -108,7 +105,7 @@ h2 {
 }
 .left__sidebar_object {
   margin-top: 30px;
-  background-color: #FDFDFD;
+  background-color: #FFFFFF;
 }
 .left__sidebar_object img {
   width: 100%;
@@ -127,17 +124,56 @@ h2 {
 
 .directions {
   margin-top: 80px;
+  width: 70%;
 }
 .directions__slider_block {
   margin: 0 15px;
-  background-color: #FDFDFD;
+  background-color: #FFFFFF;
   height: 220px;
   text-align: center;
 }
 .directions__slider_block h3 {
-  margin-top: 15px;
-  padding: 20px 34px;
+  margin: 0 0 20px 0;
+  padding: 10px 34px;
+  height: 50px;
   color: #007DD1;
+}
+.directions__slider_block img {
+  width: 100%;
+  height: 150px;
+  background-size: contain;
+}
+
+.slick-active {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  outline: none;
+}
+
+.slick-dots li button:before {
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 14px;
+  }
+
+  .top__nav_menu li a {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 16px;
+  }
+
+  .top__nav_menu li a {
+    font-size: 15px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test</title>
+	<!-- <link rel="stylesheet" href="css/styles.css"> -->
+  <!-- <script src="js/script.js"></script> -->
+<style>
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+}
+.container {
+	height: 100vh;
+	position: relative;
+	background-color: lightgray;
+	transition: all 0.4s ease;
+	color: #fff;
+}
+h1 {
+	margin: 0 0 0 30px;
+	color: #000;
+}
+
+.button {
+	display: block;
+	width: 200px;
+	height: 40px;
+	text-decoration: none;
+	color: #fff;
+	margin-top: 10%;
+	margin-left: 50%;
+	padding-top: 20px;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	border-radius: 15px;
+	background-color: #ff5252;
+}
+/*popup*/
+.wrap__popup {
+	display: none;
+}
+.overlay {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, .8);
+	opacity: 0.8;
+	overflow: auto;
+  position: fixed;
+}
+.popup {
+	position: absolute;
+	width: 300px;
+	height: 200px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	padding: 40px;
+	border: 10px solid black;
+	background-color: #FFF;
+	color: #000;
+}
+.close_popup {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 23px;
+	height: 23px;
+	background-color: #FD3;
+	border: 0;
+	cursor: pointer;
+}
+.close_popup:before {
+	content: '';
+	background-color: #555;
+	position: absolute;
+	width: 20px;
+	height: 3px;
+	top: 10px;
+	right: 2px;
+	transform: rotate(-45deg);
+}
+.close_popup:after {
+	content: '';
+	background-color: #555;
+	position: absolute;
+	width: 20px;
+	height: 3px;
+	top: 10px;
+	right: 2px;
+	transform: rotate(45deg);
+}	
+</style>
+</head>
+<body>
+
+
+	<article class="container">
+		<h1>Реализация popup на странице</h1>
+<!--Открытие popup-->
+		<a class="button" href="#" onclick="show('block', 'wrap__popup')">Открытие popup</a>
+<!-- окно popup -->
+		<div id="wrap__popup" class="wrap__popup">
+<!-- затемнение body -->
+				<div class="overlay" onclick="show('none')" id="fogging"></div>
+					<div class="popup">
+						<h2>Заголовок popup</h2>
+						<p>Содержание</p>
+<!--Закрытие popup-->
+		  			<button class="close_popup" onclick="show('none', 'wrap__popup')"></button>
+					</div>
+		</div>	
+	</article>
+
+<script>
+	function show(state, id){
+	  if(id!=null)
+	    document.getElementById(id).style.display = state;
+	  else{
+	    document.getElementById('wrap__popup').style.display = state;
+	  }
+	  document.getElementById('fogging').style.display = state;
+	}
+</script>
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>	
+</body>
+</html>

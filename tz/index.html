@@ -5,51 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Test</title>
 	<link rel="stylesheet" href="css/styles.css">
-  <script src="js/script.js"></script>
 </head>
 <body>
 
-<a href="#" id="butto" value="Кнопка">Кнопка</a>
-
-<!-- 		<a class="button" id="button" href="#" onclick="show('block', 'wrap__popup')">Запуск popup</a> -->
 	<article class="container">
 		<h1>Реализация popup на странице</h1>
+
+<!-- Реализация 1-ой JS функции на показ и скрытие popup окна -->
+
 <!--Открытие popup-->
 		<a class="button" id="button" href="#">Запуск popup</a>
-		<script>
-const button = document.getElementById('button');
-button.addEventListener('click', function() {
-   document.getElementById('wrap__popup').style.display = 'block';
-});
-		</script>
 <!-- окно popup -->
 		<div id="wrap__popup" class="wrap__popup">
-<!-- затемнение body -->
+<!-- закрытие popup окна при клике вне его области -->
 				<div class="overlay" id="overlay"></div>
-		<script>
-const overlay = document.getElementById('overlay');
-overlay.addEventListener('click', function() {
-   document.getElementById('wrap__popup').style.display = 'none';
-});
-		</script>
+				<div class="popup">
+					<!-- Форма -->
+					<form>
+					  <p>Имя: <input id='name' class='input_contacts' type='text' required name='name'><label class="label_contacts" for='name'></label></p>
+					  <p>Тел: <input  id='tel' class='input_contacts' type='number' min='100000' required name='tel'><label class="label_contacts" for='tel'></label></p>
+					  <p>mail: <input id='email' class='input_contacts' type='email' required name='email'><label class="label_contacts" for='email'></label></p>
+<!-- чекбокс -->
+						<input type="checkbox" class="input_agree" id="agree" name="agree" value="agree">
+						<label for="agree" class="label_agree">Я соглашаюсь с 
+							<a class="label_agree__href" href="#">правилами использования сервиса</a>
+						, а также с передачей и обработкой моих данных</label>
+					  <p><input type='submit'></p>
+					</form>
+<!--Закрытие popup при клике на "крестик"-->
+	  			<button class="close_popup" id="close_popup"></button>
+				</div>
+		</div>
+
+
+<!-- Реализация 2-ой JS функции на показ и скрытие popup окна -->
+
+<!--Открытие popup-->
+		<!-- <a class="button" href="#" onclick="show('block', 'wrap__popup')">Запуск popup</a> -->
+<!-- окно popup -->
+		<!-- <div id="wrap__popup" class="wrap__popup"> -->
+<!-- закрытие popup окна при клике вне его области -->
+				<!-- <div class="overlay" onclick="show('none')" id="fogging"></div>
 				<div class="popup">
 					<h2>Заголовок popup</h2>
-					<p>Содержание</p>
-<!--Закрытие popup-->
-	  			<button class="close_popup" id="close_popup"></button>
-		<script>
-const close_popup = document.getElementById('close_popup');
-close_popup.addEventListener('click', function() {
-   document.getElementById('wrap__popup').style.display = 'none';
-});
-		</script>
+					<p>Содержание</p> -->
+<!--Закрытие popup при клике на "крестик"-->
+	  			<!-- <button class="close_popup" onclick="show('none', 'wrap__popup')"></button>
 				</div>
-		</div>	
+		</div> -->
+<!-- код функции -->
+		<!-- <script>
+			function show(state, id) {
+			  document.getElementById('wrap__popup').style.display = state;
+			}
+		</script> -->
+
+<!-- Слайдер -->
+<!-- слайдер импортировал с моих работ -->
 		<h2 class="slider_title" >Слайдер</h2>
 	</article>
 
 	<article>
-<!-- слайдер импортировал с моих работ -->
 		<aside class="comWrapSlider">
 		  <input type="radio" name="comSlides" id="comPoint1" class="comRadioPoint" checked>
 		  <input type="radio" name="comSlides" id="comPoint2" class="comRadioPoint">

@@ -2,29 +2,112 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Test</title>
 	<link rel="stylesheet" href="css/styles.css">
   <script src="js/script.js"></script>
 </head>
 <body>
 
+<a href="#" id="butto" value="Кнопка">Кнопка</a>
+
+<!-- 		<a class="button" id="button" href="#" onclick="show('block', 'wrap__popup')">Запуск popup</a> -->
 	<article class="container">
 		<h1>Реализация popup на странице</h1>
 <!--Открытие popup-->
-		<a class="button" href="#" onclick="show('block', 'wrap__popup')">Запуск popup</a>
+		<a class="button" id="button" href="#">Запуск popup</a>
+		<script>
+const button = document.getElementById('button');
+button.addEventListener('click', function() {
+   document.getElementById('wrap__popup').style.display = 'block';
+});
+		</script>
 <!-- окно popup -->
 		<div id="wrap__popup" class="wrap__popup">
 <!-- затемнение body -->
-				<div class="overlay" onclick="show('none')" id="fogging"></div>
+				<div class="overlay" id="overlay"></div>
+		<script>
+const overlay = document.getElementById('overlay');
+overlay.addEventListener('click', function() {
+   document.getElementById('wrap__popup').style.display = 'none';
+});
+		</script>
 				<div class="popup">
 					<h2>Заголовок popup</h2>
 					<p>Содержание</p>
 <!--Закрытие popup-->
-	  			<button class="close_popup" onclick="show('none', 'wrap__popup')"></button>
+	  			<button class="close_popup" id="close_popup"></button>
+		<script>
+const close_popup = document.getElementById('close_popup');
+close_popup.addEventListener('click', function() {
+   document.getElementById('wrap__popup').style.display = 'none';
+});
+		</script>
 				</div>
 		</div>	
+		<h2 class="slider_title" >Слайдер</h2>
 	</article>
 
+	<article>
+<!-- слайдер импортировал с моих работ -->
+		<aside class="comWrapSlider">
+		  <input type="radio" name="comSlides" id="comPoint1" class="comRadioPoint" checked>
+		  <input type="radio" name="comSlides" id="comPoint2" class="comRadioPoint">
+		  <input type="radio" name="comSlides" id="comPoint3" class="comRadioPoint">
+		  <input type="radio" name="comSlides" id="comPoint4" class="comRadioPoint">
+		  <div class="comSlider">
+		    <div class="comSlides">
+		      <span class="comSlider__span">1</span>
+		    </div>
+		    <div class="comSlides">
+		      <span class="comSlider__span">2</span>
+		    </div>
+		    <div class="comSlides">
+		      <span class="comSlider__span">3</span>
+		    </div>
+		    <div class="comSlides">
+		      <span class="comSlider__span">4</span>
+		    </div>
+		    <div class="comSlides">
+		      <span class="comSlider__span">5</span>
+		    </div>
+		    <div class="comSlides">
+		      <span class="comSlider__span">6</span>
+		    </div>
+		    <div class="comSlides">
+		      <span class="comSlider__span">7</span>
+		    </div>
+		    <div class="comSlides">
+		      <span class="comSlider__span">8</span>
+		    </div>
+		    <div class="comSlides">
+		      <span class="comSlider__span">9</span>
+		    </div>
+		    <div class="comSlides">
+		      <span class="comSlider__span">10</span>
+		    </div>
+		    <div class="comSlides">
+		      <span class="comSlider__span">11</span>
+		    </div>
+		    <div class="comSlides">
+		      <span class="comSlider__span">12</span>
+		    </div>
+		  </div>
+
+		  <label class="comPrev" for="comPoint4"></label>
+		  <label class="comPrev" for="comPoint1"></label>
+		  <label class="comPrev" for="comPoint2"></label>
+		  <label class="comPrev" for="comPoint3"></label>
+		  <div class="wrap__comnext">
+		    <label class="comNext" for="comPoint2"></label>
+		    <label class="comNext" for="comPoint3"></label>
+		    <label class="comNext" for="comPoint4"></label>
+		    <label class="comNext" for="comPoint1"></label>
+		  </div>
+	  </aside>
+	</article>
+
+  <script src="js/script.js"></script>
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>	
 </body>
 </html>

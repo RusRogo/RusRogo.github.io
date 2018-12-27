@@ -10,7 +10,7 @@
 <body>
 
 	<article class="container">
-		<h2>Реализация popup на странице</h2>
+		<h2>Реализация popup без использования сторонних библиотек</h2>
 
 <!-- Реализация 1-ой JS функции на показ и скрытие popup окна -->
 
@@ -24,7 +24,7 @@
 					<!-- Форма -->
 					<form>
 					  <p>Имя: <input type='text' id='name' class='input_contacts' name='name' required><label class="label_contacts" for='name'></label></p>
-					  <p>Тел: <input  type='number' id='tel' class='input_contacts' min='100000' required name='tel'><label class="label_contacts" for='tel'></label></p>
+					  <p>Тел: <input type='tel' id='tel' class='input_contacts' min='100000' name='tel' required><label class="label_contacts" for='tel'></label></p>
 					  <p>mail: <input type='email' id='email' class='input_contacts' name='email' required><label class="label_contacts" for='email'></label></p>
 <!-- чекбокс -->
 						<input type="checkbox" class="input_agree" id="agree" name="agree" value="agree" required>
@@ -63,7 +63,7 @@
 
 <!-- Слайдер -->
 <!-- слайдер импортировал с моих работ -->
-		<h2 class="slider_title" >Слайдер</h2>
+		<h2 class="slider_title">Слайдер на owl-carousel</h2>
 	</article>
 
 	<article>
@@ -122,9 +122,25 @@
 		  </div>
 	  </aside>
 	</article>
+<!-- Плавное появление блоков на странице -->
+	<article>
+		<h2>Плавное появления блоков на странице</h2>
+
+		<button class="blocks_motion" id="blocks_motion">Появление блоков</button>
+		<div class="wrap_block" id="wrap_block">
+			<div class="block" id="block">1</div>
+			<div class="block" id="block">2</div>
+			<div class="block" id="block">3</div>
+			<div class="block" id="block">4</div>
+			<div class="block" id="block">5</div>
+			<div class="block" id="block">6</div>
+			<div class="block" id="block">7</div>
+			<div class="block" id="block">8</div>
+		</div>
+	</article>
 <!-- Таблица -->
 	<article>
-		<h2>Таблица</h2>
+		<h2>Таблица без использования классов</h2>
 	<table cellspacing="0" cellpadding="10" bgcolor="#fff" width="1000px" height="300px" align="center">
    <tr border="10px">
     <td>Тест</td>
@@ -152,7 +168,7 @@
   </table>
 	</article>
 	
-	
+
   <script src="js/script.js"></script>
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>	
 </body>

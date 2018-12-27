@@ -1,19 +1,26 @@
 // 1-ая JS функция на показ и скрытие popup окна
 
+// Функция с подачей id элемента
+function popup_action(state, id) {
+  document.getElementById(id).style.display = state;
+}
+
 // Открытие popup
-const button = document.getElementById('button');
-button.addEventListener('click', function() {
-   document.getElementById('wrap__popup').style.display = 'block';
+document.getElementById('button').addEventListener('click', function() {
+  popup_action('block', 'wrap__popup');
 });
 
 // закрытие popup окна при клике вне его области
-const overlay = document.getElementById('overlay');
-overlay.addEventListener('click', function() {
-   document.getElementById('wrap__popup').style.display = 'none';
+document.getElementById('overlay').addEventListener('click', function() {
+  popup_action('none', 'wrap__popup');
 });
 
 // Закрытие popup при клике на "крестик"
-const close_popup = document.getElementById('close_popup');
-close_popup.addEventListener('click', function() {
-   document.getElementById('wrap__popup').style.display = 'none';
+document.getElementById('close_popup').addEventListener('click', function() {
+  popup_action('none', 'wrap__popup');
+});
+
+// Плавное появления блоков на странице
+document.getElementById('blocks_motion').addEventListener('click', function() {
+   document.getElementById('wrap_block').style.display = 'flex';
 });

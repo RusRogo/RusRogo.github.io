@@ -146,6 +146,14 @@ body {
 }
 .portfolio__wrapper{
 }
+.portfolio__list {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row wrap;
+}
 .portfolio__img {
     margin-left: 7%;
     background: url(../img/coding7.jpg) no-repeat;
@@ -196,12 +204,12 @@ body {
     top:60%
 }
 .portfolio__img-link:hover:before{
-    content:"Перейти";
-    color:#FCFCFC;
+    content:"";
+    color:#fff;
     font-style: italic;
     text-align:center;
     font-weight:bold;
-    font-size:20px
+    font-size:1.5em;
 }
 .portfolio__img-link:after{
     display:block;
@@ -454,6 +462,9 @@ body {
         display: -o-flex;
         display: flex;
         justify-content: space-around;
+    }
+    .portfolio__list {
+        margin-top: 15%;
     }
     .portfolio__text:before {
         display: none;

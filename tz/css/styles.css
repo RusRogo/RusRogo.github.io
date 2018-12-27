@@ -6,7 +6,6 @@ body {
 	background-color: lightgray;
 }
 .container {
-	/*height: 100vh;*/
 	position: relative;
 	transition: all 0.4s ease;
 	color: #333;
@@ -97,7 +96,6 @@ body {
   content: '\274E';
   color: red;
 }
-
 .input_contacts:valid + .label_contacts:after {
 	margin-left: 10px;
   font-size: 16px;
@@ -120,11 +118,9 @@ body {
   cursor: pointer;
   padding: 0.2em;
 }
-
 .input_agree {
   display: none;
 }
-
 .label_agree:before {
   content: "\2714";
   border: 0.1em solid #FEFEFE;
@@ -139,7 +135,6 @@ body {
   color: transparent;
   transition: .2s;
 }
-
 .input_agree:checked + .label_agree:before {
   color: #FEFEFE;
 }
@@ -149,7 +144,6 @@ body {
 	margin-top: 100px;
 	font-size: 26px;
 }
-
 .comWrapSlider {
 	width: 570px;
 	height: 200px;
@@ -337,13 +331,8 @@ body {
 }
 
 /*Плавное появление блоков на странице*/
-.wrap_block {
-	display: none;
-/*	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;*/
+.wrap_blocks {
+  display: flex;
 	-webkit-flex-flow: row wrap;
 	-moz-flex-flow: row wrap;
 	-ms-flex-flow: row wrap;
@@ -353,9 +342,21 @@ body {
 .block {
 	margin: 2%;
 	width: 20%;
-	height: 200px;
+	height: 7em;
 	background-color: #333;
 	color: #fff;
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: all .5s ease;
+}
+.run-animation {
+	width: 100px;
+	height: 50px;
+	font-weight: bold;
+}
+.block.active {
+  opacity: 1;
+  transform: translateY(0px);
 }
 
 /*таблица*/

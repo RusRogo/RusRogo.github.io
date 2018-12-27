@@ -21,6 +21,15 @@ document.getElementById('close_popup').addEventListener('click', function() {
 });
 
 // Плавное появления блоков на странице
-document.getElementById('blocks_motion').addEventListener('click', function() {
-   document.getElementById('wrap_block').style.display = 'flex';
-});
+const btn = document.querySelector('#run-animation');
+const items = document.querySelectorAll('.block');
+items.forEach((item, index) => {
+  // интервал 0,3 секунды
+  item.style.transitionDelay = (index/3) + 's';
+})
+btn.addEventListener('click', function() {
+   items.forEach((item) => {
+     // добавление класса блокам
+     item.classList.add('active');
+   })
+})

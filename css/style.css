@@ -370,7 +370,8 @@ body {
 .about__item_span {
     font-family:"cocon", Arial, san-serif;
 }
-.about__item_link {
+.about__item_link,
+.about__item_test {
     color: #489;
     font-weight: bold;
 }
@@ -444,7 +445,8 @@ body {
         margin: 7% auto;
     }
     .header__dev {
-        width: 250px;
+        /*width: 250px;*/
+        display: none;
     }
     .about__photo {
         width: 100px;
@@ -502,6 +504,7 @@ body {
         padding-left: 20%;
     }
     .header__dev {
+        display: block;
         width: 340px;
     } 
     .header__wrap_img {

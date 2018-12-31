@@ -1,3 +1,73 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'fontello';
+  src: url("../fonts/fontello.eot?77439151");
+  src: url("../fonts/fontello.eot?77439151#iefix") format("embedded-opentype"), url("../fonts/fontello.woff2?77439151") format("woff2"), url("../fonts/fontello.woff?77439151") format("woff"), url("../fonts/fontello.ttf?77439151") format("truetype"), url("../fonts/fontello.svg?77439151#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?77439151#fontello') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-facebook:before {
+  content: '\f09a';
+}
+
+/* '' */
+.icon-menu:before {
+  content: '\f0c9';
+}
+
+/* '' */
+.icon-instagram:before {
+  content: '\f16d';
+}
+
+/* '' */
+.icon-vkontakte:before {
+  content: '\f189';
+}
+
+/* '' */
+@font-face {
+  font-family: Fontello;
+  src: url(../fonts/fontello.ttf);
+}
 body {
   padding-top: 40px;
   background-color: #EEF3FA;
@@ -69,7 +139,7 @@ h3 {
 .top__nav_menu li a:after {
   display: block;
   content: "";
-  width: 90px;
+  width: 80px;
   height: 2px;
   background-color: #007DD1;
   -webkit-transform: translateY(12px) scale(0);
@@ -134,7 +204,7 @@ h3 {
   text-align: center;
 }
 .directions__slider_block h3 {
-  margin: 0 0 20px 0;
+  margin: 10px 0 0 10px;
   padding: 10px 34px;
   height: 50px;
   color: #007DD1;
@@ -158,6 +228,72 @@ h3 {
   font-size: 12px;
 }
 
+.footer {
+  margin-top: 40px;
+  background-color: #111;
+  color: #666666;
+  padding: 60px 0;
+}
+.footer__policy_link {
+  font-size: 12px;
+}
+.footer p {
+  margin-bottom: 14px;
+}
+.footer a {
+  color: #666666;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: #FFFFFF;
+}
+.footer small {
+  display: block;
+  margin-top: 56px;
+  width: 80%;
+  line-height: 16px;
+  font-size: 10px;
+}
+.footer ul {
+  padding: 0;
+  list-style: none;
+}
+.footer li {
+  line-height: 32px;
+}
+.footer__contacts, .footer__social_links {
+  text-align: right;
+}
+.footer__contacts_phone {
+  font-size: 20px;
+  color: #007DD1;
+}
+.footer__social_links li {
+  display: inline-block;
+}
+.footer__social_links li a {
+  display: inline-block;
+  font-family: Fontello;
+  color: #FFFFFF;
+  width: 42px;
+  height: 42px;
+  background-color: rgba(255, 255, 255, 0.1);
+  text-align: center;
+  border-radius: 50%;
+  line-height: 42px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  margin-left: 10px;
+}
+.footer__social_links li a:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #111;
+}
+
+.icon-vk {
+  padding-right: 3px;
+}
+
 @media screen and (min-width: 320px) {
   html {
     font-size: 14px;
@@ -168,10 +304,16 @@ h3 {
   }
 
   .logo {
-    margin-top: 20px;
-    width: 150px;
+    width: 200px;
   }
 
+  .top__nav_menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 23px;
+  }
   .top__nav_menu li a {
     margin: 0;
     width: 100px;
@@ -227,7 +369,24 @@ h3 {
     margin-left: 0;
   }
 
+  .top__nav_menu {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .top__nav_menu li {
+    margin-left: 3%;
+  }
   .top__nav_menu li a {
+    width: 60px;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    padding: 0;
     font-size: 15px;
     color: #111;
     text-decoration: none;
@@ -235,6 +394,9 @@ h3 {
   .top__nav_menu li a:hover:after {
     -webkit-transform: translateY(12px) scale(1);
             transform: translateY(12px) scale(1);
+  }
+  .top__nav_menu li:first-child {
+    padding-left: 10px;
   }
 
   .navbar-brand {

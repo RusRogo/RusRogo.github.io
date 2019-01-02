@@ -31,7 +31,7 @@ $(document).ready(function() {
   // });
   left__sidebar_btn.on('click', function(event) {
     event.preventDefault();
-    $(".left__sidebar_menu").slideToggle(300)
+    $(".left__sidebar_menu").slideToggle(400)
     left__sidebar_menu.toggleClass('left__sidebar_menu__active');
   });
 });

@@ -40,6 +40,21 @@
 		font-size: 16px
 		height: 30%
 
+// min and max
+@media (min-width: 320px) and (max-width: 768px)
+	.copy
+		text-align: center
+		small
+			display: block
+			margin: 36px auto
+	.footer
+		&__contacts
+			text-align: left
+		&__social_links
+			text-align: center
+			a
+				margin-left: 20px
+
 @media screen and (min-width: 768px)
 	.content__discription
 		height: auto
@@ -55,10 +70,8 @@
 		display: block
 	.directions
 		margin-top: 80px
-		// width: 70%
 	.directions__slider
 		width: 500px
-
 
 @media screen and (min-width: 992px)
 	html
@@ -88,6 +101,10 @@
 					padding-left: 10px
 	.navbar-brand
 		display: none
+	.footer
+		&__social_links
+			a
+				margin-left: 10px
 	
 
 // @media screen and (min-width: 1200px)

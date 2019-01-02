@@ -307,7 +307,6 @@ h3 {
   line-height: 42px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
-  margin-left: 10px;
 }
 .footer__social_links li a:hover {
   background-color: rgba(255, 255, 255, 0.9);
@@ -381,6 +380,25 @@ h3 {
     padding-left: 10px;
     font-size: 16px;
     height: 30%;
+  }
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .copy {
+    text-align: center;
+  }
+  .copy small {
+    display: block;
+    margin: 36px auto;
+  }
+
+  .footer__contacts, .footer__social_links {
+    text-align: left;
+  }
+  .footer__social_links {
+    text-align: center;
+  }
+  .footer__social_links a {
+    margin-left: 20px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -457,6 +475,10 @@ h3 {
 
   .navbar-brand {
     display: none;
+  }
+
+  .footer__social_links a {
+    margin-left: 10px;
   }
 }
 

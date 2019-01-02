@@ -6,17 +6,21 @@
 <!-- bootstrap-css -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap-grid.min.css" rel="stylesheet">
+<!-- slick -->
+	<!-- <link rel="stylesheet" href="slick/slick-theme.css"> -->
+	<link rel="stylesheet" href="slick/slick.css">
 <!-- My styles -->
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
 	<div class="row">
-		<div class="sidebar col-md-2">
+<!-- Сайдбар -->
+		<aside class="sidebar col-md-2">
 			<div class="sidebar__content">
 				<div class="sidebar__heading">
 					<img class="sidebar__heading_logo" src="img/logo.png" alt="logo">
-					<!-- Длинное тире - Alt+0151 -->
+			<!-- Длинное тире - Alt+0151 -->
 					<p class="sidebar__heading_text">Современные технологии — <br>стабильное качество</p>
 				</div>
 				<nav>
@@ -29,11 +33,30 @@
 						<li><a class="sidebar__menu_link" href="#">Контакты</a></li>
 					</ul>
 				</nav>
-
  				<button type="button" class="sidebar__button">РЕЦЕПТЫ</button>
  				<a class="sidebar__question" href="#">Задать вопрос</a>
 			</div>
-		</div>
+		</aside>
+<!-- Контент -->
+		<section class="col-md-10 content">
+<!-- Рецепты -->
+			<article class="recipes">
+				<h3 class="recipes__title">Рецепты<a class="recipes__title_link" href="">Смотреть все рецепты</a></h3>
+			  <div class="wrap__slider">
+			  	<div class="directions__slider">
+			  	  <div class="directions__slider_block">your content</div>
+			  	  <div class="directions__slider_block">your content</div>
+			  	  <div class="directions__slider_block">your content</div>
+			  	  <div class="directions__slider_block">your content</div>
+			  	  <div class="directions__slider_block">your content</div>
+			  	  <div class="directions__slider_block">your content</div>
+			  	</div>
+          <label for="Previous" class="directions__slider_prev">←</label>
+          <label for="Next" class="directions__slider_next">→</label>
+			  </div>
+			</article>
+		</section>
+
 		row
 	</div>
 
@@ -41,9 +64,11 @@
 
 <!-- side - 186(126) from 1366 -->
 
-<!-- My scripts -->
+<!-- scripts -->
 <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+
 <script type="text/javascript" src="js/script.js"></script>
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>

@@ -4,21 +4,37 @@ $('.directions__slider').slick({
   dots: true,
   slidesToShow: 2,
   autoplay: true, 
-  autoplaySpeed: 2500
+  autoplaySpeed: 2500,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
 });
 
 // Открытие -закрытие header_menu - JQuerry green
 
-// $(document).ready(function() {
-//   var menuBtn = $('.top__nav_btn');
-//   var menu = $('.top__nav_menu');
+$(document).ready(function() {
+  // var menuBtn = $('.top__nav_btn');
+  // var menu = $('.top__nav_menu');
+  var left__sidebar_btn = $('.left__sidebar_btn');
+  var left__sidebar_menu = $('.left__sidebar_menu');
 
-//   menuBtn.on('click', function(event) {
-//     event.preventDefault();
-//     $(".top__nav_menu").fadeToggle(100)
-//     menu.toggleClass('top__nav_menu__active');
-//   });
-// });
+  // menuBtn.on('click', function(event) {
+  //   event.preventDefault();
+  //   $(".top__nav_menu").fadeToggle(100)
+  //   menu.toggleClass('top__nav_menu__active');
+  // });
+  left__sidebar_btn.on('click', function(event) {
+    event.preventDefault();
+    $(".left__sidebar_menu").slideToggle(300)
+    left__sidebar_menu.toggleClass('left__sidebar_menu__active');
+  });
+});
 
 // $(".top__nav_btn").click(function () {
 //   $(".top__nav_menu").slideToggle(100);

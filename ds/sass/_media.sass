@@ -15,19 +15,26 @@
 				width: 100px
 				font-size: 16px	
 				color: $active-color
-				&:hover:after
-					transform: translateY(100%) scale(0)
 				&:hover
 					color: $dark
 	.navbar-brand
 		display: block
 		text-decoration: none
-		font-weight: 700	
+		font-weight: 700
+	.left__sidebar
+		&_menu
+			display: none
+			&__active
+				display: block
+			&__on
+				display: none
+	.left__sidebar_object
+		display: none
 	.content__discription
 		height: 300px
 		overflow: hidden	
-	.directions
-		width: 100%
+	.directions__slider
+		width: 300px
 	.directions__slider_block h3
 		padding-left: 10px
 		font-size: 16px
@@ -37,6 +44,20 @@
 	.content__discription
 		height: auto
 		overflow: auto
+	.left__sidebar
+		&_btn
+			display: none
+		&_menu
+			display: block
+			&__on
+				display: block
+	.left__sidebar_object
+		display: block
+	.directions
+		margin-top: 80px
+		// width: 70%
+	.directions__slider
+		width: 500px
 
 
 @media screen and (min-width: 992px)
@@ -62,14 +83,11 @@
 					color: $dark
 					text-decoration: none
 					&:hover:after
-						transform: translateY(12px) scale(1)
+						transform: translateY(24px) scale(1)
 				&:first-child
 					padding-left: 10px
 	.navbar-brand
 		display: none
-	.directions
-		margin-top: 80px
-		width: 70%	
 	
 
 // @media screen and (min-width: 1200px)

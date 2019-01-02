@@ -1,0 +1,77 @@
+* {
+	/*outline: 1px solid blue;*/
+}
+*:focus {
+	outline: none;
+}
+html {
+}
+body {
+	background-color: #E5E5E5FF;
+}
+.row {
+	background-color: gray;
+}
+/*sidebar*/
+.sidebar {
+	padding-top: 30px;
+	background-color: lightgray;
+}
+.sidebar__content {
+	outline: 1px solid blue;
+	margin: 0 auto;
+	width: 126px
+}
+.sidebar__heading {
+	height: 140px;
+	border-bottom: 2px solid #E3E3E3;
+}
+.sidebar__heading_logo {
+	margin-left: -13px;
+}
+.sidebar__heading_text {
+	font-size: 9px;
+	text-align: center;
+}
+/*sidebar__menu*/
+.sidebar__menu {
+	margin-top: 50px;
+	padding: 0;
+	list-style: none;
+}
+.sidebar__menu li {
+}
+.sidebar__menu_link {
+	display: block;
+	margin-bottom: 15px;
+	text-align: center;
+	font-weight: bold;
+}
+.sidebar__menu_link:hover {
+	color: #fff;
+	text-decoration: none;
+	transition: 0.2s all;
+}
+.sidebar__button {
+	padding: 10px 0;
+	width: 100%;
+	background-color: #059;
+	border-radius: 25px;
+	color: #DFF;
+}
+.sidebar__button:hover {
+	background-color: green;
+	color: #000;
+	transition: 0.3s all;
+}
+.sidebar__question {
+	display: block;
+	margin-top: 100px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.sidebar__question:hover {
+	text-decoration: none;
+	color: #000;
+	transition: 0.3s all;
+}

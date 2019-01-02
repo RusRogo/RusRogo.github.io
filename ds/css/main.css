@@ -373,7 +373,7 @@ h3 {
   }
 
   .directions__slider {
-    width: 300px;
+    width: 290px;
   }
 
   .directions__slider_block h3 {
@@ -427,6 +427,7 @@ h3 {
 
   .directions__slider {
     width: 500px;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 992px) {

@@ -14,7 +14,7 @@
 	<link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-	<div class="row">
+	<div class="row col-md-auto">
 <!-- Сайдбар -->
 		<aside class="sidebar col-md-2">
 			<div class="sidebar__content">
@@ -38,31 +38,69 @@
 			</div>
 		</aside>
 <!-- Контент -->
-		<section class="col-md-10 content">
+		<section class="col-md-auto content">
+			<div class="header">
+				<img class="header__mainImg" src="img/main_milk.jpg" alt="main_milk">
+				<h1 class="header__title">Молочные продукты <br>из российской глубинки</h1>
+				<a class="header__link" href="#">Узнайте как мы производим такую полезную и вкусную продукцию</a>
+			</div>
 <!-- Рецепты -->
 			<article class="recipes">
 				<h3 class="recipes__title">Рецепты<a class="recipes__title_link" href="">Смотреть все рецепты</a></h3>
 			  <div class="wrap__slider">
 			  	<div class="directions__slider">
-			  	  <div class="directions__slider_block">your content</div>
-			  	  <div class="directions__slider_block">your content</div>
-			  	  <div class="directions__slider_block">your content</div>
-			  	  <div class="directions__slider_block">your content</div>
-			  	  <div class="directions__slider_block">your content</div>
-			  	  <div class="directions__slider_block">your content</div>
+			  		<div class="directions__slider_block">
+			  			<img class="directions__slider_img" src="img/slider_recipes/recipe_1.png" alt="img">
+			  			<h3 class="directions__slider_title">Название блюда</h3>
+			  			<p class="directions__slider_text">Консультация с широким активом играет важную роль в формировании направлений прогрессивного развития.</p>
+			  		</div>
+			  	  <div class="directions__slider_block">
+			  	  	<img class="directions__slider_img" src="img/slider_recipes/recipe_2.png" alt="img">
+			  	  	<h3 class="directions__slider_title">Название блюда</h3>
+			  	  	<p class="directions__slider_text">Консультация с широким активом играет важную роль в формировании направлений прогрессивного развития.</p>
+			  	  </div>
+			  	  <div class="directions__slider_block">
+			  	  	<img class="directions__slider_img" src="img/slider_recipes/recipe_3.png" alt="img">
+			  	  	<h3 class="directions__slider_title">Название блюда</h3>
+			  	  	<p class="directions__slider_text">Консультация с широким активом играет важную роль в формировании направлений прогрессивного развития.</p>
+			  	  </div>
+			  	  <div class="directions__slider_block">
+			  	  	<img class="directions__slider_img" src="img/news/news_1.png" alt="img">
+			  	  	<h3 class="directions__slider_title">Название блюда</h3>
+			  	  	<p class="directions__slider_text">Консультация с широким активом играет важную роль в формировании направлений прогрессивного развития.</p>
+			  	  </div>
+			  	  <div class="directions__slider_block">
+			  	  	<img class="directions__slider_img" src="img/news/news_2.png" alt="img">
+			  	  	<h3 class="directions__slider_title">Название блюда</h3>
+			  	  	<p class="directions__slider_text">Консультация с широким активом играет важную роль в формировании направлений прогрессивного развития.</p>
+			  	  </div>
+			  	  <div class="directions__slider_block">
+			  	  	<img class="directions__slider_img" src="img/news/news_3.png" alt="img">
+			  	  	<h3 class="directions__slider_title">Название блюда</h3>
+			  	  	<p class="directions__slider_text">Консультация с широким активом играет важную роль в формировании направлений прогрессивного развития.</p>
+			  	  </div>
 			  	</div>
           <label for="Previous" class="directions__slider_prev">←</label>
           <label for="Next" class="directions__slider_next">→</label>
 			  </div>
 			</article>
+	<!-- Производство -->
+			<article class="production">
+				<div class="production__content">
+					<h2 class="production__title">Производство</h2>
+					<h3 class="production__subtitle">Подзаголовок</h3>
+					<p class="production__text">На производстве молока сельскохозяйственными предприятиями оказывают существенное влияние тенденции развития сельского хозяйства. Основной частью производимого молока составляет коровье - это 90% от всего общего объёма.</p>
+					<p class="production__text">Разнообразный и богатый опыт сложившаяся структура организации требует от нас анализа новых предложений. Не следует, однако забывать, что начало повседневной работы по формированию позиции в значительной степени обуславливает создание соответствующих условий.</p>
+				</div>
+			</article>
 		</section>
 
-		row
 	</div>
 
 
 
-<!-- side - 186(126) from 1366 -->
+<!-- sidebar - 186(126) from 1360 -->
+<!-- slider heading - mt 90 mr 40 mb 60 // slider - 330/455 // m - 60/30 around // ar 46 mt 50 m30 -->
 
 <!-- scripts -->
 <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>

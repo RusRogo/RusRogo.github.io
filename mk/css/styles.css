@@ -22,24 +22,36 @@ body {
 	background-color: #F6F5F2;
 	font-family: Akrobat_Regular;
 	font-size: 16px;
-	color: #0D4169;
+	color: #707070;
 }
-h2,
+h2 {
+	font-family: Constantia;
+	font-size: 34px;
+	color: #003256;
+}
 h3 {
-	font-family: Akrobat_Black;
-	font-size: 20px;
+	font-family: Constantia;
+	font-size: 24px;
+	color: #4c4c4c;
 }
 .row {
+	z-index: 1;
+	margin: 0;
+	padding-left: 186px;
+	padding-right: 0;
 }
 /*sidebar*/
 .sidebar {
-	padding-top: 30px;
+	z-index: 2;
+	position: fixed;
+	padding: 30px;
+	height: 100%;
 	background-color: lightgray;
 }
 .sidebar__content {
 	/*outline: 1px solid blue;*/
 	margin: 0 auto;
-	width: 126px
+	width: 126px;
 }
 .sidebar__heading {
 	height: 140px;
@@ -88,6 +100,7 @@ h3 {
 	margin-top: 100px;
 	text-transform: uppercase;
 	font-weight: bold;
+	text-align: center;
 }
 .sidebar__question:hover {
 	text-decoration: none;
@@ -96,15 +109,20 @@ h3 {
 }
 /*header*/
 .header {
+	padding: 0;
+	width: 100%;
 	height: 768px;
 	z-index: 1;
 	position: relative;
+	/*display: flex;*/
+	background: url(../img/main_milk.jpg) no-repeat right;
+	/*-webkit-background-size: cover;*/
+	/*background-size: cover;*/
 }
-.header__mainImg {
+/*.header__mainImg {
 	position: absolute;
 	z-index: -1;
-	/*outline: 3px solid green;*/
-}
+}*/
 .header__title {
 	margin-top: 0;
 	padding-left: 60px;
@@ -124,26 +142,27 @@ h3 {
 /*content*/
 .content {
 	padding: 0;
-	width: 1174px;
+	width: 100%;
 	/*background-color: #F6F5F2;*/
 	/*outline: 3px solid yellow;*/
 }
 /*resipes*/
-.recipes {
+.article {
 	padding: 0 60px 50px 60px;
 	margin-top: 90px;
 }
-.recipes__title {
+.article__title {
 	margin-bottom: 0;
 }
-.recipes__title_link {
+.article__title_link {
 	margin-left: 40px;
 	font-size: 12px;
 	text-decoration: underline;
 }
 .wrap__slider {
-	margin: 0 -15px;
+	margin: 0 auto;
 	margin-top: 60px;
+	width: 1055px;
 	position: relative;
 }
 .directions__slider {
@@ -212,10 +231,6 @@ h3 {
 .production__content {
 	margin-left: 60px;
 }
-.production__title {
-	font-family: Constantia;
-	font-size: 34px;
-}
 .production__subtitle {
 	margin: 55px 0 45px 0;
 	font-family: Constantia;
@@ -229,4 +244,89 @@ h3 {
 }
 .production__text:nth-of-type(2) {
 	width: 33%;
+}
+.production__button {
+	padding: 10px 15px;
+	/*width: 100px;*/
+	background-color: #059;
+	border-radius: 25px;
+	color: #DFF;
+}
+/*brands*/
+.brands {
+	padding-left: 0;
+	/*width: 100%;*/
+	/*justify-content: space-around;*/
+}
+.wrap__content_left {
+	padding: 0 196px 70px 60px;
+	background-color: #fff;
+	position: relative;
+}
+.brands__content {
+	padding-top: 90px;
+}
+.brands__img {
+	position: absolute;
+}
+.brands__title {
+	margin-top: 120px;
+}
+.brands__text {
+	margin: 35px 0;
+	width: 325px;
+}
+.brands__milkImg {
+	position: absolute;
+	top: 15%;
+	right: -15%;
+}
+/*products*/
+.products__item_content {
+	width: 330px;
+	/*position: relative;*/
+	background-color: lightgray;
+/*	display: flex;
+	flex-direction: column;
+	vertical-align: middle;*/
+}
+.products__img {
+	/*position: absolute;*/
+	/*width: 100%;
+	height: 100%;*/
+	display: block;
+	margin: 50px auto 50px auto;
+	/*margin-left: 33%;*/
+}
+.products__discription {
+	margin-top: 30px;
+	display: block;
+	/*width: 100%;*/
+	text-align: center;
+	font-weight: bold;
+}
+/*news*/
+.news__content {
+	margin-top: 3%;
+}
+.news__img1 {
+	background-image: url(../img/news/news_1.png);
+}
+.news__img2 {
+	background-image: url(../img/news/news_2.png);
+}
+.news__img3 {
+	background-image: url(../img/news/news_3.png);
+}
+.news__img {
+	width: 330px;
+	height: 280px;
+	background-position: 50% 25%;
+	border-radius: 5%;
+  box-shadow: 0px 8px 40px 0px #858585;
+}
+.news__link {
+	text-transform: uppercase;
+	font-family: Akrobat_Black;
+	font-size: 12px;
 }

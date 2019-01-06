@@ -3,6 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Молочное царство</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/products/product_2.png">
 <!-- bootstrap-css -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap-grid.min.css" rel="stylesheet">
@@ -14,12 +16,10 @@
 	<link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-	<div class="row col-md-auto">
-<!-- Сайдбар -->
-		<aside class="sidebar col-md-2">
+		<aside class="sidebar">
 			<div class="sidebar__content">
 				<div class="sidebar__heading">
-					<img class="sidebar__heading_logo" src="img/logo.png" alt="logo">
+					<a href="#"><img class="sidebar__heading_logo" src="img/logo.png" alt="logo"></a>
 			<!-- Длинное тире - Alt+0151 -->
 					<p class="sidebar__heading_text">Современные технологии — <br>стабильное качество</p>
 				</div>
@@ -37,16 +37,18 @@
  				<a class="sidebar__question" href="#">Задать вопрос</a>
 			</div>
 		</aside>
+	<div class="row col-md-auto">
+<!-- Сайдбар -->
 <!-- Контент -->
 		<section class="col-md-auto content">
-			<div class="header">
-				<img class="header__mainImg" src="img/main_milk.jpg" alt="main_milk">
+			<div class="col-md-12 header">
+				<!-- <img class="header__mainImg" src="img/main_milk.jpg" alt="main_milk"> -->
 				<h1 class="header__title">Молочные продукты <br>из российской глубинки</h1>
 				<a class="header__link" href="#">Узнайте как мы производим такую полезную и вкусную продукцию</a>
 			</div>
 <!-- Рецепты -->
-			<article class="recipes">
-				<h3 class="recipes__title">Рецепты<a class="recipes__title_link" href="">Смотреть все рецепты</a></h3>
+			<article class="recipes article">
+				<h2 class="article__title">Рецепты<a class="article__title_link" href="">Смотреть все рецепты</a></h2>
 			  <div class="wrap__slider">
 			  	<div class="directions__slider">
 			  		<div class="directions__slider_block">
@@ -84,20 +86,121 @@
           <label for="Next" class="directions__slider_next">→</label>
 			  </div>
 			</article>
-	<!-- Производство -->
+<!-- Производство -->
 			<article class="production">
 				<div class="production__content">
 					<h2 class="production__title">Производство</h2>
 					<h3 class="production__subtitle">Подзаголовок</h3>
 					<p class="production__text">На производстве молока сельскохозяйственными предприятиями оказывают существенное влияние тенденции развития сельского хозяйства. Основной частью производимого молока составляет коровье - это 90% от всего общего объёма.</p>
 					<p class="production__text">Разнообразный и богатый опыт сложившаяся структура организации требует от нас анализа новых предложений. Не следует, однако забывать, что начало повседневной работы по формированию позиции в значительной степени обуславливает создание соответствующих условий.</p>
+ 					<button type="button" class="production__button">Подробнее о произодстве</button>
 				</div>
 			</article>
+<!-- brands -->
+			<article class="row brands">
+				<div class="wrap__content_left col-md-6">
+					<div class="brands__content brands__content_left">
+						<img class="brands__img" src="img/logo.png" alt="img">
+						<h3 class="brands__title">Молочное царство</h3>
+						<p class="brands__text">С другой стороны укрепление и развитие <br>структуры требуют определения и уточнения модели развития. Равным образом новая модель организационной деятельности способствует подготовки и реализации существенных финансовых и административных условий. </p>
+						<p class="brands__text">Равным образом постоянный количественный рост <br>и сфера нашей активности требуют определения <br>и уточнения форм развития.</p>
+						<a href="#">Подробнее о бренде</a>
+						<img class="brands__milkImg" src="img/brands/brands_milk.png" alt="img">
+					</div>
+				</div>
+				<div class="brands__content brands__content_right  col-md-3 col-md-offset-2">
+					<img class="brands__img" src="img/brands/Torzhok_gerb.png" alt="img">
+					<h3 class="brands__title">Торжок</h3>
+					<p class="brands__text">С другой стороны укрепление и развитие <br>структуры требуют определения и уточнения модели развития. Равным образом новая модель организационной деятельности способствует подготовки и реализации существенных финансовых и административных условий. </p>
+					<p class="brands__text">Равным образом постоянный количественный рост <br>и сфера нашей активности требуют определения <br>и уточнения форм развития.</p>
+					<a href="#">Подробнее о бренде</a>
+				</div>
+			</article>
+<!-- products -->
+			<article class="row article products">
+				<div class="products__wrap">
+					<h2 class="article__title">Продукция<a class="article__title_link" href="">Перейти в каталог</a></h2>
+					<div class="col-md-12">
+						<div class="products__item col-md-4">
+							<div class="products__item_content">
+								<img class="products__img" src="img/products/product_11.png" alt="img">
+								<a href="#" class="products__discription">Молоко</a>
+							</div>
+						</div>
+						<div class="products__item col-md-4">
+							<div class="products__item_content">
+								<img class="products__img" src="img/products/product_2.png" alt="img">
+								<a href="#" class="products__discription">Кефир</a>
+							</div>
+						</div>
+						<div class="products__item col-md-4">
+							<div class="products__item_content">
+								<img class="products__img" src="img/products/product_3.png" alt="img">
+								<a href="#" class="products__discription">Сметана</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="products__item col-md-4">
+							<div class="products__item_content">
+								<img class="products__img" src="img/products/product_4.png" alt="img">
+								<a href="#" class="products__discription">Творог</a>
+							</div>
+						</div>
+						<div class="products__item col-md-4">
+							<div class="products__item_content">
+								<img class="products__img" src="img/products/product_5.png" alt="img">
+								<a href="#" class="products__discription">Масло</a>
+							</div>
+						</div>
+						<div class="products__item col-md-4">
+							<div class="products__item_content">
+								<img class="products__img" src="img/products/product_6.png" alt="img">
+								<a href="#" class="products__discription">Ряженка</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="products__item col-md-4">
+							<div class="products__item_content">
+								<img class="products__img" src="img/products/product_7.png" alt="img">
+								<a href="#" class="products__discription">Йогурт</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+<!-- news -->
+			<article class="news article">
+				<h2 class="article__title">Новости<a href="#" class="article__title_link">Все новости</a></h2>
+				<div class="news__wrap">
+					<div class="col-md-4 news__content">
+						<div class="news__img news__img1"></div>
+						<h3>Заголовок новости</h3>
+						<p>Консультация с широким активом играет важную роль в формировании направлений прогрессивного развития.</p>
+						<a class="news__link" href="#">Подробнее</a>
+					</div>
+					<div class="col-md-4 news__content">
+						<div class="news__img news__img2"></div>
+						<h3>Заголовок новости</h3>
+						<p>Консультация с широким активом играет важную роль в формировании направлений прогрессивного развития.</p>
+						<a class="news__link" href="#">Подробнее</a>
+					</div>
+					<div class="col-md-4 news__content">
+						<div class="news__img news__img3"></div>
+						<h3>Заголовок новости</h3>
+						<p>Консультация с широким активом играет важную роль в формировании направлений прогрессивного развития.</p>
+						<a class="news__link" href="#">Подробнее</a>
+					</div>
+				</div>
+			</article>
+
 		</section>
 
 	</div>
 
-
+<!-- 330/280 -->
+<!-- p - m35-0 -->
 
 <!-- sidebar - 186(126) from 1360 -->
 <!-- slider heading - mt 90 mr 40 mb 60 // slider - 330/455 // m - 60/30 around // ar 46 mt 50 m30 -->

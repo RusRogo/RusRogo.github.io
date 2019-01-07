@@ -74,7 +74,7 @@ h3 {
 }
 .sidebar__menu_link {
 	display: block;
-	margin-bottom: 15px;
+	margin-bottom: 5px;
 	text-align: center;
 	font-weight: bold;
 }
@@ -87,17 +87,17 @@ h3 {
 	padding: 10px 0;
 	width: 100%;
 	background-color: #059;
-	border-radius: 25px;
+	border-radius: 20px;
 	color: #DFF;
 }
 .sidebar__button:hover {
-	background-color: green;
-	color: #000;
+	background-color: #036;
+	/*color: #000;*/
 	transition: 0.3s all;
 }
 .sidebar__question {
 	display: block;
-	margin-top: 100px;
+	margin-top: 10px;
 	text-transform: uppercase;
 	font-weight: bold;
 	text-align: center;
@@ -162,7 +162,8 @@ h3 {
 .wrap__slider {
 	margin: 0 auto;
 	margin-top: 60px;
-	width: 1055px;
+	/*width: 1055px;*/
+	width: 300px;
 	position: relative;
 }
 .directions__slider {
@@ -170,7 +171,8 @@ h3 {
 }
 .directions__slider_block {
 	position: relative;
-	height: 442px;
+	/*height: 442px;*/
+	height: 95px;
 	margin: 0 15px;
 	background-color: #fff;
 	border-radius: 12px;
@@ -331,51 +333,6 @@ h3 {
 }
 /*media*/
 @media (min-width: 320px) and (max-width: 768px) {
-/*content*/
-	.content {
-		margin-top: 200px;
-	}
-/*sidebar*/
-	.sidebar {
-		z-index: 2;
-		/*position: fixed;*/
-		width: 100%;
-		height: auto;
-		min-height: 90px;
-		background-color: lightgray;
-		padding: 10px;
-		outline: 1px solid blue;
-	}
-	.sidebar__content {
-		width: 100%;
-		display: flex;
-		flex-flow: row nowrap;
-/*		padding: 0;
-		margin: 0;*/
-	}
-	.sidebar__heading {
-/*		margin: 0;
-		padding: 0;*/
-		position: absolute;
-		top: 0;
-		width: auto;
-		height: auto;
-		display: flex;
-		flex-flow: row nowrap;
-		border-bottom: none;
-	}
-	.sidebar__heading_text {
-		margin-top: 30px;
-	}
-	.sidebar__menu {
-		display: flex;
-		flex-flow: row;
-	}
-.sidebar__menu_link {
-	padding: 0;
-	display: block;
-	width: 100px;
-}
 /*ds*/
 .top__nav {
   display: -webkit-box;
@@ -420,32 +377,126 @@ h3 {
   .top__nav_menu li a:hover {
     color: #111;
   }
-/*My new styles*/
-.wrap__nav {
-	position: relative;
-}
-.navbar {
-	width: 300px;
-}
-.navbar-toggler {
+/*old yellow*/
+/*content*/
+	.content {
+		margin-top: 150px;
+	}
+/*sidebar*/
+	.sidebar {
+		z-index: 2;
+		/*position: fixed;*/
+		width: 100%;
+		height: auto;
+		min-height: 100px;
+		background-color: #EEE;
+		padding: 10px;
+		outline: 1px solid blue;
+	}
+	.sidebar__content {
+		width: 100%;
+/*		display: block;
+		flex-flow: row nowrap;*/
+/*		padding: 0;
+		margin: 0;*/
+	}
+	.sidebar__heading {
+/*		margin: 0;
+		padding: 0;*/
+		position: absolute;
+		top: 0;
+		width: auto;
+		height: auto;
+		display: flex;
+		flex-flow: row nowrap;
+		border-bottom: none;
+	}
+	.sidebar__heading_text {
+		margin-top: 30px;
+	}
+	.sidebar__menu {
+		display: flex;
+		flex-flow: column;
+	}
+.sidebar__menu_link {
+	padding: 0;
 	display: block;
-	position: fixed;
-	top: 20px;
-	right: 10px;
+	width: 100px;
 }
-.navbar-toggler:focus {
-  outline: none;
-}
-.top__nav_menu {
-	margin-top: 80px;
-}
-.top__nav_menu li {
-	/*margin: 0;*/
-	margin-top: 10px;
-}
+/*My new styles yellow*/
+	.wrap__nav {
+		position: relative;
+	}
+	.navbar {
+		width: 300px;
+		/*margin-bottom: 10px;*/
+	}
+	.navbar-toggler {
+		display: block;
+		position: fixed;
+		top: 20px;
+		right: 10px;
+	}
+	.navbar-toggler:focus,
+	.sidebar__button:focus {
+	  outline: none;
+	}
+	.top__nav_menu {
+		margin-top: 80px;
+	}
+	.top__nav_menu li {
+		/*margin: 0;*/
+		margin-top: 5px;
+	}
+	.sidebar__button {
+		width: 100px;
+		margin: 15px;
+		margin-left: 25px;
+		margin: 15px 20px 0 25px;
+	}
+	.sidebar__question {
+		display: inline;
+		margin: 25px;
+		margin-left: 0;
+		text-align: left;
+	}
+	/*row*/
+	.row {
+		padding-left: 0;
+	}
+	/*header*/
+	.header {
+		height: auto;
+		background-position: 70% bottom;
+	}
+	.header__title {
+		padding: 5%;
+	}
+	.header__link {
+		padding-left: 10%;
+		/*padding-top: 0;*/
+		margin-top: 0;
+		font-family: Myriad Pro, sans-serif;
+		font-size: 18px;
+		color: #003256;
+	}
+	/*content*/
+	.article {
+		padding: 5%;
+		margin-top: 15%;
+	}
 }
 
 @media screen and (min-width: 768px) {
+	.collapse {
+		margin: 0;
+		padding: 0;
+	}
+	.navbar {
+		/*width: 300px;*/
+		flex-flow: column;
+		/*margin-bottom: 10px;*/
+	}
 	.navbar-toggler {
 	display: none;
 	}

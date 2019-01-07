@@ -284,7 +284,6 @@ h3 {
 /*products*/
 .products__item_content {
 	width: 330px;
-	/*position: relative;*/
 	background-color: lightgray;
 /*	display: flex;
 	flex-direction: column;
@@ -330,3 +329,125 @@ h3 {
 	font-family: Akrobat_Black;
 	font-size: 12px;
 }
+/*media*/
+@media (min-width: 320px) and (max-width: 768px) {
+/*content*/
+	.content {
+		margin-top: 200px;
+	}
+/*sidebar*/
+	.sidebar {
+		z-index: 2;
+		/*position: fixed;*/
+		width: 100%;
+		height: auto;
+		min-height: 90px;
+		background-color: lightgray;
+		padding: 10px;
+		outline: 1px solid blue;
+	}
+	.sidebar__content {
+		width: 100%;
+		display: flex;
+		flex-flow: row nowrap;
+/*		padding: 0;
+		margin: 0;*/
+	}
+	.sidebar__heading {
+/*		margin: 0;
+		padding: 0;*/
+		position: absolute;
+		top: 0;
+		width: auto;
+		height: auto;
+		display: flex;
+		flex-flow: row nowrap;
+		border-bottom: none;
+	}
+	.sidebar__heading_text {
+		margin-top: 30px;
+	}
+	.sidebar__menu {
+		display: flex;
+		flex-flow: row;
+	}
+.sidebar__menu_link {
+	padding: 0;
+	display: block;
+	width: 100px;
+}
+/*ds*/
+.top__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*background-color: #FFFFFF;*/
+  padding: 15px 0;
+}
+.top__nav_menu {
+  list-style: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.top__nav_menu li {
+  margin-right: 35px;
+}
+.top__nav_menu li a {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+}
+.top__nav_menu li a:hover {
+  color: #007DD1;
+  background-color: #FFFFFF;
+}
+/*min-320px*/
+.top__nav_menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 23px;
+  }
+  .top__nav_menu li a {
+    margin: 0;
+    width: 100px;
+    font-size: 16px;
+    color: #007DD1;
+  }
+  .top__nav_menu li a:hover {
+    color: #111;
+  }
+/*My new styles*/
+.wrap__nav {
+	position: relative;
+}
+.navbar {
+	width: 300px;
+}
+.navbar-toggler {
+	display: block;
+	position: fixed;
+	top: 20px;
+	right: 10px;
+}
+.navbar-toggler:focus {
+  outline: none;
+}
+.top__nav_menu {
+	margin-top: 80px;
+}
+.top__nav_menu li {
+	/*margin: 0;*/
+	margin-top: 10px;
+}
+}
+
+@media screen and (min-width: 768px) {
+	.navbar-toggler {
+	display: none;
+	}
+}
+/*@media screen and (min-width: 992px)*/

@@ -6,24 +6,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="img/products/product_2.png">
 <!-- bootstrap-css -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap-grid.min.css" rel="stylesheet">
 <!-- slick -->
-	<!-- <link rel="stylesheet" href="slick/slick-theme.css"> -->
 	<link rel="stylesheet" href="slick/slick.css">
 <!-- My styles -->
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
+<!-- Сайдбар -->
 		<aside class="sidebar">
 			<div class="sidebar__content">
-				<div class="sidebar__heading">
-					<a href="#"><img class="sidebar__heading_logo" src="img/logo.png" alt="logo"></a>
-			<!-- Длинное тире - Alt+0151 -->
-					<p class="sidebar__heading_text">Современные технологии — <br>стабильное качество</p>
-				</div>
-				<nav>
+
+<!-- ds green -->
+	<div class="top-nav">
+		<div class="justify-content-between align-items-center">
+
+			<div class="wrap__nav">
+				<nav class="navbar navbar-expand-lg navbar-light">
+
+					<div class="sidebar__heading">
+						<a href="#"><img class="sidebar__heading_logo" src="img/logo.png" alt="logo"></a>
+				<!-- Длинное тире - Alt+0151 -->
+						<p class="sidebar__heading_text">Современные технологии — <br>стабильное качество</p>
+					</div>
+
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				    <span class="navbar-toggler-icon"></span>
+				  </button>
+<!-- 			</div> -->
+				  <div class="collapse navbar-collapse" id="navbar">
+							<ul class="sidebar__menu top__nav_menu">
+								<li><a class="dropdown-item sidebar__menu_link" href="#">Где купить</a></li>
+								<li><a class="dropdown-item sidebar__menu_link" href="#">Производство</a></li>
+								<li><a class="dropdown-item sidebar__menu_link" href="#">Продукция</a></li>
+								<li><a class="dropdown-item sidebar__menu_link" href="#">Новости</a></li>
+								<li><a class="dropdown-item sidebar__menu_link" href="#">Документы</a></li>
+								<li><a class="dropdown-item sidebar__menu_link" href="#">Контакты</a></li>
+							</ul>
+						</div>
+
+				</nav>
+			</div>
+		</div>
+	</div>
+
+<!-- 				<nav>
 					<ul class="sidebar__menu">
 						<li><a class="sidebar__menu_link" href="#">Где купить</a></li>
 						<li><a class="sidebar__menu_link" href="#">Производство</a></li>
@@ -32,22 +62,22 @@
 						<li><a class="sidebar__menu_link" href="#">Документы</a></li>
 						<li><a class="sidebar__menu_link" href="#">Контакты</a></li>
 					</ul>
-				</nav>
- 				<button type="button" class="sidebar__button">РЕЦЕПТЫ</button>
- 				<a class="sidebar__question" href="#">Задать вопрос</a>
+				</nav> -->
+
+<!--  				<button type="button" class="sidebar__button">РЕЦЕПТЫ</button>
+ 				<a class="sidebar__question" href="#">Задать вопрос</a> -->
 			</div>
 		</aside>
+
 	<div class="row col-md-auto">
-<!-- Сайдбар -->
 <!-- Контент -->
 		<section class="col-md-auto content">
-			<div class="col-md-12 header">
-				<!-- <img class="header__mainImg" src="img/main_milk.jpg" alt="main_milk"> -->
+<!-- 			<div class="col-md-12 header">
 				<h1 class="header__title">Молочные продукты <br>из российской глубинки</h1>
 				<a class="header__link" href="#">Узнайте как мы производим такую полезную и вкусную продукцию</a>
-			</div>
+			</div> -->
 <!-- Рецепты -->
-			<article class="recipes article">
+			<!-- <article class="recipes article">
 				<h2 class="article__title">Рецепты<a class="article__title_link" href="">Смотреть все рецепты</a></h2>
 			  <div class="wrap__slider">
 			  	<div class="directions__slider">
@@ -85,9 +115,9 @@
           <label for="Previous" class="directions__slider_prev">←</label>
           <label for="Next" class="directions__slider_next">→</label>
 			  </div>
-			</article>
+			</article> -->
 <!-- Производство -->
-			<article class="production">
+			<!-- <article class="production">
 				<div class="production__content">
 					<h2 class="production__title">Производство</h2>
 					<h3 class="production__subtitle">Подзаголовок</h3>
@@ -95,9 +125,9 @@
 					<p class="production__text">Разнообразный и богатый опыт сложившаяся структура организации требует от нас анализа новых предложений. Не следует, однако забывать, что начало повседневной работы по формированию позиции в значительной степени обуславливает создание соответствующих условий.</p>
  					<button type="button" class="production__button">Подробнее о произодстве</button>
 				</div>
-			</article>
+			</article> -->
 <!-- brands -->
-			<article class="row brands">
+			<!-- <article class="row brands">
 				<div class="wrap__content_left col-md-6">
 					<div class="brands__content brands__content_left">
 						<img class="brands__img" src="img/logo.png" alt="img">
@@ -115,9 +145,9 @@
 					<p class="brands__text">Равным образом постоянный количественный рост <br>и сфера нашей активности требуют определения <br>и уточнения форм развития.</p>
 					<a href="#">Подробнее о бренде</a>
 				</div>
-			</article>
+			</article> -->
 <!-- products -->
-			<article class="row article products">
+			<!-- <article class="row article products">
 				<div class="products__wrap">
 					<h2 class="article__title">Продукция<a class="article__title_link" href="">Перейти в каталог</a></h2>
 					<div class="col-md-12">
@@ -169,9 +199,9 @@
 						</div>
 					</div>
 				</div>
-			</article>
+			</article> -->
 <!-- news -->
-			<article class="news article">
+			<!-- <article class="news article">
 				<h2 class="article__title">Новости<a href="#" class="article__title_link">Все новости</a></h2>
 				<div class="news__wrap">
 					<div class="col-md-4 news__content">
@@ -193,7 +223,7 @@
 						<a class="news__link" href="#">Подробнее</a>
 					</div>
 				</div>
-			</article>
+			</article> -->
 
 		</section>
 

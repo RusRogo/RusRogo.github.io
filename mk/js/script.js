@@ -6,7 +6,7 @@ $('.directions__slider').slick({
   autoplaySpeed: 2500,
   responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 1340,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1

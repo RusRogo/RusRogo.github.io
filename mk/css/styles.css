@@ -16,13 +16,13 @@
 	font-family: Constantia;
 	src: url(../fonts/constantia.ttf);
 }
-html {
-}
 body {
-	background-color: #F6F5F2;
+	background-color: #F6F2EF;
 	font-family: Akrobat_Regular;
 	font-size: 16px;
 	color: #707070;
+	user-select: none;
+	-webkit-user-select: none;
 }
 h2 {
 	font-family: Constantia;
@@ -52,7 +52,7 @@ button:focus {
 	position: fixed;
 	padding: 30px;
 	height: 100%;
-	background-color: lightgray;
+	background-color: #fff;
 }
 .sidebar__content {
 	/*outline: 1px solid blue;*/
@@ -72,7 +72,7 @@ button:focus {
 }
 /*sidebar__menu*/
 .sidebar__menu {
-	margin-top: 50px;
+	margin-top: 90px;
 	padding: 0;
 	list-style: none;
 }
@@ -121,7 +121,7 @@ button:focus {
 	z-index: 1;
 	position: relative;
 	/*display: flex;*/
-	background: url(../img/main_milk.jpg) no-repeat right;
+	background: url(../img/main_milk.jpg) no-repeat top;
 	/*-webkit-background-size: cover;*/
 	/*background-size: cover;*/
 }
@@ -265,7 +265,7 @@ button:focus {
 	/*justify-content: space-around;*/
 }
 .brands__title {
-	margin: 40px 86px;
+	margin: 40px 60px;
 	width: 100%;
 }
 .wrap__content_left {
@@ -331,59 +331,24 @@ button:focus {
 }
 /*media yellow*/
 @media (min-width: 320px) and (max-width: 767px) {
-/*ds*/
-/*.top__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 15px 0;
-}*/
-/*.top__nav_menu {
-  list-style: none;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}*/
-/*.top__nav_menu li {
-  margin-right: 35px;
-}*/
-/*.top__nav_menu li a {
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 700;
-}*/
-/*.top__nav_menu li a:hover {
-  color: #007DD1;
-}*/
-/*min-320px*/
-/*.top__nav_menu {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-top: 23px;
-  }*/
-/*  .top__nav_menu li a {
-    margin: 0;
-    width: 100px;
-    font-size: 16px;
-    color: #007DD1;
-  }*/
-/*  .top__nav_menu li a:hover {
-    color: #111;
-  }*/
-/*old blue*/
+body {
+	font-size: 14px;
+}
+h2 {
+	font-size: 28px;
+}
+h3 {
+	font-size: 20px;
+}
 /*content*/
 	.content {
-		margin-top: 140px;
+		margin-top: 160px;
 	}
 /*sidebar*/
 	.sidebar {
 		width: 100%;
 		height: auto;
 		min-height: 100px;
-		background-color: #EEE;
 		padding: 10px;
 	}
 	.sidebar__content {
@@ -415,7 +380,10 @@ button:focus {
 		/*position: relative;*/
 	}
 	.navbar {
-		/*width: 300px;*/
+		min-height: 85px;
+		margin: 0;
+		/*margin-top: 0px;*/
+		/*margin-bottom: 0;*/
 	}
 	.navbar-toggler {
 		display: block;
@@ -423,18 +391,12 @@ button:focus {
 		top: 20px;
 		right: 10px;
 	}
-	.top__nav_menu {
+/*	.top__nav_menu {
 		margin-top: 90px;
-	}
-	.top__nav_menu li {
-		/*margin: 0;*/
-		/*margin-top: 5px;*/
-	}
+	}*/
 	.sidebar__button {
 		width: 100px;
-		margin: 15px;
-		margin-left: 25px;
-		margin: 15px 20px 0 25px;
+		margin: 0 20px 0 25px;
 	}
 	.sidebar__question {
 		display: inline;
@@ -449,10 +411,12 @@ button:focus {
 	/*header*/
 	.header {
 		height: 300px;
-		background-position: 20%;
+		background-image: none;
+		/*background-position: 17%;*/
 	}
 	.header__title {
 		padding: 5%;
+		font-size: 34px;
 	}
 	.header__link {
 		padding-left: 10%;
@@ -469,6 +433,9 @@ button:focus {
 		padding: 5%;
 		padding-top: 0;
 		margin-top: 20px;
+		margin-bottom: 8%;
+	}
+	.article__title {
 		margin-bottom: 8%;
 	}
 	.article__title_link {
@@ -566,6 +533,17 @@ button:focus {
 .products__discription {
 	margin-top: 0;
 }
+/*news*/
+.news__content {
+	margin: 0 auto;
+	margin-top: 6%;
+	width: 280px;
+}
+.news__img {
+	width: 264px;
+	height: 224px;
+  box-shadow: 0px 4px 20px 0px #858585;
+}
 }
 /*End of (max-width: 768px) yellow*/
 
@@ -575,7 +553,6 @@ button:focus {
 		padding: 0;
 	}
 	.navbar {
-		/*width: 300px;*/
 		flex-flow: column;
 		/*margin-bottom: 10px;*/
 	}
@@ -618,7 +595,7 @@ button:focus {
 	background: url(../img/slider_recipes/recipe_2.png) no-repeat right;
 }
 .production__content {
-	margin-left: 20px;
+	margin-left: 60px;
 }
 .production__subtitle {
 	margin: 15px 0 15px 0;
@@ -651,32 +628,32 @@ button:focus {
 .products__item {
 	margin: 0 auto;
 }
-.products__img {
-	margin: 20px auto;
-	margin-bottom: 10px;
-}
-.products__discription {
-	margin-top: 0;
-}
-
-/*.products {
-	display: flex;
-	flex-direction: row;
-}
 .products__item_content {
-	width: 100%;
-}
-.products__item {
-	margin: 0 auto;
+	width: 250px;
 }
 .products__img {
 	margin: 20px auto;
 	margin-bottom: 10px;
 }
 .products__discription {
-	width: 100%;
 	margin-top: 0;
-}*/
+}
+/*news*/
+.news__content {
+	margin: 0 auto;
+	margin-top: 8%;
+	margin-right: 60px;
+	width: 280px;
+	/*width: 100%;*/
+}
+.news__img {
+	width: 264px;
+	height: 224px;
+  box-shadow: 0px 4px 20px 0px #858585;
+}
+.news__content_text {
+	width: 100%;
+}
 }
 @media screen and (min-width: 1340px) {
 

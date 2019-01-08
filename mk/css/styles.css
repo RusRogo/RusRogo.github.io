@@ -34,6 +34,12 @@ h3 {
 	font-size: 24px;
 	color: #4c4c4c;
 }
+button {
+	border: none;
+}
+button:focus {
+  outline: none;
+}
 .row {
 	z-index: 1;
 	margin: 0;
@@ -87,12 +93,13 @@ h3 {
 	padding: 10px 0;
 	width: 100%;
 	background-color: #059;
-	border-radius: 20px;
+	border-radius: 50px;
 	color: #DFF;
 }
+.production__button:hover,
 .sidebar__button:hover {
 	background-color: #036;
-	/*color: #000;*/
+	color: #fff;
 	transition: 0.3s all;
 }
 .sidebar__question {
@@ -250,7 +257,7 @@ h3 {
 	padding: 10px 15px;
 	/*width: 100px;*/
 	background-color: #059;
-	border-radius: 25px;
+	border-radius: 50px;
 	color: #DFF;
 }
 /*brands*/
@@ -264,7 +271,7 @@ h3 {
 	width: 100%;
 }
 .wrap__content_left {
-	padding: 0 196px 70px 60px;
+	padding: 0 186px 70px 60px;
 	background-color: #fff;
 	position: relative;
 }
@@ -279,7 +286,6 @@ h3 {
 }
 .brands__text {
 	margin: 35px 0;
-	width: 90%;
 }
 .brands__milkImg {
 	position: absolute;
@@ -289,23 +295,14 @@ h3 {
 /*products*/
 .products__item_content {
 	width: 330px;
-	/*background-color: lightgray;*/
-/*	display: flex;
-	flex-direction: column;
-	vertical-align: middle;*/
 }
 .products__img {
-	/*position: absolute;*/
-	/*width: 100%;
-	height: 100%;*/
 	display: block;
-	margin: 50px auto 50px auto;
-	/*margin-left: 33%;*/
+	margin: 50px auto
 }
 .products__discription {
 	margin-top: 30px;
 	display: block;
-	/*width: 100%;*/
 	text-align: center;
 	font-weight: bold;
 }
@@ -439,10 +436,6 @@ h3 {
 		top: 20px;
 		right: 10px;
 	}
-	.navbar-toggler:focus,
-	.sidebar__button:focus {
-	  outline: none;
-	}
 	.top__nav_menu {
 		margin-top: 80px;
 	}
@@ -487,7 +480,8 @@ h3 {
 	/*content*/
 	.article {
 		padding: 5%;
-		margin-top: 15%;
+		padding-top: 0;
+		margin-top: 20px;
 		margin-bottom: 8%;
 	}
 	.article__title_link {
@@ -551,6 +545,7 @@ h3 {
 }
 .brands__title {
 	margin: 30px 20px;
+	margin-bottom: 10px;
 	width: 100%;
 }
 .wrap__content_left {
@@ -566,11 +561,21 @@ h3 {
 	margin-top: 10px;
 }
 .brands__text {
-	margin: 35px 0;
-	width: auto;
+	width: 90%;
 }
 .brands__milkImg {
 	display: none;
+}
+/*products*/
+.products__item {
+	margin: 0 auto;
+}
+.products__img {
+	margin: 20px auto;
+	margin-bottom: 10px;
+}
+.products__discription {
+	margin-top: 0;
 }
 }
 /*End of (max-width: 768px) yellow*/
@@ -632,7 +637,53 @@ h3 {
 .production__text:nth-of-type(2) {
 	width: 53%;
 }
+/*brands*/
+.brands__title {
+	margin-bottom: 20px;
+}
+.wrap__content_left {
+	padding: 0 0 30px 60px;
+}
+.brands__content {
+	padding: 30px;
+}
+.brands__text {
+	width: 95%;
+}
 .brands__milkImg {
 	display: none;
 }
+/*products*/
+.products__item {
+	margin: 0 auto;
+}
+.products__img {
+	margin: 20px auto;
+	margin-bottom: 10px;
+}
+.products__discription {
+	margin-top: 0;
+}
+
+/*.products {
+	display: flex;
+	flex-direction: row;
+}
+.products__item_content {
+	width: 100%;
+}
+.products__item {
+	margin: 0 auto;
+}
+.products__img {
+	margin: 20px auto;
+	margin-bottom: 10px;
+}
+.products__discription {
+	width: 100%;
+	margin-top: 0;
+}*/
+}
+@media screen and (min-width: 1340px) {
+
 }

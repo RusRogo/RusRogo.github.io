@@ -34,7 +34,7 @@
 				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				    <span class="navbar-toggler-icon"></span>
 				  </button>
-<!-- 			</div> -->
+
 				  <div class="collapse navbar-collapse" id="navbar">
 							<ul class="sidebar__menu top__nav_menu">
 								<li><a class="dropdown-item sidebar__menu_link" href="#">Где купить</a></li>
@@ -59,10 +59,10 @@
 	<div class="row col-md-auto">
 <!-- Контент -->
 		<section class="col-md-auto content">
-			<div class="col-md-12 header">
+			<header class="col-md-12 header">
 				<h1 class="header__title">Молочные продукты <br>из российской глубинки</h1>
 				<a class="header__link" href="#">Узнайте как мы производим такую полезную и вкусную продукцию</a>
-			</div>
+			</header>
 <!-- Рецепты -->
 			<article class="recipes article">
 				<h2 class="article__title">Рецепты<a class="article__title_link" href="">Смотреть все рецепты</a></h2>
@@ -113,7 +113,7 @@
  					<button type="button" class="production__button">Подробнее о произодстве</button>
 				</div>
 			</article>
-<!-- brands -->
+<!-- Бренды -->
 			<article class="row brands">
 					<h2 class="brands__title">Бренды</h2>
 				<div class="wrap__content_left col-sm-12 col-md-12 col-lg-5">
@@ -134,24 +134,24 @@
 					<a href="#">Подробнее о бренде</a>
 				</div>
 			</article>
-<!-- products -->
+<!-- Продукция -->
 			<article class="row article">
 				<div class="products__wrap">
 					<h2 class="article__title">Продукция<a class="article__title_link" href="">Перейти в каталог</a></h2>
-					<div class="col-md-12 products">
-						<div class="products__item col-md-4">
+					<div class="col-sm-12 products">
+						<div class="products__item col-sm-auto col-md-4">
 							<div class="products__item_content">
 								<img class="products__img" src="img/products/product_11.png" alt="img">
 								<a href="#" class="products__discription">Молоко</a>
 							</div>
 						</div>
-						<div class="products__item col-md-4">
+						<div class="products__item col-sm-auto col-md-4">
 							<div class="products__item_content">
 								<img class="products__img" src="img/products/product_2.png" alt="img">
 								<a href="#" class="products__discription">Кефир</a>
 							</div>
 						</div>
-						<div class="products__item col-md-4">
+						<div class="products__item col-sm-auto col-md-4">
 							<div class="products__item_content">
 								<img class="products__img" src="img/products/product_3.png" alt="img">
 								<a href="#" class="products__discription">Сметана</a>
@@ -159,27 +159,27 @@
 						</div>
 					</div>
 					<div class="col-md-12">
-						<div class="products__item col-md-4">
+						<div class="products__item col-sm-auto col-md-4">
 							<div class="products__item_content">
 								<img class="products__img" src="img/products/product_4.png" alt="img">
 								<a href="#" class="products__discription">Творог</a>
 							</div>
 						</div>
-						<div class="products__item col-md-4">
+						<div class="products__item col-sm-auto col-md-4">
 							<div class="products__item_content">
 								<img class="products__img" src="img/products/product_5.png" alt="img">
 								<a href="#" class="products__discription">Масло</a>
 							</div>
 						</div>
-						<div class="products__item col-md-4">
+						<div class="products__item col-sm-auto col-md-4">
 							<div class="products__item_content">
 								<img class="products__img" src="img/products/product_6.png" alt="img">
 								<a href="#" class="products__discription">Ряженка</a>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
-						<div class="products__item col-md-4">
+					<div class="col-md-12">
+						<div class="products__item col-sm-auto col-md-4">
 							<div class="products__item_content">
 								<img class="products__img" src="img/products/product_7.png" alt="img">
 								<a href="#" class="products__discription">Йогурт</a>
@@ -188,7 +188,7 @@
 					</div>
 				</div>
 			</article>
-<!-- news -->
+<!-- Новости -->
 			<article class="news article">
 				<h2 class="article__title">Новости<a href="#" class="article__title_link">Все новости</a></h2>
 				<div class="news__wrap">
@@ -237,3 +237,16 @@
 						<li><a class="sidebar__menu_link" href="#">Контакты</a></li>
 					</ul>
 				</nav> -->
+
+<!-- 	green		/* Небольшой устройствах (планшеты, 768px и выше) */  
+@media (min-width: @screen-sm-min) { ... }
+
+/* Средние устройств (настольных компьютеров, 992px и выше) */  
+@media (min-width: @screen-md-min) { ... }
+
+/* Большие устройств (большие компьютеры, 1200px и выше) */  
+@media (min-width: @screen-lg-min) { ... } -->
+
+<!-- green Отступ -->
+<!-- <div class="col-md-4 col-md-offset-4">.col-md-4 .col-md-offset-4</div> -->
+

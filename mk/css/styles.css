@@ -289,7 +289,7 @@ h3 {
 /*products*/
 .products__item_content {
 	width: 330px;
-	background-color: lightgray;
+	/*background-color: lightgray;*/
 /*	display: flex;
 	flex-direction: column;
 	vertical-align: middle;*/

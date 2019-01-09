@@ -21,8 +21,8 @@ body {
 	font-family: Akrobat_Regular;
 	font-size: 16px;
 	color: #707070;
-	user-select: none;
-	-webkit-user-select: none;
+	user-select: text;
+	-webkit-user-select: text;
 }
 h2 {
 	font-family: Constantia;
@@ -83,7 +83,7 @@ button:focus {
 	font-weight: bold;
 }
 .sidebar__menu_link:hover {
-	color: #fff;
+	color: #07D;
 	text-decoration: none;
 	transition: 0.2s all;
 	background-color: inherit; 
@@ -159,9 +159,10 @@ button:focus {
 }
 .article__title {
 	margin-bottom: 0;
+	width: 100%;
 }
 .article__title_link {
-	margin-left: 20%;
+	margin-left: 50px;
 	font-size: 12px;
 	text-decoration: underline;
 }
@@ -230,16 +231,17 @@ button:focus {
 	transition: 0.3s all;
 }
 .map {
+	margin: 0 auto;
 	width: auto;
 	height: auto;
 }
 /*production*/
 .production {
+	margin-left: 60px;
 	height: 648px;
-	background: url(../img/production.png) no-repeat right;
 }
 .production__content {
-	margin-left: 60px;
+	background: url(../img/production.png) no-repeat right;
 }
 .production__subtitle {
 	margin: 55px 0 45px 0;
@@ -344,10 +346,6 @@ h2 {
 h3 {
 	font-size: 20px;
 }
-/*content*/
-	.content {
-		margin-top: 160px;
-	}
 /*sidebar*/
 	.sidebar {
 		width: 100%;
@@ -370,24 +368,9 @@ h3 {
 	.sidebar__heading_text {
 		margin-top: 30px;
 	}
-	.sidebar__menu {
-		/*display: flex;*/
-		/*flex-flow: column;*/
-	}
-.sidebar__menu_link {
-	padding: 0;
-	display: block;
-	width: 100px;
-}
-/*My new styles red*/
-	.wrap__nav {
-		/*position: relative;*/
-	}
 	.navbar {
 		min-height: 85px;
 		margin: 0;
-		/*margin-top: 0px;*/
-		/*margin-bottom: 0;*/
 	}
 	.navbar-toggler {
 		display: block;
@@ -395,6 +378,12 @@ h3 {
 		top: 20px;
 		right: 10px;
 	}
+	.sidebar__menu_link {
+		padding: 0;
+		display: block;
+		width: 100px;
+	}
+/*My new styles red*/
 /*	.top__nav_menu {
 		margin-top: 90px;
 	}*/
@@ -411,6 +400,24 @@ h3 {
 	/*row*/
 	.row {
 		padding-left: 0;
+	}
+	/*content*/
+	.content {
+		margin-top: 160px;
+	}
+	.article {
+		padding: 5%;
+		padding-top: 0;
+		margin-top: 20px;
+		margin-bottom: 8%;
+	}
+	.article__title {
+		margin-bottom: 8%;
+	}
+	.article__title_link {
+		margin-left: 30px;
+		font-size: 12px;
+		text-decoration: underline;
 	}
 	/*header*/
 	.header {
@@ -432,122 +439,112 @@ h3 {
 		font-size: 18px;
 		color: #003256;
 	}
-	/*content*/
-	.article {
-		padding: 5%;
-		padding-top: 0;
+	/*slider*/
+	.wrap__slider {
 		margin-top: 20px;
-		margin-bottom: 8%;
+		/*width: 1055px;*/
+		width: 300px;
 	}
-	.article__title {
-		margin-bottom: 8%;
+	.directions__slider {
+		margin-bottom: 10px;
 	}
-	.article__title_link {
-		margin-left: 10%;
-		font-size: 12px;
-		text-decoration: underline;
+	.directions__slider_block {
+		/*height: 442px;*/
+		height: 372px;
+		border-radius: 8px;
 	}
-/*slider*/
-.wrap__slider {
-	margin-top: 20px;
-	/*width: 1055px;*/
-	width: 300px;
-}
-.directions__slider {
-	margin-bottom: 10px;
-}
-.directions__slider_block {
-	/*height: 442px;*/
-	height: 372px;
-	border-radius: 8px;
-}
-.directions__slider_title {
-	margin: 15px 25px;
-	margin-top: 250px;
-	color: #005797;
-}
-/*стрелки*/
-.directions__slider_prev,
-.directions__slider_next {
-	bottom: -70px;
-	padding-top: .9%;
-	padding-left: 4%;
-	right: 75px;
-}
-.directions__slider_prev {
-	left: 75px;
-}
-/*production*/
-.production {
-	margin-top: 70px;
-	height: auto;
-	background: url(../img/slider_recipes/recipe_2.png) no-repeat right;
-	/*background-position: -1560%;*/
-}
-.production__content {
-	margin-left: 20px;
-}
-.production__subtitle {
-	margin: 15px 0 15px 0;
-}
-.production__text {
-	width: 90%;
-}
-.production__text:nth-of-type(2) {
-	width: 93%;
-}
-/*brands*/
-.brands {
-	padding-left: 0;
-	/*width: auto;*/
-}
-.brands__title {
-	margin: 30px 20px;
-	margin-bottom: 10px;
-	width: 100%;
-}
-.wrap__content_left {
-	padding: 0;
-	/*padding-left: 30px;*/
-}
-.brands__content {
-	padding: 20px;
-	padding-left: 20px;
-}
-.brands__img {
-	position: static;
-}
-.brands__subtitle {
-	margin-top: 10px;
-}
-.brands__text {
-	width: 90%;
-}
-.brands__milkImg {
-	display: none;
-}
-/*products*/
-.products__item {
-	margin: 0 auto;
-}
-.products__img {
-	margin: 20px auto;
-	margin-bottom: 10px;
-}
-.products__discription {
-	margin-top: 0;
-}
-/*news*/
-.news__content {
-	margin: 0 auto;
-	margin-top: 6%;
-	width: 280px;
-}
-.news__img {
-	width: 264px;
-	height: 224px;
-  box-shadow: 0px 4px 20px 0px #858585;
-}
+	.directions__slider_title {
+		margin: 15px 25px;
+		margin-top: 250px;
+		color: #005797;
+	}
+	/*стрелки*/
+	.directions__slider_prev,
+	.directions__slider_next {
+		bottom: -70px;
+		padding-top: .9%;
+		padding-left: 4%;
+		right: 75px;
+	}
+	.directions__slider_prev {
+		left: 75px;
+	}
+	/*map*/
+	.map {
+		margin-top: 30px;
+		width: 90%;
+	}
+	/*production*/
+	.production {
+		margin-top: 70px;
+		margin-left: 20px;
+		height: auto;
+		/*background-position: -1560%;*/
+	}
+	.production__content {
+		background: url(../img/slider_recipes/recipe_2.png) no-repeat right;
+	}
+	.production__subtitle {
+		margin: 15px 0 15px 0;
+	}
+	.production__text {
+		width: 90%;
+	}
+	.production__text:nth-of-type(2) {
+		width: 93%;
+	}
+	/*brands*/
+	.brands {
+		padding-left: 0;
+		/*width: auto;*/
+	}
+	.brands__title {
+		margin: 30px 20px;
+		margin-bottom: 10px;
+		width: 100%;
+	}
+	.wrap__content_left {
+		padding: 0;
+		/*padding-left: 30px;*/
+	}
+	.brands__content {
+		padding: 20px;
+		padding-left: 20px;
+	}
+	.brands__img {
+		position: static;
+	}
+	.brands__subtitle {
+		margin-top: 10px;
+	}
+	.brands__text {
+		width: 90%;
+	}
+	.brands__milkImg {
+		display: none;
+	}
+	/*products*/
+	.products__item {
+		margin: 0 auto;
+	}
+	.products__img {
+		margin: 20px auto;
+		margin-bottom: 10px;
+	}
+	.products__discription {
+		margin-top: 0;
+	}
+	/*news*/
+	.news__content {
+		margin: 0 auto;
+		margin-top: 6%;
+		width: 280px;
+	}
+	.news__img {
+		width: 264px;
+		height: 224px;
+	  box-shadow: 0px 4px 20px 0px #858585;
+	}
 }
 /*End of (max-width: 768px) yellow*/
 
@@ -592,14 +589,19 @@ h3 {
 	padding-top: .8%;
 	padding-left: 2.5%;
 }
+/*map*/
+.map {
+	margin-top: 30px;
+	width: 90%;
+}
 /*production*/
 .production {
 	margin-top: 30px;
+	margin-left: 60px;
 	height: auto;
-	background: url(../img/slider_recipes/recipe_2.png) no-repeat right;
 }
 .production__content {
-	margin-left: 60px;
+	background: url(../img/slider_recipes/recipe_2.png) no-repeat right;
 }
 .production__subtitle {
 	margin: 15px 0 15px 0;

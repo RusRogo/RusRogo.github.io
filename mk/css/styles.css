@@ -229,6 +229,10 @@ button:focus {
 	color: #EFF;
 	transition: 0.3s all;
 }
+.map {
+	width: auto;
+	height: auto;
+}
 /*production*/
 .production {
 	height: 648px;

@@ -31,20 +31,20 @@ directions__slider_next.addEventListener('click', function() {
 
 
 // onclick for tabs green
-var london = document.querySelector('.london');
-var paris = document.querySelector('.paris');
-var tokyo = document.querySelector('.tokyo');
+var tver = document.querySelector('.tver');
+var moscow = document.querySelector('.moscow');
+var spb = document.querySelector('.spb');
 // Открытие 1-го таба
-london.addEventListener('click', function() {
-  openCity(event, 'London');
+tver.addEventListener('click', function() {
+  openCity(event, 'tver_content');
 });
 // Открытие 2-го таба
-paris.addEventListener('click', function() {
-  openCity(event, 'Paris');
+moscow.addEventListener('click', function() {
+  openCity(event, 'moscow_content');
 });
 // Открытие 3-го таба
-tokyo.addEventListener('click', function() {
-  openCity(event, 'Tokyo');
+spb.addEventListener('click', function() {
+  openCity(event, 'spb_content');
 });
 
 // tabs

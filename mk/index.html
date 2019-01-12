@@ -106,33 +106,35 @@
 <!-- Карта -->
 <!-- map - 1174/768  tabs - 1054/290 -->
 			<article class="map">
-				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab64a2c9018f74f52dc982db54944691181bb7f92ee54c9e8fad4a8462c23a932&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
-				
+				<div class="max_map">
+					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab64a2c9018f74f52dc982db54944691181bb7f92ee54c9e8fad4a8462c23a932&amp;width=100%25&amp;height=768&amp;lang=ru_RU&amp;scroll=true"></script>
+				</div>	
+				<div class="mini_map">
+					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab64a2c9018f74f52dc982db54944691181bb7f92ee54c9e8fad4a8462c23a932&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+				</div>
 				<div class="tabs">
 <div class="tab">
-	  <button class="tablinks london active">Тверская обл.</button>
-	  <button class="tablinks paris">Москва и обл.</button>
-	  <button class="tablinks tokyo">Ленинградская обл.</button>
+	  <button class="tablinks tver active">Тверская область</button>
+	  <button class="tablinks moscow">Москва и область</button>
+	  <button class="tablinks spb">Ленинградская область</button>
 	  <button class="tablinks paris">В. Новгород</button>
 	  <button class="tablinks paris">Псков</button>
 	  <button class="tablinks paris">Ярославль</button>
 	  <button class="tablinks paris">Владимир</button>
 	  <button class="tablinks paris">Нижн. Новгород</button>
 	  <button class="tablinks paris">Казань</button>
+</div>
+	
+	<div>
+	  <h2 id="tver_content" class="tabcontent tabcontent_tver">Где вы можете <br>купить нашу продукцию</h2>
 	</div>
 	
-	<div id="London" class="tabcontent england">
-	  <h2>Где вы можете купить нашу продукцию</h2>
+	<div>
+	  <h2 id="moscow_content" class="tabcontent">Москва и область <br>купить нашу продукцию</h2>
 	</div>
 	
-	<div id="Paris" class="tabcontent">
-	  <h3>Paris</h3>
-	  <p>Paris is the capital of France.</p> 
-	</div>
-	
-	<div id="Tokyo" class="tabcontent">
-	  <h3>Tokyo</h3>
-	  <p>Tokyo is the capital of Japan.</p>
+	<div>
+	  <h2 id="spb_content" class="tabcontent">Ленинградская область <br>купить нашу продукцию</h2>
 	</div>
 				</div>
 			</article>

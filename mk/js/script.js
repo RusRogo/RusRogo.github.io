@@ -34,6 +34,13 @@ directions__slider_next.addEventListener('click', function() {
 var tver = document.querySelector('.tver');
 var moscow = document.querySelector('.moscow');
 var spb = document.querySelector('.spb');
+var novg = document.querySelector('.novg');
+var pskov = document.querySelector('.pskov');
+var jarosl = document.querySelector('.jarosl');
+var vlad = document.querySelector('.vlad');
+var nnov = document.querySelector('.nnov');
+var kaz = document.querySelector('.kaz');
+
 // Открытие 1-го таба
 tver.addEventListener('click', function() {
   openCity(event, 'tver_content');
@@ -45,6 +52,30 @@ moscow.addEventListener('click', function() {
 // Открытие 3-го таба
 spb.addEventListener('click', function() {
   openCity(event, 'spb_content');
+});
+// Открытие 3-го таба
+novg.addEventListener('click', function() {
+  openCity(event, 'novg_content');
+});
+// Открытие 3-го таба
+pskov.addEventListener('click', function() {
+  openCity(event, 'pskov_content');
+});
+// Открытие 3-го таба
+jarosl.addEventListener('click', function() {
+  openCity(event, 'jarosl_content');
+});
+// Открытие 3-го таба
+vlad.addEventListener('click', function() {
+  openCity(event, 'vlad_content');
+});
+// Открытие 3-го таба
+nnov.addEventListener('click', function() {
+  openCity(event, 'nnov_content');
+});
+// Открытие 3-го таба
+kaz.addEventListener('click', function() {
+  openCity(event, 'kaz_content');
 });
 
 // tabs

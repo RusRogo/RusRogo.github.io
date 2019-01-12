@@ -9,6 +9,34 @@
 </head>
 <body>
 
+<!-- tabs -->
+<article class="tabs">
+	<h2>Табы</h2>
+	<p>При нажатии открывается путкт меню:</p>
+	
+	<div class="tab">
+	  <button class="tablinks london active">London</button>
+	  <button class="tablinks paris">Paris</button>
+	  <button class="tablinks tokyo">Tokyo</button>
+	</div>
+	
+	<div id="London" class="tabcontent england">
+	  <h3>London</h3>
+	  <p>London is the capital city of England.</p>
+	</div>
+	
+	<div id="Paris" class="tabcontent">
+	  <h3>Paris</h3>
+	  <p>Paris is the capital of France.</p> 
+	</div>
+	
+	<div id="Tokyo" class="tabcontent">
+	  <h3>Tokyo</h3>
+	  <p>Tokyo is the capital of Japan.</p>
+	</div>
+</article>
+
+<!-- tz -->
 	<article class="container">
 		<h2>Реализация popup без использования сторонних библиотек</h2>
 		<h3>Реализация 1-ой JS функции</h3>
@@ -23,7 +51,7 @@
 					<!-- Форма -->
 					<form>
 					  <p>Имя: <input type='text' id='name' class='input_contacts' name='name' required><label class="label_contacts" for='name'></label></p>
-					  <p>Тел: <input type='tel' id='tel' class='input_contacts' min='100000' name='tel' required><label class="label_contacts" for='tel'></label></p>
+					  <p>Тел: <input type='number' id='tel' class='input_contacts' min='100000' name='tel' required><label class="label_contacts" for='tel'></label></p>
 					  <p>mail: <input type='email' id='email' class='input_contacts' name='email' required><label class="label_contacts" for='email'></label></p>
 <!-- чекбокс -->
 						<input type="checkbox" class="input_agree" id="agree" name="agree" value="agree" required>

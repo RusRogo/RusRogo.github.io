@@ -33,3 +33,36 @@ btn.addEventListener('click', function() {
      item.classList.add('active');
    })
 })
+
+// onclick for tabs green
+var london = document.querySelector('.london');
+var paris = document.querySelector('.paris');
+var tokyo = document.querySelector('.tokyo');
+// Открытие 1-го таба
+london.addEventListener('click', function() {
+  openCity(event, 'London');
+});
+// Открытие 2-го таба
+paris.addEventListener('click', function() {
+  openCity(event, 'Paris');
+});
+// Открытие 3-го таба
+tokyo.addEventListener('click', function() {
+  openCity(event, 'Tokyo');
+});
+
+// tabs
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName('tabcontent');
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName('tablinks');
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(' active', "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+

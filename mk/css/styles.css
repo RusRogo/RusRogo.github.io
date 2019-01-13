@@ -318,10 +318,11 @@ button:focus {
 /*production*/
 .production {
 	margin-left: 60px;
-	height: 648px;
 }
 .production__content {
 	background: url(../img/production.png) no-repeat right;
+	-webkit-background-size: contain;
+	background-size: contain;
 }
 .production__subtitle {
 	margin: 55px 0 45px 0;
@@ -348,7 +349,8 @@ button:focus {
 	padding-left: 0;
 }
 .brands__title {
-	margin: 40px 60px;
+	margin: 55px 60px;
+	margin-bottom: 20px;
 	width: 100%;
 }
 .wrap__content_left {
@@ -388,9 +390,18 @@ button:focus {
 	font-weight: bold;
 }
 /*news*/
+.news {
+	margin-top: 10px;
+}
 .news__content {
 	margin-top: 3%;
 	margin-bottom: 50px;
+	cursor: pointer;
+}
+.news__content:hover .news__content_title {
+	text-decoration: underline;
+	font-weight: bold;
+	transition: 0.2s all;
 }
 .news__img1 {
 	background-image: url(../img/news/news_1.png);

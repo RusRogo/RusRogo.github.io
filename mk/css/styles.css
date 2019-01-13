@@ -1,6 +1,3 @@
-* {
-	/*outline: 1px solid blue;*/
-}
 *:focus {
 	outline: none;
 }
@@ -56,7 +53,6 @@ button:focus {
   box-shadow: 0px 0px 10px 3px #b5b5b5;
 }
 .sidebar__content {
-	/*outline: 1px solid blue;*/
 	margin: 0 auto;
 	width: 126px;
 }
@@ -125,15 +121,9 @@ button:focus {
 	height: 768px;
 	z-index: 1;
 	position: relative;
-	/*display: flex;*/
 	background: url(../img/main_milk.jpg) no-repeat left bottom;
-	/*-webkit-background-size: cover;*/
 	background-size: cover;
 }
-/*.header__mainImg {
-	position: absolute;
-	z-index: -1;
-}*/
 .header__title {
 	margin-top: 0;
 	padding-left: 60px;
@@ -154,8 +144,6 @@ button:focus {
 .content {
 	padding: 0;
 	width: 100%;
-	/*background-color: #F6F5F2;*/
-	/*outline: 3px solid yellow;*/
 }
 /*resipes*/
 .article {
@@ -272,12 +260,9 @@ button:focus {
 	-webkit-border-radius: 10px;
 		 -moz-border-radius: 10px;
 }
-.wrapOfTab {
-}
 .tab {
 	display: flex;
 	flex-flow: row wrap;
-	/*justify-content: space-around;*/
 	border-bottom: 2px solid #efefef;
   overflow: hidden;
   background-color: #f6f6f6;
@@ -285,8 +270,6 @@ button:focus {
 	-webkit-border-radius: 10px 10px 0 0;
 		 -moz-border-radius: 10px 10px 0 0;
 }
-
-/* Style the buttons inside the tab */
 .tablinks {
   background-color: inherit;
   border: none;
@@ -296,13 +279,10 @@ button:focus {
   transition: .3s all;
   font-size: 16px;
 }
-
-/* Change background color of buttons on hover */
 .tablinks:hover {
   background-color: #ddd;
 }
 
-/* Create an active/current tablink class */
 .tablinks.active {
   background-color: #e9f0f5;
 	color: #005797;
@@ -316,7 +296,6 @@ button:focus {
 	text-decoration: underline;
 	color: #707070;
 }
-
 /* Style the tab content */
 .tabcontent {
 	height: 240px;
@@ -360,7 +339,6 @@ button:focus {
 }
 .production__button {
 	padding: 10px 15px;
-	/*width: 100px;*/
 	background-color: #059;
 	border-radius: 50px;
 	color: #DFF;
@@ -368,8 +346,6 @@ button:focus {
 /*brands*/
 .brands {
 	padding-left: 0;
-	/*width: 100%;*/
-	/*justify-content: space-around;*/
 }
 .brands__title {
 	margin: 40px 60px;
@@ -439,15 +415,15 @@ button:focus {
 }
 /*media yellow*/
 @media (min-width: 320px) and (max-width: 767px) {
-body {
-	font-size: 14px;
-}
-h2 {
-	font-size: 28px;
-}
-h3 {
-	font-size: 20px;
-}
+	body {
+		font-size: 14px;
+	}
+	h2 {
+		font-size: 28px;
+	}
+	h3 {
+		font-size: 20px;
+	}
 /*sidebar*/
 	.sidebar {
 		width: 100%;
@@ -492,10 +468,6 @@ h3 {
 		display: block;
 		width: 100px;
 	}
-/*My new styles red*/
-/*	.top__nav_menu {
-		margin-top: 90px;
-	}*/
 	.sidebar__button {
 		width: 100px;
 		margin: 0 20px 0 25px;
@@ -532,7 +504,6 @@ h3 {
 	.header {
 		height: 300px;
 		background-image: none;
-		/*background-position: 17%;*/
 	}
 	.header__title {
 		padding: 5%;
@@ -541,9 +512,7 @@ h3 {
 	.header__link {
 		padding-left: 10%;
 		padding-right: 3%;
-		/*padding-top: 0;*/
 		margin-top: 0;
-		/*margin-bottom: 5%;*/
 		font-family: Myriad Pro, sans-serif;
 		font-size: 18px;
 		color: #003256;
@@ -551,14 +520,12 @@ h3 {
 	/*slider*/
 	.wrap__slider {
 		margin-top: 20px;
-		/*width: 1055px;*/
 		width: 300px;
 	}
 	.directions__slider {
 		margin-bottom: 10px;
 	}
 	.directions__slider_block {
-		/*height: 442px;*/
 		height: 372px;
 		border-radius: 8px;
 	}
@@ -583,15 +550,12 @@ h3 {
 		display: none;
 		margin-top: 30px;
 		width: 90%;
-		/*height: 200px;*/
-		/*overflow: hidden;*/
 	}
 	/*production*/
 	.production {
 		margin-top: 70px;
 		margin-left: 20px;
 		height: auto;
-		/*background-position: -1560%;*/
 	}
 	.production__content {
 		background: url(../img/slider_recipes/recipe_2.png) no-repeat right;
@@ -608,7 +572,6 @@ h3 {
 	/*brands*/
 	.brands {
 		padding-left: 0;
-		/*width: auto;*/
 	}
 	.brands__title {
 		margin: 30px 20px;
@@ -617,7 +580,6 @@ h3 {
 	}
 	.wrap__content_left {
 		padding: 0;
-		/*padding-left: 30px;*/
 	}
 	.brands__content {
 		padding: 20px;
@@ -658,7 +620,6 @@ h3 {
 	  box-shadow: 0px 4px 20px 0px #858585;
 	}
 }
-/*End of (max-width: 768px) yellow*/
 
 @media screen and (min-width: 768px) {
 	.collapse {
@@ -667,140 +628,138 @@ h3 {
 	}
 	.navbar {
 		flex-flow: column;
-		/*margin-bottom: 10px;*/
 	}
 	.navbar-toggler {
 		display: none;
 	}
 }
-/*@media screen and (min-width: 992px)*/
 
 @media (min-width: 768px) and (max-width: 1340px) {
-.article {
-	margin-top: 30px;
-}
-/*slider*/
-.wrap__slider {
-	margin-top: 30px;
-	/*width: 1055px;*/
-	width: 400px;
-}
-.directions__slider {
-	margin-bottom: 30px;
-}
-.directions__slider_block {
-	/*height: 442px;*/
-	height: 509px;
-}
-.directions__slider_title {
-	margin-top: 360px;
-}
-.directions__slider_prev,
-.directions__slider_next {
-	bottom: -65px;
-	padding-top: .8%;
-	padding-left: 2.5%;
-}
-/*map*/
-.map {
-	margin-top: 30px;
-	width: 90%;
-}
-.max_map {
-	display: none;
-}
-.mini_map {
-	display: block;
-}
-.tabs {
-	bottom: 7%;
-	left: 8%;
-}
-.tabcontent {
-	height: 100px;
-  padding-top: 10px;
-  padding-left: 10px;
-	font-family: Constantia;
-	font-size: 24px;
-}
-.tablinks {
-  padding: 10px 16px;
-  transition: .3s all;
-  font-size: 12px;
-}
-.another_link {
-	bottom: 10px;
-	right: 5px;
-	font-size: 8px;
-}
-/*production*/
-.production {
-	margin-top: 30px;
-	margin-left: 60px;
-	height: auto;
-}
-.production__content {
-	background: url(../img/slider_recipes/recipe_2.png) no-repeat right;
-}
-.production__subtitle {
-	margin: 15px 0 15px 0;
-}
-.production__text {
-	width: 50%;
-}
-.production__text:nth-of-type(2) {
-	width: 53%;
-}
-/*brands*/
-.brands__title {
-	margin-left: 60px;
-	margin-bottom: 20px;
-}
-.wrap__content_left {
-	padding: 0 0 30px 0px;
-}
-.brands__content {
-	padding: 30px;
-	padding-left: 60px;
-}
-.brands__text {
-	width: 95%;
-}
-.brands__milkImg {
-	display: none;
-}
-/*products*/
-.products__item {
-	margin: 0 auto;
-}
-.products__item_content {
-	width: 250px;
-}
-.products__img {
-	margin: 20px auto;
-	margin-bottom: 10px;
-}
-.products__discription {
-	margin-top: 0;
-}
-/*news*/
-.news__content {
-	margin: 0 auto;
-	margin-top: 8%;
-	margin-bottom: 50px;
-	margin-right: 60px;
-	width: 280px;
-	/*width: 100%;*/
-}
-.news__img {
-	width: 264px;
-	height: 224px;
-  box-shadow: 0px 4px 20px 0px #858585;
-}
-.news__content_text {
-	width: 100%;
-}
-}
-@media screen and (min-width: 1340px) {
-
+	.article {
+		margin-top: 30px;
+	}
+	.header {
+		height: 400px;
+	}
+	.header__title {
+		padding-top: 30px;
+	}
+	/*slider*/
+	.wrap__slider {
+		margin-top: 30px;
+		width: 400px;
+	}
+	.directions__slider {
+		margin-bottom: 30px;
+	}
+	.directions__slider_block {
+		height: 509px;
+	}
+	.directions__slider_title {
+		margin-top: 360px;
+	}
+	.directions__slider_prev,
+	.directions__slider_next {
+		bottom: -65px;
+		padding-top: .8%;
+		padding-left: 2.5%;
+	}
+	/*map*/
+	.map {
+		margin-top: 30px;
+		width: 90%;
+	}
+	.max_map {
+		display: none;
+	}
+	.mini_map {
+		display: block;
+	}
+	.tabs {
+		bottom: 7%;
+		left: 8%;
+	}
+	.tabcontent {
+		height: 100px;
+	  padding-top: 10px;
+	  padding-left: 10px;
+		font-family: Constantia;
+		font-size: 24px;
+	}
+	.tablinks {
+	  padding: 10px 16px;
+	  transition: .3s all;
+	  font-size: 12px;
+	}
+	.another_link {
+		bottom: 10px;
+		right: 5px;
+		font-size: 8px;
+	}
+	/*production*/
+	.production {
+		margin-top: 30px;
+		margin-left: 60px;
+		height: auto;
+	}
+	.production__content {
+		background: url(../img/slider_recipes/recipe_2.png) no-repeat right;
+	}
+	.production__subtitle {
+		margin: 15px 0 15px 0;
+	}
+	.production__text {
+		width: 50%;
+	}
+	.production__text:nth-of-type(2) {
+		width: 53%;
+	}
+	/*brands*/
+	.brands__title {
+		margin-left: 60px;
+		margin-bottom: 20px;
+	}
+	.wrap__content_left {
+		padding: 0 0 30px 0px;
+	}
+	.brands__content {
+		padding: 30px;
+		padding-left: 60px;
+	}
+	.brands__text {
+		width: 95%;
+	}
+	.brands__milkImg {
+		display: none;
+	}
+	/*products*/
+	.products__item {
+		margin: 0 auto;
+	}
+	.products__item_content {
+		width: 250px;
+	}
+	.products__img {
+		margin: 20px auto;
+		margin-bottom: 10px;
+	}
+	.products__discription {
+		margin-top: 0;
+	}
+	/*news*/
+	.news__content {
+		margin: 0 auto;
+		margin-top: 8%;
+		margin-bottom: 50px;
+		margin-right: 60px;
+		width: 280px;
+	}
+	.news__img {
+		width: 264px;
+		height: 224px;
+	  box-shadow: 0px 4px 20px 0px #858585;
+	}
+	.news__content_text {
+		width: 100%;
+	}
 }

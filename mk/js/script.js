@@ -1,8 +1,7 @@
-
 // slick
 $('.directions__slider').slick({
   slidesToShow: 3,
-  // autoplay: true, 
+  autoplay: true, 
   autoplaySpeed: 2500,
   responsive: [
     {
@@ -53,27 +52,27 @@ moscow.addEventListener('click', function() {
 spb.addEventListener('click', function() {
   openCity(event, 'spb_content');
 });
-// Открытие 3-го таба
+// Открытие 4-го таба
 novg.addEventListener('click', function() {
   openCity(event, 'novg_content');
 });
-// Открытие 3-го таба
+// Открытие 5-го таба
 pskov.addEventListener('click', function() {
   openCity(event, 'pskov_content');
 });
-// Открытие 3-го таба
+// Открытие 6-го таба
 jarosl.addEventListener('click', function() {
   openCity(event, 'jarosl_content');
 });
-// Открытие 3-го таба
+// Открытие 7-го таба
 vlad.addEventListener('click', function() {
   openCity(event, 'vlad_content');
 });
-// Открытие 3-го таба
+// Открытие 8-го таба
 nnov.addEventListener('click', function() {
   openCity(event, 'nnov_content');
 });
-// Открытие 3-го таба
+// Открытие 9-го таба
 kaz.addEventListener('click', function() {
   openCity(event, 'kaz_content');
 });

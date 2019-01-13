@@ -465,14 +465,16 @@ button:focus {
 		margin-top: 30px;
 	}
 	.navbar {
-		min-height: 85px;
+		min-height: 75px;
 		margin: 0;
 	}
-	.navbar-toggler {
+	.navbar-light	.navbar-toggler {
 		display: block;
 		position: fixed;
-		top: 20px;
+		top: 40px;
 		right: 10px;
+		border-color: #FFA70D;
+		background-color: #FFA70D;
 	}
 	.sidebar__menu_link {
 		padding: 0;
@@ -481,7 +483,7 @@ button:focus {
 	}
 	.sidebar__button {
 		width: 100px;
-		margin: 0 20px 0 25px;
+		margin-right: 20px;
 	}
 	.sidebar__question {
 		display: inline;
@@ -495,7 +497,7 @@ button:focus {
 	}
 	/*content*/
 	.content {
-		margin-top: 160px;
+		margin-top: 90px;
 	}
 	.article {
 		padding: 5%;
@@ -524,6 +526,7 @@ button:focus {
 		padding-left: 10%;
 		padding-right: 3%;
 		margin-top: 0;
+		max-width: 90%;
 		font-family: Myriad Pro, sans-serif;
 		font-size: 18px;
 		color: #003256;

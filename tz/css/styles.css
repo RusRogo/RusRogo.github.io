@@ -1,9 +1,21 @@
 
 body {
-	margin: 0;
+	margin: 2%;
 	padding: 0;
 	font-size: 18px;
-	background-color: lightgray;
+	font-family: Lucida, san-serif;
+	background-color: #fcfcfc;
+}
+h1 {
+	text-align: center;
+	font-family: Segoe Print, san-serif;
+}
+h2 {
+	margin-left: 10%;
+	margin-top: 5%;
+	font-family: Segoe Print, san-serif;
+}
+article {
 }
 .container {
 	position: relative;
@@ -141,13 +153,12 @@ body {
 
 /*yellow слайдер импортировал с моих работ */
 .slider_title {
-	margin-top: 100px;
 	font-size: 26px;
 }
 .comWrapSlider {
 	width: 570px;
 	height: 200px;
-	margin-top: 20%;
+	margin-top: 5%;
 	margin-left: 1%;
 	padding-bottom: 30px;
 	position: relative;
@@ -367,9 +378,6 @@ tr:first-child td {
 	border-bottom: 3px solid #EEE;
 }
 /*tabs yellow*/
-body {font-family: Arial;}
-
-/* Style the tab */
 .tab {
   overflow: hidden;
   border: 1px solid #ccc;

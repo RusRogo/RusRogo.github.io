@@ -28,19 +28,43 @@ function createTodoItem(title) {
   listItem.appendChild(editButton);
   listItem.appendChild(deleteButton);
 
-  console.log(listItem);
+  // bindEvents(listItem);
+
   return listItem;
 }
+
+// function bindEvents(todoItem) {
+//   const chexbox = todoItem.querySelector('.checkbox');
+//   const editButton = todoItem.querySelector('button.edit');
+//   const deleteButton = todoItem.querySelector('button.delete');
+
+//   chexbox.addEventListener('change', toggleTodoItem);
+//   editButton.addEventListener('click', editTodoItem);
+//   deleteButton.addEventListener('click', deleteTodoItem);
+// }
 
 function addTodoItem(event) {
   event.preventDefault();
 
-  if (addInput.value === '') return alert('Need wr!');
+  if (addInput.value === '') return alert('Need name!');
 
   const todoItem = createTodoItem(addInput.value);
   todoList.appendChild(todoItem);
   addInput.value = '';
 }
+
+// function toggleTodoItem({ target }) {
+//   console.log(target);
+//   console.log(this);
+// }
+
+// function editTodoItem() {
+
+// }
+
+// function deleteTodoItem() {
+
+// }
 
 const todoForm = document.getElementById('todo-form');
 const addInput = document.getElementById('add-input');
